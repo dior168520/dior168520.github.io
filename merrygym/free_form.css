@@ -2,14 +2,12 @@
 * {
   text-decoration: none;
   list-style: none;
-  margin: 0;
 }
 
-html,
-body {
-  height: 100%;
-  margin: 0;
+body,
+html {
   font-family: "微軟正黑體";
+  margin: 0;
   scroll-behavior: smooth;
 }
 
@@ -250,137 +248,119 @@ nav #menu .hamburger .line_C:hover {
   }
 }
 
-#section .background_img {
+#contact_bannet img {
   width: 100%;
 }
 
-#section .background_img img {
-  width: 100%;
-}
-
-#section .home_nav {
+.home_nav {
   font-family: "微軟正黑體";
+  margin: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 50%;
 }
 
-#section .home_nav .item .home::after {
+.home_nav .item .home::after {
   content: "\003e";
 }
 
-#section .home_nav .item a {
+.home_nav .item a {
   color: black;
 }
 
-#section .coach {
-  margin: 70px 0;
-}
-
-#section .coach h1 {
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-#section .coach .row {
-  max-width: 1400px;
+#contact_group h2 {
   margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  border-bottom: solid 1px black;
+}
+
+#contact_group .textA {
+  text-align: center;
+}
+
+#contact_group .container .group {
+  max-width: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#contact_group .container .group .from_group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
 }
 
-#section .coach .row .card_container {
-  margin: 50px auto;
-  width: 300px;
-  height: 450px;
-  position: relative;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  cursor: pointer;
+@media screen and (max-width: 975px) {
+  #contact_group .container .group .from_group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
-#section .coach .row .card_container .cover,
-#section .coach .row .card_container .back {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.45s ease-in-out;
-  transition: -webkit-transform 0.45s ease-in-out;
-  transition: transform 0.45s ease-in-out;
-  transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
+#contact_group .container .group .from_group .text {
+  max-width: 100%;
+  padding: 0 10px;
+  font-family: "微軟正黑體";
+  width: 400px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
-#section .coach .row .card_container .cover img,
-#section .coach .row .card_container .back img {
-  width: 100%;
-  height: 450px;
-  display: block;
-  border-radius: 20px;
-  -webkit-box-shadow: 3px 5px 15px;
-          box-shadow: 3px 5px 15px;
-}
-
-#section .coach .row .card_container .cover {
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-}
-
-#section .coach .row .card_container .cover h2 {
+#contact_group .container .group .from_group label {
+  max-width: 100%;
+  width: 150px;
   text-align: center;
-  letter-spacing: 2px;
-  line-height: 50px;
-  margin-top: 20px;
+  letter-spacing: 5px;
 }
 
-#section .coach .row .card_container:hover .cover {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+#contact_group .container .group .from_group .time {
+  max-width: 100%;
+  width: 424px;
+  height: 44px;
+  padding: 0 10px;
+  font-size: 18px;
 }
 
-#section .coach .row .card_container .back {
+#contact_group .container .group textarea {
+  max-width: 100%;
+  padding: 10px 10px;
+  font-size: 18px;
+  width: 400px;
+  height: 200px;
+}
+
+#contact_group .container .group .line {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 30px;
+  border-bottom: solid 1px black;
+}
+
+#contact_group .container .group .buttons {
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+#contact_group .container .group .buttons .btn {
+  width: 100px;
+  height: 40px;
   background-color: black;
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-  border-radius: 20px;
-}
-
-#section .coach .row .card_container .back .textcontent {
-  text-align: center;
   color: white;
-  line-height: 40px;
-  letter-spacing: 2px;
-}
-
-#section .coach .row .card_container .back .textcontent h3 {
-  margin: 10px;
-}
-
-#section .coach .row .card_container:hover .back {
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-}
-
-#section .coach .row .card_container_opacity {
-  display: none;
-}
-
-@media screen and (max-width: 1199px) {
-  #section .coach .row .card_container_opacity {
-    display: block;
-    opacity: 0;
-  }
-}
-
-@media screen and (max-width: 899px) {
-  #section .coach .row .card_container_opacity {
-    display: none;
-  }
+  border: 0;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 #footercontext .container {
@@ -487,4 +467,4 @@ footer #button_top {
 footer #button_top:hover {
   bottom: 15px;
 }
-/*# sourceMappingURL=coach.css.map */
+/*# sourceMappingURL=free_form.css.map */

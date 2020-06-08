@@ -37,7 +37,7 @@ nav {
 
     ul {
       display: flex;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
 
       @media screen and (max-width: 1200px) {
         display: none;
@@ -296,7 +296,7 @@ nav {
     @media screen and (max-width: 1200px) {
       width: 95%;
     }
-
+// 活動訊息
     h1 {
       letter-spacing: 3px;
       text-align: center;
@@ -325,6 +325,7 @@ nav {
 
         .big_title_text {
           width: 100%;
+          letter-spacing: 3px;
        
          
           img {
@@ -366,7 +367,7 @@ nav {
             line-height: 40px;
             border: solid 1px white;
             text-align: center;
-            width: 70px;
+            width: 80px;
             height: 40px;
             cursor: pointer;
             &:hover {
@@ -394,6 +395,30 @@ nav {
 
     .free {
       width: 100%;
+      position: relative;
+
+      .free_text {
+        letter-spacing: 3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h1 {
+          color: white;
+        }
+        a {
+          .btn {
+            text-align: center;
+            padding: 10px ;
+            border: solid 1px white;
+            color: white;
+            &:hover {
+              background-color: black;
+              border: solid 1px black;
+            }
+          }
+        }
+      }
 
       img {
         width: 100%;
@@ -486,6 +511,7 @@ nav {
           }
 
           .text_content_A {
+            letter-spacing: 3px;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -555,6 +581,7 @@ nav {
           }
 
           .text_content_B {
+            letter-spacing: 3px;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -633,6 +660,7 @@ nav {
           }
 
           .text_content_C {
+            letter-spacing: 3px;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -700,6 +728,7 @@ nav {
           }
 
           .text_content_D {
+            letter-spacing: 3px;
             position: absolute;
             top: 50%;
             left: 50%;

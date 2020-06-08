@@ -1,14 +1,11 @@
 * {
   text-decoration: none;
   list-style: none;
-  margin: 0;
 }
-
-html,
-body {
-  height: 100%;
-  margin: 0;
+body,
+html {
   font-family: "微軟正黑體";
+  margin: 0;
   scroll-behavior: smooth;
 }
 
@@ -64,7 +61,7 @@ nav {
           }
         }
 
-      
+
       }
     }
     // icon fb ig line
@@ -203,118 +200,128 @@ nav {
   }
 }
 
-#section {
-  .background_img {
+//  banner圖片
+#contact_bannet {
+  img {
     width: 100%;
-    img {
-      width: 100%;
-    }
   }
+}
 
-  // home_nav
-  .home_nav {
-    font-family: "微軟正黑體";
-    display: flex;
-    width: 50%;
+// home_nav
+.home_nav {
+  font-family: "微軟正黑體";
+  margin: 20px 0;
+  display: flex;
 
-    .item {
-      .home {
-        &::after {
-          content: "\003e";
-        }
-      }
+  width: 50%;
 
-      a {
-        color: black;
+  .item {
+    .home {
+      &::after {
+        content: "\003e";
       }
     }
+
+    a {
+      color: black;
+    }
+  }
+}
+
+#contact_group {
+  h2 {
+  
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    border-bottom: solid 1px black;
   }
 
-  .coach {
-    margin: 70px 0;
-    h1 {
-      text-align: center;
-      padding-bottom: 30px;
-    }
+  .textA {
+    text-align: center;
+  }
 
-    .row {
-      max-width: 1400px;
+  .container {
+    
+    .group {
+      max-width: 100%;
+      width: 70%;
       margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      // 設定大小
-      .card_container {
-        margin: 50px auto;
-        width: 300px;
-        height: 450px;
-        position: relative;
-        perspective: 1000px; //立體透視效果
-        cursor: pointer;
-
-        .cover,
-        .back {
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          backface-visibility: hidden; // 將目前back "-180度" 隱藏
-          transition: transform 0.45s ease-in-out; //cover back 切換時加上動畫
-
-          img {
-            width: 100%;
-            height: 450px;
-            display: block;
-            border-radius: 20px;
-            box-shadow: 3px 5px 15px;
-          }
+      .from_group {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        @media screen and(max-width:975px) {
+          flex-wrap: wrap;
+          
         }
 
-        // 1.正面背景藍色 2.平常狀態"0"deg
-        .cover {
-          transform: rotateY(0deg);
-          h2 {
-            text-align: center;
-            letter-spacing: 2px;
-            line-height: 50px;
-            margin-top: 20px;
-          }
+        .text {
+          
+          max-width: 100%;
+          padding: 0 10px;
+          font-family: "微軟正黑體";
+          width: 400px;
+          height: 40px;
+          font-size: 18px;
+          line-height: 30px;
         }
-        // 滑鼠移動過去cover翻轉180度
-        &:hover .cover {
-          transform: rotateY(180deg);
+        label {
+         max-width: 100%;
+         width: 150px;
+         
+          text-align: center;
+          letter-spacing: 5px;
         }
-        // 1.背面背景黃色 2.平常狀態""-180"deg
-        .back {
-          background-color: black;
-          transform: rotateY(-180deg);
-          border-radius: 20px;
 
-          .textcontent {
-            text-align: center;
-            color: white;
-            line-height: 40px;
-            letter-spacing: 2px;
-            h3 {
-              margin: 10px;
-            }
-          }
+        .time {
+          max-width: 100%;
+          width: 424px;
+          height: 44px;
+          padding: 0 10px;
+   
+          font-size: 18px;
+
         }
-        // 滑鼠移動過去翻轉0度
-        &:hover .back {
-          transform: rotateY(0deg);
-        }
+
+
+       
       }
-      .card_container_opacity {
-        display: none;
-        @media screen and (max-width: 1199px) {
-          display: block;
-          opacity: 0;
-        }
-        @media screen and (max-width: 899px) {
-          display: none;
+      textarea {
+        max-width: 100%;
+        padding: 10px 10px;
+        font-size: 18px;
+        width: 400px;
+        height: 200px;
+      }
+
+      .line {
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 30px;
+        border-bottom: solid 1px black;
+      }
+      .buttons {
+        width: 100%;
+        margin: 30px auto;
+        text-align: center;
+
+        .btn {
+          width: 100px;
+          height: 40px;
+          background-color: black;
+          color: white;
+          border: 0;
+          border-radius: 3px;
+          font-size: 16px;
+          font-weight: bold;
         }
       }
     }
   }
+
 }
 
 #footercontext {

@@ -51,7 +51,7 @@ nav .container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -411,6 +411,7 @@ nav #menu .hamburger .line_C:hover {
 
 #section_A .swiper_New .swiper_wrap .banner_photo .big_title_text {
   width: 100%;
+  letter-spacing: 3px;
 }
 
 #section_A .swiper_New .swiper_wrap .banner_photo .big_title_text img {
@@ -469,7 +470,7 @@ nav #menu .hamburger .line_C:hover {
   line-height: 40px;
   border: solid 1px white;
   text-align: center;
-  width: 70px;
+  width: 80px;
   height: 40px;
   cursor: pointer;
 }
@@ -502,6 +503,32 @@ nav #menu .hamburger .line_C:hover {
 
 #section_B .main .free {
   width: 100%;
+  position: relative;
+}
+
+#section_B .main .free .free_text {
+  letter-spacing: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#section_B .main .free .free_text h1 {
+  color: white;
+}
+
+#section_B .main .free .free_text a .btn {
+  text-align: center;
+  padding: 10px;
+  border: solid 1px white;
+  color: white;
+}
+
+#section_B .main .free .free_text a .btn:hover {
+  background-color: black;
+  border: solid 1px black;
 }
 
 #section_B .main .free img {
@@ -657,6 +684,7 @@ nav #menu .hamburger .line_C:hover {
 }
 
 #section_B .main .content .introduction_t .box_t_A .text_content_A {
+  letter-spacing: 3px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -754,6 +782,7 @@ nav #menu .hamburger .line_C:hover {
 }
 
 #section_B .main .content .introduction_t .box_t_B .text_content_B {
+  letter-spacing: 3px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -868,6 +897,7 @@ nav #menu .hamburger .line_C:hover {
 }
 
 #section_B .main .content .introduction_b .box_b_A .text_content_C {
+  letter-spacing: 3px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -964,6 +994,7 @@ nav #menu .hamburger .line_C:hover {
 }
 
 #section_B .main .content .introduction_b .box_b_B .text_content_D {
+  letter-spacing: 3px;
   position: absolute;
   top: 50%;
   left: 50%;
