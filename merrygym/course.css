@@ -257,6 +257,66 @@ nav #menu .hamburger .line_C:hover {
   background-position: center;
 }
 
+@media screen and (max-width: 1150px) {
+  #section .background_img {
+    height: 65vh;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #section .background_img {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #section .background_img {
+    height: 55vh;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #section .background_img {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #section .background_img {
+    height: 45vh;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #section .background_img {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #section .background_img {
+    height: 38vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #section .background_img {
+    height: 37vh;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #section .background_img {
+    height: 35vh;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #section .background_img {
+    height: 33vh;
+  }
+}
+
 #section .home_nav {
   font-family: "微軟正黑體";
   display: -webkit-box;

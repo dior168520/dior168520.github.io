@@ -208,6 +208,36 @@ nav {
     background-image: url(./img/bruce.jpg);
     background-size: cover;
     background-position: center;
+    @media screen and (max-width: 1150px) {
+      height: 65vh;
+    }
+    @media screen and (max-width: 1050px) {
+      height: 60vh;
+    }
+    @media screen and (max-width: 1000px) {
+      height: 55vh;
+    }
+    @media screen and (max-width: 950px) {
+      height: 50vh;
+    }
+    @media screen and (max-width: 900px) {
+      height: 45vh;
+    }
+    @media screen and (max-width: 850px) {
+      height: 40vh;
+    }
+    @media screen and (max-width: 800px) {
+      height: 38vh;
+    }
+    @media screen and (max-width: 700px) {
+      height: 37vh;
+    }
+    @media screen and (max-width: 580px) {
+      height: 35vh;
+    }
+    @media screen and (max-width: 530px) {
+      height: 33vh;
+    }
   }
 
     // home_nav

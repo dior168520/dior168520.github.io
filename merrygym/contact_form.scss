@@ -202,6 +202,40 @@ nav {
 
 //  banner圖片
 #contact_bannet {
+  .bigbanner {
+    width: 100%;
+    height: 70vh;
+    background-image: url(./contact/contact_banner.jpg);
+    background-position: center;
+    background-size: cover;
+
+    
+    @media screen and (max-width: 1000px) {
+      height: 65vh;
+    }
+    @media screen and (max-width: 900px) {
+      height: 60vh;
+    }
+    @media screen and (max-width: 800px) {
+      height: 50vh;
+    }
+    @media screen and (max-width: 700px) {
+      height: 45vh;
+    }
+    @media screen and (max-width: 630px) {
+      height: 40vh;
+    }
+    @media screen and (max-width: 530px) {
+      height: 35vh;
+    }
+    @media screen and (max-width: 470px) {
+      height: 30vh;
+    }
+    @media screen and (max-width: 420px) {
+      height: 25vh;
+    }
+
+  }
   img {
     width: 100%;
   }

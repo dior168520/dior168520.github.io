@@ -250,95 +250,69 @@ nav #menu .hamburger .line_C:hover {
 
 #banner .image {
   width: 100%;
-}
-
-#banner img {
-  display: block;
-  width: 100%;
-  height: 100vh;
-}
-
-@media screen and (max-width: 1400px) {
-  #banner img {
-    height: 90vh;
-  }
-}
-
-@media screen and (max-width: 1350px) {
-  #banner img {
-    height: 85vh;
-  }
-}
-
-@media screen and (max-width: 1250px) {
-  #banner img {
-    height: 80vh;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #banner img {
-    height: 75vh;
-  }
+  height: 70vh;
+  background-image: url(./about/original.jpg);
+  background-position: 0%  10%;
+  background-size: cover;
 }
 
 @media screen and (max-width: 1150px) {
-  #banner img {
-    height: 70vh;
+  #banner .image {
+    height: 65vh;
   }
 }
 
 @media screen and (max-width: 1050px) {
-  #banner img {
+  #banner .image {
     height: 60vh;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  #banner img {
+  #banner .image {
     height: 55vh;
   }
 }
 
 @media screen and (max-width: 950px) {
-  #banner img {
+  #banner .image {
     height: 50vh;
   }
 }
 
 @media screen and (max-width: 900px) {
-  #banner img {
+  #banner .image {
     height: 45vh;
   }
 }
 
 @media screen and (max-width: 850px) {
-  #banner img {
+  #banner .image {
     height: 40vh;
   }
 }
 
 @media screen and (max-width: 800px) {
-  #banner img {
+  #banner .image {
     height: 38vh;
   }
 }
 
 @media screen and (max-width: 700px) {
-  #banner img {
-    height: 35vh;
+  #banner .image {
+    height: 37vh;
   }
 }
 
 @media screen and (max-width: 580px) {
-  #banner img {
-    height: 32vh;
+  #banner .image {
+    height: 35vh;
   }
 }
 
 @media screen and (max-width: 530px) {
-  #banner img {
-    height: 28vh;
+  #banner .image {
+    height: 33vh;
   }
 }
 
