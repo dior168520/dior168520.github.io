@@ -1,0 +1,158 @@
+html,
+body {
+    background-color: rgb(118, 118, 122);
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "微軟正黑體";
+    letter-spacing: 1px;
+}
+#container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    
+   
+
+    #nav {
+        max-width: 100%;
+        width: 400px;
+        background-color: rgb(233, 229, 229);
+       
+        
+        .navfixed{
+            width: 400px;
+            position: fixed;
+        
+        .navbar {
+            margin: 20px 0;
+         
+
+            h1 ,p {
+                line-height: 35px;
+                text-align: center;
+                margin: 10px 0;
+            }
+            .photo {
+                width: 180px;
+                margin: 0 auto;
+                border-radius: 15px;
+
+                img {
+                    width: 100%;
+                    display: block;
+                    
+                }
+            }
+            ul {
+                width: 200px;
+                text-align: left;
+                line-height: 40px;
+                font-size: 18px;
+                font-weight: bold;
+                margin: 30px auto;
+                li {
+                }
+
+                a {
+                    color: black;
+                }
+            }
+        }
+     }
+    }
+
+    #main {
+        max-width: 100%;
+        width: calc(100% - 400px);
+        padding: 0 10px;
+        background-color: #f1f1f1;
+        // 關於
+        .about {
+            margin: 30px auto;
+
+            h2 {
+                text-align: justify;
+                padding: 10px 0;
+            }
+
+            p {
+                padding: 20px 0;
+            }
+        }
+        .line {
+            border-bottom: 1px gray solid;
+        }
+
+        // 作品集標題
+        .Portfolio {
+            h2 {
+                text-align: justify;
+                padding: 10px 0;
+            }
+
+            .line {
+                border-bottom: 1px gray solid;
+            }
+        }
+        // 作品集
+        .wrap {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 30px 0;
+
+            // 固定寬度
+            .col {
+                width: 450px;
+                .textcontent {
+                    h2 , p {
+                        line-height: 30px;
+                        padding: 5px 0  ;
+                    }
+                }
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .experience {
+        h2 {
+            text-align: justify;
+        }
+        .line {
+            border-bottom: 1px gray solid;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            margin: 30px auto;
+            line-height: 30px;
+        }
+    }
+
+    .Skills {
+        .line {
+            border-bottom: 1px gray solid;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+
+            .col {
+                width: 50%;
+            }
+        }
+    }
+}

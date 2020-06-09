@@ -1,0 +1,161 @@
+@charset "UTF-8";
+html,
+body {
+  background-color: #76767a;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "微軟正黑體";
+  letter-spacing: 1px;
+}
+
+#container {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#container #nav {
+  max-width: 100%;
+  width: 400px;
+  background-color: #e9e5e5;
+}
+
+#container #nav .navfixed {
+  width: 400px;
+  position: fixed;
+}
+
+#container #nav .navfixed .navbar {
+  margin: 20px 0;
+}
+
+#container #nav .navfixed .navbar h1, #container #nav .navfixed .navbar p {
+  line-height: 35px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#container #nav .navfixed .navbar .photo {
+  width: 180px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+#container #nav .navfixed .navbar .photo img {
+  width: 100%;
+  display: block;
+}
+
+#container #nav .navfixed .navbar ul {
+  width: 200px;
+  text-align: left;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 30px auto;
+}
+
+#container #nav .navfixed .navbar ul a {
+  color: black;
+}
+
+#container #main {
+  max-width: 100%;
+  width: calc(100% - 400px);
+  padding: 0 10px;
+  background-color: #f1f1f1;
+}
+
+#container #main .about {
+  margin: 30px auto;
+}
+
+#container #main .about h2 {
+  text-align: justify;
+  padding: 10px 0;
+}
+
+#container #main .about p {
+  padding: 20px 0;
+}
+
+#container #main .line {
+  border-bottom: 1px gray solid;
+}
+
+#container #main .Portfolio h2 {
+  text-align: justify;
+  padding: 10px 0;
+}
+
+#container #main .Portfolio .line {
+  border-bottom: 1px gray solid;
+}
+
+#container #main .wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 30px 0;
+}
+
+#container #main .wrap .col {
+  width: 450px;
+}
+
+#container #main .wrap .col .textcontent h2, #container #main .wrap .col .textcontent p {
+  line-height: 30px;
+  padding: 5px 0;
+}
+
+#container #main .wrap .col img {
+  width: 100%;
+  display: block;
+}
+
+#container .experience h2 {
+  text-align: justify;
+}
+
+#container .experience .line {
+  border-bottom: 1px gray solid;
+}
+
+#container .experience .container {
+  max-width: 900px;
+  width: 100%;
+  margin: 30px auto;
+  line-height: 30px;
+}
+
+#container .Skills .line {
+  border-bottom: 1px gray solid;
+}
+
+#container .Skills .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container .Skills .container .col {
+  width: 50%;
+}
+/*# sourceMappingURL=personal.css.map */
