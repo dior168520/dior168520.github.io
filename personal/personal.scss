@@ -16,62 +16,175 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     display: flex;
-    
-   
 
+    // web nav
     #nav {
-        max-width: 100%;
         width: 400px;
         background-color: rgb(233, 229, 229);
-       
-        
-        .navfixed{
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+
+        .navfixed {
+            width: 100%;
             width: 400px;
             position: fixed;
-        
-        .navbar {
-            margin: 20px 0;
-         
 
-            h1 ,p {
-                line-height: 35px;
-                text-align: center;
-                margin: 10px 0;
-            }
-            .photo {
-                width: 180px;
-                margin: 0 auto;
-                border-radius: 15px;
-
-                img {
+            .navbar {
+                width: 100%;
+                margin: 20px 0;
+                .text {
                     width: 100%;
-                    display: block;
-                    
-                }
-            }
-            ul {
-                width: 200px;
-                text-align: left;
-                line-height: 40px;
-                font-size: 18px;
-                font-weight: bold;
-                margin: 30px auto;
-                li {
+                    h1,
+                    p {
+                        line-height: 35px;
+                        text-align: center;
+                        margin: 10px 0;
+                    }
                 }
 
-                a {
-                    color: black;
+                .photo {
+                    width: 180px;
+                    margin: 0 auto;
+                    border-radius: 15px;
+
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                ul {
+                    width: 200px;
+                    text-align: left;
+                    line-height: 40px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin: 30px auto;
+
+                    a {
+                        color: black;
+                    }
                 }
             }
         }
-     }
+    }
+
+    // 手機選單
+    .mobile_nav {
+        height: 100vh;
+        width: 400px;
+        background-color: rgb(233, 229, 229);
+        display: none;
+        position: fixed;
+        z-index: 100;
+
+        .navfixed {
+            width: 100%;
+            .mobile_navbar {
+                width: 100%;
+                margin: 20px 0;
+
+                .text {
+                    width: 100%;
+                    h1,
+                    p {
+                        line-height: 35px;
+                        text-align: center;
+                        margin: 10px 0;
+                    }
+                }
+                .photo {
+                    width: 180px;
+                    margin: 0 auto;
+                    border-radius: 15px;
+
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                ul {
+                    width: 200px;
+                    text-align: left;
+                    line-height: 40px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin: 30px auto;
+
+                    a {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    // mobile nav
+    .mobile_nav.active {
+        @media screen and(max-width:1000px) {
+            display: block;
+        }
     }
 
     #main {
-        max-width: 100%;
         width: calc(100% - 400px);
         padding: 0 10px;
         background-color: #f1f1f1;
+
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+        }
+
+        // 漢堡條
+        .collapse {
+            width: 35px;
+            height: 50px;
+            position: relative;
+            display: none;
+            @media screen and (max-width: 1000px) {
+                display: block;
+            }
+
+            .line {
+                width: 100%;
+                height: 3px;
+                border: solid 1px black;
+                background-color: black;
+                border-radius: 2px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transition-duration: 0.3s;
+                transform: translate(-50%, -50%);
+            }
+
+            .line1 {
+                top: 25%;
+            }
+
+            .line3 {
+                top: 75%;
+            }
+
+            &:hover .line1 {
+                transform: translate(-50%, -50%) rotate(45deg);
+                top: 50%;
+                transition-property: transform, top;
+                transition-duration: 0.5s, 0.3s;
+            }
+
+            &:hover .line3 {
+                transform: translate(-50%, -50%) rotate(-45deg);
+                top: 50%;
+                transition-property: transform, top;
+                transition-duration: 0.5s, 0.3s;
+            }
+
+            &:hover .line2 {
+                opacity: 0;
+            }
+        }
+
         // 關於
         .about {
             margin: 30px auto;
@@ -104,17 +217,28 @@ body {
         .wrap {
             width: 100%;
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-evenly;
             margin: 30px 0;
+            @media screen and (max-width: 1000px) {
+                max-width: 100%;
+                display: inline-block;
+            }
 
             // 固定寬度
             .col {
-                width: 450px;
+                width: 40%;
+
+                @media screen and (max-width: 1000px) {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+
                 .textcontent {
-                    h2 , p {
+                    width: 80%;
+                    h2,
+                    p {
                         line-height: 30px;
-                        padding: 5px 0  ;
+                        padding: 15px 0;
                     }
                 }
                 img {

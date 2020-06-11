@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- scss -->
+    <link rel="stylesheet" href="./navbar.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
+    <title>navbar</title>
+
+</head>
+
+<body>
+
+
+
+
+    <!-- nav>ul>(li.item$>a)*5 -->
+    <nav class="navbar">
+        <div class="container">
+            <div><img src="./img/skoda_logo.jpg" alt="">
+            </div>
+            <ul class="navbar_nav">
+
+                <li class="item">
+                    <a href="">AAA</a>
+                </li>
+
+                <li class="item">
+                    <a href="">BBB</a>
+                </li>
+
+                <li class="item">
+                    <a href="">CCC</a>
+                </li>
+
+                <li class="item">
+                    <a href="">DDD</a>
+                </li>
+
+                <li class="item">
+                    <a href="">EEE</a>
+                </li>
+
+            </ul>
+            <div class="mobile_navbar_toggle">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+    <nav class="mobile_navbar">
+        <ul class="mobile_navbar_nav ">
+            <span class="close_nav">X</span>
+            <li class="mobile_item">
+                <a href="">關於我們</a>
+            </li>
+
+            <li class="mobile_item">
+                <a href="">最新消息</a>
+            </li>
+
+            <li class="mobile_item">
+                <a href="">免費體驗</a>
+            </li>
+
+            <li class="mobile_item">
+                <a href="">課程資訊</a>
+            </li>
+
+            <li class="mobile_item">
+                <a href="">分店介紹</a>
+            </li>
+        </ul>
+    </nav>
+
+<script>
+    // 手機版按鈕
+var mobile_toggle = document.querySelector(".mobile_navbar_toggle")
+
+
+// 手機選單
+var mobile_navbar = document.querySelector(".mobile_navbar_nav")
+
+// 關掉選單按鈕
+var close_nav =document.querySelector(".close_nav")
+
+mobile_toggle.addEventListener("click" , function(){
+    // 選單要打開
+
+    // 加上class active
+    mobile_navbar.classList.add("active");
+
+
+});
+
+close_nav.addEventListener("click" , function(){
+
+    mobile_navbar.classList.remove("active")
+});
+</script>
+</body>
+
+</html>
