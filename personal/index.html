@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- hover -->
+  <!-- hover -->
   <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/hover.css/2.3.1/css/hover-min.css">
   <link rel="stylesheet" href="./personal.css">
-  
+
   <title>Document</title>
 </head>
 
@@ -21,7 +21,7 @@
             <h1>SHIHWEI LI 李世惟</h1>
             <p>dior168520@gmail.com</p>
           </div>
-         
+
           <div class="photo">
             <img src="./About/img_01.jpg" alt="">
 
@@ -36,28 +36,28 @@
       </div>
     </nav>
 
-      <!-- mobile navbar -->
-      <nav class="mobile_nav">
-        <span class="close_nav">X</span>
-        <div class="navfixed">
-          <div class="mobile_navbar">
-            <div class="text">
-              <h1>SHIHWEI LI 李世惟</h1>
-              <p>dior168520@gmail.com</p>
-            </div>
-            <div class="photo">
-              <img src="./About/img_01.jpg" alt="">
-  
-            </div>
-            <ul>
-              <li><a href="#about">關於我About</a></li>
-              <li><a href="#Portfolio">作品集Portfolio</a></li>
-              <li><a href="#experience">經歷Experience</a></li>
-              <li><a href="#Skills">專長Skills</a></li>
-            </ul>
+    <!-- mobile navbar -->
+    <nav class="mobile_nav">
+      <span class="close_nav">X</span>
+      <div class="navfixed">
+        <div class="mobile_navbar">
+          <div class="text">
+            <h1>SHIHWEI LI 李世惟</h1>
+            <p>dior168520@gmail.com</p>
           </div>
+          <div class="photo">
+            <img src="./About/img_01.jpg" alt="">
+
+          </div>
+          <ul class="mobile_list">
+            <li class="close_list_A"><a href="#about">關於我About</a></li>
+            <li class="close_list_B"><a href="#Portfolio">作品集Portfolio</a></li>
+            <li class="close_list_C"><a href="#experience">經歷Experience</a></li>
+            <li class="close_list_D"><a href="#Skills">專長Skills</a></li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
 
 
@@ -68,7 +68,7 @@
         <div class="line line1"></div>
         <div class="line line2"></div>
         <div class="line line3"></div>
-    </div>
+      </div>
 
       <!-- 關於我 -->
       <div id="about" class="about">
@@ -96,7 +96,8 @@
       <div class="wrap">
         <div class="col">
           <div class="image ">
-            <a class="hvr-grow"href="https://dior168520.github.io/merrygym/"><img src="./img/merry.jpg" alt=""></div></a>
+            <a class="hvr-grow" href="https://dior168520.github.io/merrygym/"><img src="./img/merry.jpg" alt=""></div>
+          </a>
           <div class="textcontent">
             <h2>美力健身房</h2>
             <p>個人專題作品:RWD切版、JavaScript
@@ -106,7 +107,8 @@
 
         <div class="col">
           <div class="image">
-            <a class="hvr-grow" href="https://dior168520.github.io/group/"><img src="./img/The one.jpg" alt=""></a></div>
+            <a class="hvr-grow" href="https://dior168520.github.io/group/"><img src="./img/The one.jpg" alt=""></a>
+          </div>
           <div class="textcontent">
             <h2>The One Villa民宿</h2>
             <p>團體專題作品:RWD切版、Swiper、JavaScript
@@ -223,31 +225,7 @@
 
 
 
- <script>
-  //  collapse漢堡條按鈕
-   var collapse = document.querySelector(".collapse");
-  //  mobile nav 手機漢堡條選單
-   var mobile_nav = document.querySelector(".mobile_nav");
-
-// close_nav手機選單關閉
-   var  close_nav =document.querySelector(".close_nav")
-
-// collapse漢堡條按鈕>>點擊>>執行>>打開mobile_navbar手機選單
-// addEventListener事件監聽
-collapse.addEventListener("click" , function(){
-
-  mobile_nav.classList.add("active");
-});
-
-// close_nav取消按鈕>>點擊>>執行>>關閉mobile_navbar手機選單
-close_nav.addEventListener("click" ,function(){
-
-mobile_nav.classList.remove("active");
-});
-
-
-
- </script>
+  <script src="personal.js"></script>
 </body>
 
 </html>
