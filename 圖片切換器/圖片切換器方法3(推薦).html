@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .changeimage img {
+            width: 800px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+<div class="changeimage">
+    <img id="imgA" class="img" src="https://s.newtalk.tw/album/news/277/5d38186fc6d0d.jpg" alt="">
+    <h1>點我~點我~點我</h1>
+</div>
+    
+
+
+    <script>
+        // 找到圖片
+        var image_A = document.querySelector(".img");
+
+        
+        image_A.addEventListener("click" ,function () {
+
+            image_A.src = "https://images.chinatimes.com/newsphoto/2020-04-06/900/20200406001356.jpg";//chang image src
+        });
+    
+
+    </script>
+    
+</body>
+</html>

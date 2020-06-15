@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 800px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="imgA" class="img" src="./img/img1.jpg" alt=""onclick='changeimage()'>
+
+
+
+    <script>
+        // 改變圖片
+        // 有名字涵式
+        function changeimage() {
+            // 找到element
+            var image_A = document.querySelector(".img")
+            // 改變路徑圖片
+            image_A.src = "./img/img2.jpg"
+        }
+
+
+
+    </script>
+</body>
+
+</html>
