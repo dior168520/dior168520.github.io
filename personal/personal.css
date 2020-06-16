@@ -269,19 +269,19 @@ body {
   }
 }
 
+#container #main .wrap .col .image img {
+  width: 100%;
+  display: block;
+}
+
 #container #main .wrap .col .textcontent {
-  width: 80%;
+  width: 100%;
 }
 
 #container #main .wrap .col .textcontent h2,
 #container #main .wrap .col .textcontent p {
   line-height: 30px;
-  padding: 15px 0;
-}
-
-#container #main .wrap .col img {
-  width: 100%;
-  display: block;
+  padding: 10px 0;
 }
 
 #container .experience h2 {
