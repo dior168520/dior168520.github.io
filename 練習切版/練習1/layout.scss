@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+header {
+    width: 100%;
+    line-height: 200px;
+    background-color: rgb(230, 84, 84);
+
+    @media screen and(max-width:1025px) {
+        line-height: 100px;
+    }
+}
+
+nav {
+    width: 100%;
+    background-color: green;
+    @media screen and(max-width:1025px) {
+        background-color: black;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        @media screen and(max-width:1025px) {
+            display: none;
+        }
+
+        li {
+            width: 25%;
+            line-height: 100px;
+        }
+    }
+    .mobile_navbar {
+        display: none;
+        @media screen and(max-width:1025px) {
+            display: block;
+            display: flex;
+        }
+
+        .btns {
+            width: 50%;
+            li {
+                width: 100%;
+                line-height: 100px;
+            }
+        }
+    }
+}
+
+section {
+    width: 100%;
+    // background-color: pink;
+
+    .content {
+        width: 100%;
+        display: flex;
+        line-height: 700px;
+        @media screen and(max-width:1025px) {
+            line-height: 400px;
+        }
+
+        aside {
+            width: 30%;
+            background-color: royalblue;
+            @media screen and(max-width:1025px) {
+                order: 1;
+            }
+        }
+
+        article {
+            width: 70%;
+            background-color: sandybrown;
+            @media screen and(max-width:1025px) {
+                order: 0;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    line-height: 200px;
+    background-color: slategrey;
+    @media screen and(max-width:1025px) {
+        line-height: 100px;
+    }
+}
