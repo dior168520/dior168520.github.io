@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "標楷體";
+        }
+
+        .time {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .cards .card {
+            width: calc(25% - 10px);
+            background-color:rgb(226, 220, 220);
+            text-align: center;
+            margin: 5px;
+            padding: 2% 0 2% 0;
+        }
+
+        .cards .card .weather_img {
+            width: 60%;
+        }
+
+        .cards .card h1 {
+            font-size: 32px;
+        }
+
+        .cards .card p {
+            margin: 12px 0 12px 0;
+        }
+
+        .cards .card .weather_type {
+            color: rgb(138, 135, 135);
+        }
+
+        .cards .card .description {
+            color: rgb(233, 159, 159);
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="time"></div>
+    <div class="cards"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <script>
+        fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-CFF4730B-D725-47EB-A782-70EB6E1F3FCF")
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (weather_data) {
+                var locations = weather_data.records.location;
+                console.log(locations);
+
+                locations.forEach(function (single_data) {
+                    var city = single_data.locationName;
+                    // console.log(city);
+                    var weather_type = single_data.weatherElement[0].time[0].parameter.parameterName;
+                    // console.log(weather_type);
+                    var highest_temp = single_data.weatherElement[4].time[0].parameter.parameterName;
+                    // console.log(highest_temp);
+                    var lowest_temp = single_data.weatherElement[2].time[0].parameter.parameterName;
+                    // console.log(lowest_temp);
+                    var description = single_data.weatherElement[3].time[0].parameter.parameterName;
+                    // console.log(description);
+                    var weather_type_value = single_data.weatherElement[0].time[0].parameter.parameterValue;
+                    // console.log(weather_type_value);
+                    if (weather_type_value == 1) {
+                        var weather_img = "./img/sunny.png";
+                    }
+                    else if (weather_type_value == 2 || weather_type_value == 3) {
+                        var weather_img = "./img/code2.png";
+                    }
+                    else if (weather_type_value > 3 && weather_type_value < 8) {
+                        var weather_img = "./img/cloud.png";
+                    }
+                    else {
+                        var weather_img = "./img/raining.png";
+                    }
+
+                    var every_data = document.querySelector(".cards")
+                    every_data.innerHTML += `
+                    <div class="card">
+                        <img src=${weather_img} alt="" class="weather_img">
+                        <h1 class="city">${city}</h1>
+                        <p class="weather_type">${weather_type}</p>   
+                        <p class="highest_temp">氣溫 : ${lowest_temp} ℃ ~  ${highest_temp} ℃</p>
+                        <p class="description">${description}</p>
+                    </div>
+                    `
+                });
+
+                var time = new Date();
+                    var year_month_day_hour_minute_second = time.getFullYear() + "年" + (time.getMonth()+1) + "月" + time.getDate() + "日 " + time.getHours() + "時" + time.getMinutes() + "分" + time.getSeconds() + "秒"
+                    var time_data = document.querySelector(".time")
+                    time_data.textContent = year_month_day_hour_minute_second
+                    
+                function clock(){
+                    var time = new Date();
+                    var year_month_day_hour_minute_second = time.getFullYear() + "年" + (time.getMonth()+1) + "月" + time.getDate() + "日 " + time.getHours() + "時" + time.getMinutes() + "分" + time.getSeconds() + "秒"
+                    var time_data = document.querySelector(".time")
+                    time_data.textContent = year_month_day_hour_minute_second
+                };
+                
+                setInterval(clock,1000)
+
+                // var time = new Date();
+                // var year_month_day_hour_minute = time.getFullYear() + "年" + time.getMonth() + "月" + time.getDate() + "日 " + time.getHours() + "時" + time.getMinutes() + "分"
+                // var time_data = document.querySelector(".time")
+                // time_data.innerHTML += `${year_month_day_hour_minute}`
+            });
+    </script>
+</body>
+
+</html>
