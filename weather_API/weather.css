@@ -1,0 +1,52 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: "標楷體";
+}
+
+.time {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+}
+
+.cards .card {
+  width: calc(25% - 10px);
+  background-color: #e2dcdc;
+  text-align: center;
+  margin: 5px;
+  padding: 2% 0 2% 0;
+}
+
+.cards .card .weather_img {
+  max-width: 100%;
+  width: 70%;
+}
+
+.cards .card h1 {
+  font-size: 32px;
+}
+
+.cards .card p {
+  margin: 12px 0 12px 0;
+}
+
+.cards .card .weather_type {
+  color: #8a8787;
+}
+
+.cards .card .description {
+  color: #1a1313;
+  font-size: 24px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=weather.css.map */
