@@ -32,7 +32,7 @@ nav .container {
 
 nav .container img {
   display: block;
-  width: 110px;
+  width: 100px;
 }
 
 @media screen and (max-width: 1200px) {
