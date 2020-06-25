@@ -21,18 +21,19 @@ nav {
     align-items: center;
     justify-content: center;
 
-    //logo
-    img {
-      display: block;
-      width: 110px;
-      @media screen and (max-width: 1200px) {
-        width: 95px;
+      //logo
+      .logo_icon {
+        img {
+          display: block;
+          width: 100px;
+          @media screen and (max-width: 1200px) {
+            width: 95px;
+          }
+          @media screen and (max-width: 1000px) {
+            display: none;
+          }
+        }
       }
-      @media screen and (max-width: 1000px) {
-        display: none;
-      }
-    }
-
     ul {
       display: flex;
       letter-spacing: 3px;
@@ -85,8 +86,6 @@ nav {
       }
     }
   }
-
-  // menu------------------------------------------------------------
   #menu {
     width: 70px;
     height: 70px;
@@ -149,7 +148,6 @@ nav {
       }
     }
   }
-  // menu------------------------------------------------------------
 }
 
 // mobile_navbar 手機板選單

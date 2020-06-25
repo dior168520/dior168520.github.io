@@ -24,25 +24,25 @@ nav {
     justify-content: center;
 
     //logo
-    img {
-      display: block;
-      width: 110px;
-      @media screen and (max-width: 1200px) {
-        width: 95px;
-      }
-      @media screen and (max-width: 1000px) {
-        display: none;
+    .logo_icon {
+      img {
+        display: block;
+        width: 100px;
+        @media screen and (max-width: 1200px) {
+          width: 95px;
+        }
+        @media screen and (max-width: 1000px) {
+          display: none;
+        }
       }
     }
 
     ul {
       display: flex;
       letter-spacing: 3px;
-
       @media screen and (max-width: 1200px) {
         display: none;
       }
-
       li {
         width: 100px;
         text-align: center;
@@ -86,8 +86,6 @@ nav {
       }
     }
   }
-
-  // menu------------------------------------------------------------
   #menu {
     width: 70px;
     height: 70px;
@@ -150,7 +148,6 @@ nav {
       }
     }
   }
-  // menu------------------------------------------------------------
 }
 
 // mobile_navbar 手機板選單
@@ -254,16 +251,13 @@ nav {
             content: "\003e";
           }
         }
-  
         a {
           color: black;
         }
       }
     }
   .course {
-   
     margin: 50px 0;
-
     h1 {
       text-align: center;
       color: black;
@@ -279,8 +273,6 @@ nav {
       flex-wrap: wrap;
       margin: 20px 0;
       position: relative;
-    
-     
       .imgA {
         margin: 0 auto;
         width: 25%;
@@ -305,9 +297,7 @@ nav {
             color: black;
             margin: 0;
             line-height: 40px;
-           
           }
-
           p {
             margin: 10px 0;
             line-height: 30px;
@@ -318,19 +308,12 @@ nav {
             line-height: 40px;
             padding: 0 10px ;
             letter-spacing: 3px;
-            
             display: inline-block;
             color: white;
             background-color: black;
           }
-      
-        }
-        .image {
-         
         }
       }
-
-
     }
   }
 }

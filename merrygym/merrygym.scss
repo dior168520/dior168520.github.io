@@ -15,7 +15,6 @@ body {
 nav {
   width: 100%;
   position: relative;
-
   .container {
     width: 100%;
     background-color: black;
@@ -24,14 +23,16 @@ nav {
     justify-content: center;
 
     //logo
-    img {
-      display: block;
-      width: 100px;
-      @media screen and (max-width: 1200px) {
-        width: 95px;
-      }
-      @media screen and (max-width: 1000px) {
-        display: none;
+    .logo_icon {
+      img {
+        display: block;
+        width: 100px;
+        @media screen and (max-width: 1200px) {
+          width: 95px;
+        }
+        @media screen and (max-width: 1000px) {
+          display: none;
+        }
       }
     }
 
@@ -151,8 +152,6 @@ nav {
   }
   // menu------------------------------------------------------------
 }
-
-
 
 // mobile_navbar 手機板選單
 .mobile_navbar {
@@ -281,8 +280,7 @@ nav {
   }
 }
 
-
-//   swiper 活動訊息 
+//   swiper 活動訊息
 #section_A {
   width: 100%;
   height: auto;
@@ -296,7 +294,7 @@ nav {
     @media screen and (max-width: 1200px) {
       width: 95%;
     }
-// 活動訊息
+    // 活動訊息
     h1 {
       letter-spacing: 3px;
       text-align: center;
@@ -326,8 +324,7 @@ nav {
         .big_title_text {
           width: 100%;
           letter-spacing: 3px;
-       
-         
+
           img {
             width: 100%;
             height: 30vh;
@@ -382,7 +379,6 @@ nav {
   }
 }
 
-
 #section_B {
   width: 100%;
   .main {
@@ -409,7 +405,7 @@ nav {
         a {
           .btn {
             text-align: center;
-            padding: 10px ;
+            padding: 10px;
             border: solid 1px white;
             color: white;
             &:hover {
@@ -780,7 +776,6 @@ nav {
           line-height: 35px;
           text-align: center;
           margin: 0;
-          
         }
       }
     }

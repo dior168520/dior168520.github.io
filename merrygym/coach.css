@@ -32,19 +32,19 @@ nav .container {
           justify-content: center;
 }
 
-nav .container img {
+nav .container .logo_icon img {
   display: block;
-  width: 110px;
+  width: 100px;
 }
 
 @media screen and (max-width: 1200px) {
-  nav .container img {
+  nav .container .logo_icon img {
     width: 95px;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  nav .container img {
+  nav .container .logo_icon img {
     display: none;
   }
 }
