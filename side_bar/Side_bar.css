@@ -5,16 +5,6 @@
   text-decoration: none;
 }
 
-#menu {
-  display: none;
-}
-
-@media screen and (max-width: 900px) {
-  #menu {
-    display: block;
-  }
-}
-
 #menu #check {
   display: none;
 }

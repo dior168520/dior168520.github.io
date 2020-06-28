@@ -6,10 +6,7 @@
 }
 
 #menu {
-    display: none;
-    @media screen and(max-width:900px) {
-        display: block;
-    }
+
     #check {
         display: none;
         &:checked ~ .sidebar {
