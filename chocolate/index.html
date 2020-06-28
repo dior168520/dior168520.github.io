@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+
+
+    <section id="background">
+        <div class="bgd"></div>
+    </section>
+
+
+    <div class="row justify-content-center mb-5 ">
+        <div class="card mx-3 mt-5 col-6 col-md-3 overflow-hidden ">
+            <div class="bacrground"
+                style="background-image: url(https://img.technews.tw/wp-content/uploads/2018/04/27113149/chocolate.jpg);">
+            </div>
+            <div class="card-body">
+                <h5 class="font-weight-bold">品名:黑巧克力</h5>
+                <p>熱量:1000卡</p>
+                <p><span>NT:260元</span></p>
+                <p>介紹:是以可可漿和可可脂為主要原料製成的一種甜食，巧克力製作致可劃分兩部分，一為可可豆採收，二為可可豆製作烘焙
+                </p>
+            
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+<script>
+    // 尋找dom綁定屬性
+    var cards = document.querySelector(".row");
+
+    // 陣列+物件
+    var product_a = [{
+        product_img: "https://www.foodsjapan.jp/img/feature/47/feature47_01.png?x=640",
+        product_name: "白色巧克力",
+        calories: "500卡路里",
+        price: "100元",
+        intro: "與牛奶巧克力大致相同，乳製品和糖粉的含量相對較大，甜度高。白巧克力不含可可粉，但有可可脂。"
+
+    }, {
+        product_img: "https://www.luxurywatcher.com/uploads/article/2/2/22860/201707101515021.jpg",
+        product_name: "松露巧克力",
+        calories: "300卡路里",
+        price: "7500元",
+        intro: "松露是和魚子醬、鵝肝並列的世界三大珍味，其中尤以法國產的黑松露與義大利產的白松露評價最高，更有「可食用的鑽石」之美譽。"
+    }, {
+        product_img: "https://www.cheeseduke.com.tw/wp-content/uploads/2016/12/33.png",
+        product_name: "80%比利時巧克力",
+        calories: "600卡路里",
+        price: "500元",
+        intro: "織成份為可可製品（可可液塊、可可粉、可可脂）、乳製品、糖粉、香料和表面活性劑等材料組成。牛奶巧克力至少含10％的可可漿，以及12％的乳質。"
+    }, 
+    {
+        product_img: "https://img.shop.com/Image/260000/260300/260320/products/1831868752__400x400__.jpg",
+        product_name: "熔岩火山巧克力蛋糕",
+        calories: "900卡路里",
+        price: "500元",
+        intro: "蛋糕內有特製巧克力於烘烤時中心點巧克力沸騰形成蛋糕表面隆起蛋糕出爐後溫度漸漸下降後蛋糕隆起處會自然成現破口狀態這就是火山巧克力蛋糕。"
+    },
+    {
+        product_img: "https://www.kaoshieh.com.tw/proimages/sr/products/proA/32.jpg",
+        product_name: "日式黑琳巧克力蛋糕",
+        calories: "600卡路里",
+        price: "500元",
+        intro: "65%進口巧克力、蛋、牛奶、動物性鮮奶油、奶油、可可粉、海藻糖、麵粉、君度橙酒。"
+    },]
+
+
+    // console.log(product_a)
+    product_a.forEach((chocolate) => {
+        cards.innerHTML += `
+             <div class="card mx-3 mt-5 col-6 col-md-3 tab_content ">
+            <div class="bacrground"
+                style="background-image: url( ${chocolate.product_img});">
+            </div>
+            <div class="card-body"> 
+                <h5 class="font-weight-bold">品名:${chocolate.product_name}</h5>
+                <p>熱量:${chocolate.calories}</p> 
+                <p><span> NT:${chocolate.price}</span></p>
+                <p>介紹:${chocolate.intro}</p>  
+            </div>
+        </div>
+    `
+    });
+
+
+
+  
+
+</script>
+
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

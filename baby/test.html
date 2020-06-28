@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./tabs.css">
+    <title>Tabs</title>
+
+
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="nav">
+            <div class="container">
+                <div class="navflax">
+                    <div class="logo">
+                        <img src="./img/logo-large.png" alt="">
+                    </div>
+                    <ul class="navs">
+                        <li class="tabbtn"><a href=""></a>健康與疾病</li>
+                        <li class="tabbtn"><a href=""></a>嬰幼兒睡眠</li>
+                        <li class="tabbtn"><a href=""></a>媽媽談心</li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- 健康與急病 -->
+
+   
+    <div class="wrap ">
+        <div class="tabs">
+            <span class="health">健康與疾病</span>
+            <div class="baby">
+                <div class="btn">嬰兒</div>
+                <div class="btn"> 幼兒1-3歲</div>
+                <div class="btn">兒童4-6歲</div>
+                <div class="btn">防疫專區</div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="textcontant active">
+                <div class="image">
+                    <img src="./img/baby-01.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="textcontant ">
+                <div class="image">
+                    <img src="./img/baby-02.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="textcontant">
+                <div class="image">
+                    <img src="./img/brothers-01.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="textcontant ">
+                <div class="image">
+                    <img src="./img/newborn-02.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  
+
+
+
+
+      
+
+
+
+
+
+
+
+
+    <script>
+        var tab_btns = document.querySelectorAll(".btn");
+        var tab_contents = document.querySelectorAll(".textcontant");
+
+        // console.log(tab_btns);
+        // console.log(tab_contents[0]);
+
+        for (let index = 0; index < tab_btns.length; index++) {
+            const tab_btn = tab_btns[index];
+            // console.log(tab_btn);
+
+            tab_btn.addEventListener("click", function () {
+                //刪掉所有的active
+                remove_all_active()
+
+                //加上自己的active
+                tab_contents[index].classList.add('active');
+
+            });
+        }
+
+        function remove_all_active() {
+            for (let index = 0; index < tab_contents.length; index++) {
+                const tab_content = tab_contents[index];
+                tab_content.classList.remove('active');
+            }
+        }
+
+
+    </script>
+
+
+
+
+  
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .click {
+            padding: 20px;
+        }
+
+        .text {
+            display: none;
+        }
+
+        .text.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <button class="click">more</button>
+
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, laborum. Maiores consectetur natus, repellat vitae
+        nostrum distinctio rem, suscipit, recusandae perferendis similique explicabo accusantium a nobis iste mollitia
+        aut commodi?
+    </p>
+
+
+</body>
+
+<script>
+
+    // 按鈕 click
+    var button = document.querySelector(".click")
+    // 文字
+    var text = document.querySelector(".text")
+
+    // click事件發生出現文字訊息
+    button.addEventListener("click", function () {
+        text.classList.add("active");
+    });
+    // classList取得元素 Class
+</script>
+
+</html>
