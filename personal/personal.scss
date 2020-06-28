@@ -283,13 +283,10 @@ body {
                     max-width: 100%;
                     display: inline-block;
                 }
-                .colhid {
-                    @media screen and (max-width: 1000px) {
-                        display: none;
-                    }
-                }
+              
                 // 固定寬度
                 .col {
+                    margin-bottom: 50px;
                     width: 32%;
                     @media screen and (max-width: 1000px) {
                         width: 80%;

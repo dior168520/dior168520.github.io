@@ -347,13 +347,8 @@ body {
   }
 }
 
-@media screen and (max-width: 1000px) {
-  #container #main .container .wrap .colhid {
-    display: none;
-  }
-}
-
 #container #main .container .wrap .col {
+  margin-bottom: 50px;
   width: 32%;
 }
 
