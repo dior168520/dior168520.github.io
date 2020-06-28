@@ -4,6 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome 5 Introduction -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
   <!-- hover -->
   <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/hover.css/2.3.1/css/hover-min.css">
   <link rel="stylesheet" href="./personal.css">
@@ -18,43 +25,63 @@
       <div class="navfixed">
         <div class="navbar">
           <div class="text">
-            <h1>SHIHWEI LI 李世惟</h1>
-            <p>dior168520@gmail.com</p>
+            <h1>Li-Shih Wei | 李世惟</h1>
+            <p>
+              <i class="fa fa-envelope fa-fw"></i>
+              dior168520@gmail.com
+            </p>
+
           </div>
 
           <div class="photo">
-            <img src="./About/img_01.jpg" alt="">
-
+            <img src="./img/Daniel.jpg" alt="">
           </div>
-          <ul>
-            <li><a href="#about">關於我About</a></li>
-            <li><a href="#Portfolio">作品集Portfolio</a></li>
-            <li><a href="#experience">經歷Experience</a></li>
-            <li><a href="#Skills">專長Skills</a></li>
-          </ul>
+          <div class="row">
+            <div class="box"></div>
+
+            <ul>
+              <li><i class="fa fa-user fa-fw"></i><a id="anchor" href="#about">About</a></li>
+              <li><i class="fa fa-th-large fa-fw  "></i><a id="anchor" href="#Portfolio">Portfolio</a></li>
+              <li><i class="fa fa-suitcase fa-fw"></i><a id="anchor" href="#experience">Experience</a></li>
+              <li><i class="fa fa-asterisk"></i><a id="anchor" href="#Skills">Skills</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
 
+
+
     <!-- mobile navbar -->
     <nav class="mobile_nav">
-      <span class="close_nav">X</span>
+      <span class="close_nav">
+        <i class="fas fa-times-circle close"></i>
+      </span>
       <div class="navfixed">
         <div class="mobile_navbar">
           <div class="text">
-            <h1>SHIHWEI LI 李世惟</h1>
-            <p>dior168520@gmail.com</p>
+            <h1>Li-Shih Wei | 李世惟</h1>
+            <p>
+              <i class="fa fa-envelope fa-fw"></i>
+              dior168520@gmail.com
+            </p>
           </div>
-          <div class="photo">
-            <img src="./About/img_01.jpg" alt="">
 
+          <div class="photo">
+            <img src="./img/Daniel.jpg" alt="">
           </div>
-          <ul class="mobile_list">
-            <li class="close_list"><a href="#about">關於我About</a></li>
-            <li class="close_list"><a href="#Portfolio">作品集Portfolio</a></li>
-            <li class="close_list"><a href="#experience">經歷Experience</a></li>
-            <li class="close_list"><a href="#Skills">專長Skills</a></li>
-          </ul>
+
+          <div class="row">
+            <div class="box"></div>
+            <ul class="mobile_list">
+              <li class="close_list"><i class="fa fa-user fa-fw"></i><a id="anchor" href="#about">About</a></li>
+              <li class="close_list"><i class="fa fa-th-large fa-fw  "></i><a id="anchor"
+                  href="#Portfolio">Portfolio</a></li>
+              <li class="close_list"><i class="fa fa-suitcase fa-fw"></i><a id="anchor"
+                  href="#experience">Experience</a></li>
+              <li class="close_list"><i class="fa fa-asterisk"></i><a id="anchor" href="#Skills">Skills</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -70,180 +97,266 @@
         <div class="line line3"></div>
       </div>
 
-      <!-- 關於我 -->
+      <!-- 關於我  -->
       <div id="about" class="about">
-        <h2>關於我About</h2>
-        <div class="line"></div>
-        <p>
-          我是李世惟，熱愛學習新知識，接觸到前端程式從無到有建構出網頁，在職訓局參與團體專案讓我深深體會到除了程式上技術外還有非常重要的溝通與討論,這段時間我學習到HTML5、CSS3、Bootsrap4、jQuery(JavaScript
-          ES6)目前持續進修Vue.js。
-        </p>
+        <div class="container">
+          <div class="text">
+            <h2>About</h2>
+            <div class="line"></div>
+            <p>
+              曾任職車架研發人員(設計),在職期間規劃好準備離職上前端課程,我一直在自學前端相關技術,CSS3、HTML5、JavaScript。
+              離職後我到豐原職訓局上「RWD網站前端開發與跨平台介面設計培訓班」,我在職訓局期間實作團體專案作品、個人專題作品，包含API天氣卡片串接,目前自學Webpack、Vue.js。
+            </p>
+          </div>
+
+        </div>
+      </div>
       </div>
 
 
 
 
-      <!-- 上面選單 -->
-      <div id="Portfolio" class="Portfolio">
-        <h2>作品集Portfolio</h2>
-        <div class="line"></div>
-      </div>
-
-
-      <!-- 作品集 -->
-      <div class="wrap">
-        <div class="col">
-          <div class="image ">
-            <a class="hvr-grow" href="https://dior168520.github.io/merrygym/" target="_blank"><img src="./img/merry.jpg"
-                alt=""> </a>
-          </div>
-
-          <div class="textcontent">
-            <h2>美力健身房</h2>
-            <p>個人專題作品:RWD切版、JavaScript
-            </p>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="image">
-            <a class="hvr-grow" href="https://dior168520.github.io/group/" target="_blank"><img src="./img/The one.jpg"
-                alt=""></a>
-          </div>
-          <div class="textcontent">
-            <h2>The One Villa民宿</h2>
-            <p>團體專題作品:RWD切版、Swiper、JavaScript
-            </p>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="image">
-            <a class="hvr-grow" href="https://dior168520.github.io/weather_API/index.html" target="_blank"><img
-                src="./img/weather_API.png" alt=""></a>
-          </div>
-          <div class="textcontent">
-            <h2>Weather-API串接</h2>
-            <p>天氣卡片
-            </p>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-      </div>
-
-      <div id="experience" class="experience">
-
-        <h2>經歷Experience</h2>
-        <div class="line"></div>
-
-        <div class="container">
-          <h3>上益資訊管理顧問有限公司(職訓局) |2020年2月-2020年05月</h3>
-          
-          <p>
-
-            【培訓單位名稱】:上益資訊管理顧問有限公司(職訓局)<br>
-            【課程名稱】:109年 RWD網站前端開發與跨平台界面設計培訓班(全日訓練)<br>
-            【學習總時數或課程時程】:全期420小時課程<br>
-            【結訓日期】:2020年2月24日開始~2020年05月22日結訓<br>
-            Illustrator 介面設計<br>
-            HTML5核心基礎實作<br>
-            SCSS實作<br>
-            進階CSS3切版<br>
-            RWD切版實作<br>
-            Java Script 基礎實作<br>
-            Bootstrap 4<br>
-            Github線上版本控制<br>
-            個人專題實作、團體專題實作<br>
-            網頁套件進階開發實作(AOS、Anime、lightbox、Parallax、Swiper)<br>
-          </p>
-        </div>
-
-        <div class="container">
-          <h3>旭生自行車工業股份有限公司 |研發人員|2019年8月-2020年01月</h3>
-          <p>
-            專案產品設計<br>
-            開模及首樣確認<br>
-            樣品車架組裝與確認<br>
-
-          </p>
-        </div>
-
-        <div class="container">
-          <h3>尚青雲端整合行銷 | 產品開發人員| 2018年1月-2019年07月</h3>
-          <p>
-            透過電話行銷開發新供應商<br>
-            預約洽談供應商,討論商品特性<br>
-            開會討論活動企劃<br>
-            維護供應商商品後台管理<br>
-
-
-          </p>
-        </div>
-
-        <div class="container">
-          <h3>興夆有限公司 | 製圖工程師 | 2016年8月-2017年11月</h3>
-          <p>
-            開模樣品確認<br>
-            鍛造圖面設計<br>
-            模具設計開發<br>
-
-          </p>
-        </div>
-
-        <div class="container">
-          <h3>巨大機械工業股份有限公司(捷安特) | 模具設計副工程師 | 2015年3月-2016年7月</h3>
-          <p>
-            CNC加工模設計<br>
-            碳纖成型模具設計<br>
-            AL成型模具設計<br>
-
-          </p>
-        </div>
-
-        <!-- 專長Skills -->
-        <div id="Skills" class="Skills">
-          <h2>專長Skills</h2>
-
+      <div class="container">
+        <div id="Portfolio" class="Portfolio">
+          <h2>Portfolio</h2>
           <div class="line"></div>
-          <div class="container">
-            <div class="col">
-              <h2>Skill</h2>
-              <p>
-                Illustrator<br>
-                Photoshop<br>
-                CSS3/SCSS<br>
-                HTML5<br>
-                JavaScript (ES6)<br>
-                Bootstrap 4<br>
-                RWD切版<br>
-                API串接<br>
-                ajax<br>
-              </p>
+        </div>
+
+        <!-- 作品集 -->
+        <div class="wrap">
+          <!-- 健身房 -->
+          <div class="col">
+            <div class="image ">
+              <a class="hvr-grow" href="https://dior168520.github.io/merrygym/" target="_blank"><img
+                  src="./img/merry.jpg" alt=""> </a>
             </div>
-
-            <div class="col">
-              <h2>Other</h2>
-              <p>
-                Github線上版本控制<br>
-
+            <div class="textcontent">
+              <h3>美力健身房</h3>
+              <ul>
+                <li>RWD切版</li>
+                <li>Swiper</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="github">
+                <a href="https://dior168520.github.io/merrygym/" target="_blank">Github</a>
+                <a href="https://github.com/dior168520/dior168520.github.io/blob/master/merrygym/index.html"
+                  target="_blank">Demo</a>
+              </div>
               </p>
             </div>
           </div>
+          <!-- The one -->
+          <div class="col">
+            <div class="image">
+              <a class="hvr-grow" href="https://dior168520.github.io/The_one/index.html" target="_blank"><img
+                  src="./img/The one.jpg" alt=""></a>
+            </div>
+            <div class="textcontent">
+              <h3>The One Villa民宿</h3>
+              <ul>
+                <li>RWD切版</li>
+                <li>Swiper</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="github">
+                <a href="https://github.com/dior168520/dior168520.github.io/blob/master/The_one/index.html"
+                  target="_blank">Github</a>
+                <a href="https://dior168520.github.io/The_one/index.html" target="_blank">Demo</a>
+              </div>
+            </div>
+          </div>
+          <!-- 天氣卡片 -->
+          <div class="col">
+            <div class="image">
+              <a class="hvr-grow" href="https://dior168520.github.io/weather_API/index.html" target="_blank"><img
+                  src="./img/weather_API.png" alt=""></a>
+            </div>
+            <div class="textcontent">
+              <h3>Weather-API串接</h3>
+              <ul>
+                <li>API串接資料<br>
+                  樣板字串功能
+
+                </li>
+              </ul>
+              <div class="github">
+                <a href="https://github.com/dior168520/dior168520.github.io/blob/master/weather_API/index.html"
+                  target="_blank">Github</a>
+                <a href="https://dior168520.github.io/weather_API/index.html" target="_blank">Demo</a>
+              </div>
+            </div>
+          </div>
+          <!-- 巧克力 -->
+          <div class="col">
+            <div class="image">
+              <a class="hvr-grow" href="https://dior168520.github.io/chocolate/index.html" target="_blank"><img
+                  src="./img/chocolate.png" alt=""></a>
+            </div>
+            <div class="textcontent">
+              <h3>chocolate 樣板字串</h3>
+              <ul>
+                <li>JavaScript</li>
+              </ul>
+              <div class="github">
+                <a href="https://github.com/dior168520/dior168520.github.io/blob/master/chocolate/index.html"
+                  target="_blank">Github</a>
+                <a href="https://dior168520.github.io/chocolate/index.html" target="_blank">Demo</a>
+              </div>
+            </div>
+          </div>
+          <!-- baby -->
+          <div class="col">
+            <div class="image">
+              <a class="hvr-grow" href="https://dior168520.github.io/baby/index.html" target="_blank"><img
+                  src="./img/baby.png" alt=""></a>
+            </div>
+            <div class="textcontent">
+              <h3>Tabs分頁</h3>
+              <ul>
+                <li>JavaScript</li>
+              </ul>
+              <div class="github">
+                <a href="https://github.com/dior168520/dior168520.github.io/blob/master/baby/index.html"
+                  target="_blank">Github</a>
+                <a href="https://dior168520.github.io/baby/index.html" target="_blank">Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 隱藏 -->
+          <div class="col colhid" style="opacity: 0;">
+            <div class="image">
+              <a class="hvr-grow" href="https://dior168520.github.io/weather_API/index.html" target="_blank"><img
+                  src="./img/weather_API.png" alt=""></a>
+            </div>
+            <div class="textcontent">
+              <h3>Weather-API串接</h3>
+              <ul>
+                <li>API串接資料<br>
+                  樣板字串功能
+
+                </li>
+              </ul>
+              <div class="github">
+                <a href="">Github</a>
+                <a href="">Demo</a>
+              </div>
+            </div>
+          </div>
+
+
+
         </div>
       </div>
+
+      <!-- 工作經歷 -->
+      <div id="experience" class="experience">
+        <div class="container">
+          <div class="text_space">
+            <h2>Experience</h2>
+            <div class="line"></div>
+            <div class="text">
+              <h3><span>上益資訊管理顧問有限公司(職訓局) |2020年2月-2020年05月</span></h3>
+              <p>
+                培訓單位名稱:上益資訊管理顧問有限公司(職訓局)<br>
+                課程名稱:109年 RWD網站前端開發與跨平台界面設計培訓班(全日訓練)<br>
+                學習總時數:全期420小時課程<br>
+                日期:2020年2月24日~2020年05月22日結訓<br>
+                HTML5 | CSS3 | SCSS<br>
+                RWD切版實作<br>
+                Java Script(ES6)<br>
+                Bootstrap 4<br>
+                Github線上版本控制<br>
+                個人專題實作、團體專題實作<br>
+                網頁套件進階開發實作(AOS、Anime、lightbox、Parallax、Swiper)<br>
+              </p>
+            </div>
+
+            <div class="wrap_experience">
+              <div class="container">
+                <h3>旭生自行車工業股份有限公司 |研發人員|2019年8月-2020年01月</h3>
+                <p>
+                  專案產品設計<br>
+                  開模及首樣確認<br>
+                  樣品車架組裝與確認<br>
+                </p>
+              </div>
+
+              <div class="container">
+                <h3>尚青雲端整合行銷 | 產品開發人員| 2018年1月-2019年07月</h3>
+                <p>
+                  透過電話行銷開發新供應商<br>
+                  預約洽談供應商,討論商品特性<br>
+                  開會討論活動企劃<br>
+                  維護供應商商品後台管理<br>
+                </p>
+              </div>
+
+              <div class="container">
+                <h3>興夆有限公司 | 製圖工程師 | 2016年8月-2017年11月</h3>
+                <p>
+                  開模樣品確認<br>
+                  鍛造圖面設計<br>
+                  模具設計開發<br>
+                </p>
+              </div>
+
+              <div class="container">
+                <h3>巨大機械工業股份有限公司(捷安特) | 模具設計副工程師 | 2015年3月-2016年7月</h3>
+                <p>
+                  CNC加工模設計<br>
+                  碳纖成型模具設計<br>
+                  AL成型模具設計<br>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 專長Skills -->
+          <div id="Skills" class="Skills">
+            <div class="container_a">
+              <h2>Skills</h2>
+
+              <div class="line"></div>
+            </div>
+
+            <div class="container">
+              <div class="col">
+                <h3>Skill</h3>
+                <p>
+                  CSS3/SCSS<br>
+                  HTML5<br>
+                  Vue.js基礎<br>
+                  JavaScript基礎 (ES6)<br>
+                  Bootstrap 4 (Framework網站框架)<br>
+                  跨平台RWD切版<br>
+                  API串接<br>
+                  ajax<br>
+                  Illustrator<br>
+                  Photoshop<br>
+                </p>
+              </div>
+
+              <div class="col">
+                <h3>Other</h3>
+                <p>
+                  Github線上版本控制<br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
     </main>
   </section>
 
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/personal.js"></script>
+  
 
-  <script src="personal.js"></script>
+
+
+
 </body>
 
 </html>
