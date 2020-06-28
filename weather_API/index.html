@@ -39,16 +39,16 @@
                     var weather_type_value = single_data.weatherElement[0].time[0].parameter.parameterValue;
                     // console.log(weather_type_value);
                     if (weather_type_value == 1) {
-                        var weather_img = "./img/sunny.png";
+                        var weather_img = "./img/sunny.jpg";
                     }
                     else if (weather_type_value == 2 || weather_type_value == 3) {
-                        var weather_img = "./img/code2.png";
+                        var weather_img = "./img/code2.jpg";
                     }
                     else if (weather_type_value > 3 && weather_type_value < 8) {
-                        var weather_img = "./img/cloud.png";
+                        var weather_img = "./img/cloud.jpg";
                     }
                     else {
-                        var weather_img = "./img/raining.png";
+                        var weather_img = "./img/raining.jpg";
                     }
 
                     var every_data = document.querySelector(".cards")

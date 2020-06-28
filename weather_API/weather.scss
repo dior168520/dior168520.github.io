@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "標楷體";
+    font-family: "微軟正黑體";
 }
 
 .time {
@@ -14,31 +14,25 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-    @media screen and (max-width:768px){
-        
-      
-    
-       
-    }
-
+ 
     .card {
-        width: calc(25% - 10px);
-        background-color:rgb(226, 220, 220);
+        background-color:rgb(176,224,230);
         text-align: center;
-        margin: 5px;
+        margin: 5px auto;
         padding: 2% 0 2% 0;
         .weather_img {
             max-width: 100%;
-            width: 70%;
+            width: 80%;
         }
         h1 {
             font-size: 32px;
         }
         p {
             margin: 12px 0 12px 0;
+            font-size: 20px;
         }
         .weather_type {
-            color: rgb(138, 135, 135);
+            color: rgb(1, 81, 112);
         }
         .description {
             color: rgb(26, 19, 19);

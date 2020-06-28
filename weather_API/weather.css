@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   margin: 0;
-  font-family: "標楷體";
+  font-family: "微軟正黑體";
 }
 
 .time {
@@ -20,16 +20,15 @@ body {
 }
 
 .cards .card {
-  width: calc(25% - 10px);
-  background-color: #e2dcdc;
+  background-color: powderblue;
   text-align: center;
-  margin: 5px;
+  margin: 5px auto;
   padding: 2% 0 2% 0;
 }
 
 .cards .card .weather_img {
   max-width: 100%;
-  width: 70%;
+  width: 80%;
 }
 
 .cards .card h1 {
@@ -38,10 +37,11 @@ body {
 
 .cards .card p {
   margin: 12px 0 12px 0;
+  font-size: 20px;
 }
 
 .cards .card .weather_type {
-  color: #8a8787;
+  color: #015170;
 }
 
 .cards .card .description {
