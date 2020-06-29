@@ -12,7 +12,7 @@ body {
     font-family: "Noto Sans", sans-serif;
 }
 #container {
-    max-width: 1600px;
+    max-width: 1800px;
     margin: 0 auto;
     display: flex;
 
@@ -20,7 +20,7 @@ body {
     #nav {
         width: 350px;
         background-color: white;
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             display: none;
         }
         @media screen and (max-width: 1200px) {  
@@ -193,10 +193,10 @@ body {
     #main {
         width: calc(100% - 350px);
         background-color: white;
-        margin: 0 10px;
+        margin: 0 20px;
         padding: 0 15px;
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1100px) {
             width: 100%;
         }
 
@@ -254,10 +254,10 @@ body {
         .about {
             .container {
                 margin: 0 auto;
-                max-width: 1100px;
+                max-width: 1400px;
                 .text {
                     padding: 20px 0;
-                    line-height: 40px;
+                    line-height: 50px;
                     text-align: justify;
                     letter-spacing: 2px;
                     h2 {
@@ -268,10 +268,16 @@ body {
                     }
 
                     p {
-                        padding-top: 35px;
+                        padding-top: 50px;
                     }
                     @media screen and (max-width: 1000px) {
                         font-size: 18px;
+                    }
+                    @media screen and (max-width: 800px) {
+                        font-size: 16px;
+                    }
+                    @media screen and (max-width: 700px) {
+                        font-size: 15px;
                     }
                 }
             }
@@ -279,7 +285,7 @@ body {
 
         // 作品集標題
         .container {
-            max-width: 1100px;
+            max-width: 1400px;
             margin: 0 auto;
             .Portfolio {
                 h2 {
@@ -306,7 +312,7 @@ body {
                 // 固定寬度
                 .col {
                     margin-bottom: 50px;
-                    width: 32%;
+                    width: 28%;
                     @media screen and (max-width: 1000px) {
                         width: 80%;
                         margin: 50px auto;
@@ -323,6 +329,9 @@ body {
                         width: 100%;
                         @media screen and (max-width: 1000px) {
                             font-size: 16px;
+                        }
+                        @media screen and (max-width: 900px) {
+                            font-size: 14px;
                         }
                         h3 {
                             letter-spacing: 3px;
@@ -356,7 +365,7 @@ body {
 
         //經歷
         .experience {
-            line-height: 40px;
+            line-height: 50px;
             letter-spacing: 3px;
             @media screen and (max-width: 900px) {
                 font-size: 15px;
@@ -374,25 +383,34 @@ body {
                 }
                 .text {
                     padding: 50px 0;
-
+                    h3 {
+                        
+                       margin-bottom:20px ;
+                    }
                     a {
                         color: rgb(184, 30, 125);
                         font-weight: bold;
+                        
+                        
                     }
                 }
                 .wrap_experience {
                     .container {
                         padding-bottom: 50px;
+                        h3 {
+                            margin-bottom:20px ;
+                        }
                     }
                 }
             }
             // 專長Skills
             .Skills {
                 .container_a {
-                    max-width: 1100px;
+                    max-width: 1400px;
                     margin: 30px auto;
                     h2 {
                         padding: 20px 0;
+                        
                     }
                     .line {
                         border-bottom: 2px gray solid;
@@ -402,7 +420,7 @@ body {
                 .container {
                     display: flex;
                     justify-content: center;
-                    max-width: 1100px;
+                    max-width: 1400px;
                     .col {
                         width: 50%;
                     }
@@ -411,3 +429,5 @@ body {
         }
     }
 }
+
+

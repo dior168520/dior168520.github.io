@@ -13,7 +13,7 @@ body {
 }
 
 #container {
-  max-width: 1600px;
+  max-width: 1800px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,7 +25,7 @@ body {
   background-color: white;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   #container #nav {
     display: none;
   }
@@ -235,11 +235,11 @@ body {
 #container #main {
   width: calc(100% - 350px);
   background-color: white;
-  margin: 0 10px;
+  margin: 0 20px;
   padding: 0 15px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   #container #main {
     width: 100%;
   }
@@ -311,12 +311,12 @@ body {
 
 #container #main .about .container {
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1400px;
 }
 
 #container #main .about .container .text {
   padding: 20px 0;
-  line-height: 40px;
+  line-height: 50px;
   text-align: justify;
   letter-spacing: 2px;
 }
@@ -330,7 +330,7 @@ body {
 }
 
 #container #main .about .container .text p {
-  padding-top: 35px;
+  padding-top: 50px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -339,8 +339,20 @@ body {
   }
 }
 
+@media screen and (max-width: 800px) {
+  #container #main .about .container .text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #container #main .about .container .text {
+    font-size: 15px;
+  }
+}
+
 #container #main .container {
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -375,7 +387,7 @@ body {
 
 #container #main .container .wrap .col {
   margin-bottom: 50px;
-  width: 32%;
+  width: 28%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -398,6 +410,12 @@ body {
 @media screen and (max-width: 1000px) {
   #container #main .container .wrap .col .textcontent {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #container #main .container .wrap .col .textcontent {
+    font-size: 14px;
   }
 }
 
@@ -433,7 +451,7 @@ body {
 }
 
 #container #main .experience {
-  line-height: 40px;
+  line-height: 50px;
   letter-spacing: 3px;
 }
 
@@ -461,6 +479,10 @@ body {
   padding: 50px 0;
 }
 
+#container #main .experience .text_space .text h3 {
+  margin-bottom: 20px;
+}
+
 #container #main .experience .text_space .text a {
   color: #b81e7d;
   font-weight: bold;
@@ -470,8 +492,12 @@ body {
   padding-bottom: 50px;
 }
 
+#container #main .experience .text_space .wrap_experience .container h3 {
+  margin-bottom: 20px;
+}
+
 #container #main .experience .Skills .container_a {
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 30px auto;
 }
 
@@ -490,7 +516,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1100px;
+  max-width: 1400px;
 }
 
 #container #main .experience .Skills .container .col {
