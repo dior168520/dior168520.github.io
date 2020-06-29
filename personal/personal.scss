@@ -18,29 +18,38 @@ body {
 
     // web nav
     #nav {
-        width: 400px;
+        width: 350px;
         background-color: white;
         @media screen and (max-width: 1000px) {
             display: none;
         }
+        @media screen and (max-width: 1200px) {  
+            width: 300px;
+        }
 
         .navfixed {
-            width: 100%;
-            width: 400px;
+            width: 350px;
             position: fixed;
+            @media screen and (max-width: 1200px) {
+                width: 300px;
+            }
+            
 
             .navbar {
                 width: 100%;
-
                 .text {
                     width: 100%;
                     margin: 50px 0;
                     text-align: center;
                     line-height: 50px;
                     font-size: 20px;
+                    @media screen and (max-width: 1200px) {
+                        font-size: 18px;
+                        
+                    }
                     h1,
                     p {
-                        letter-spacing: 3px;
+                        letter-spacing: 2px;
                     }
                 }
 
@@ -67,8 +76,13 @@ body {
                         margin: 50px auto;
                         li {
                             width: 200px;
+                           
                             &:hover {
                                 background-color: #ccc;
+                            }
+                            &:active {
+                                color: rgb(218,42,86);
+                               
                             }
                             i {
                                 width: 30px;
@@ -80,7 +94,9 @@ body {
                                 padding: 0 10px;
                                 line-height: 50px;
                                 letter-spacing: 2px;
-                                font-size: 24px;
+                                font-size: 20px;
+                                
+                                
                             }
                         }
                     }
@@ -96,18 +112,18 @@ body {
         display: none;
         position: fixed;
         z-index: 100;
+       
 
         .close_nav {
             position: absolute;
             top: 10px;
             right: 10px;
             .close {
-                font-size: 50px;
+                font-size: 40px;
             }
         }
         .navfixed {
-            width: 100%;
-            width: 400px;
+            width: 300px;
             .mobile_navbar {
                 width: 100%;
 
@@ -116,14 +132,14 @@ body {
                     margin: 50px 0;
                     text-align: center;
                     line-height: 50px;
-                    font-size: 20px;
+                    font-size: 18px;
                     h1,
                     p {
                         margin: 30px 0;
                     }
                 }
                 .photo {
-                    width: 250px;
+                    width: 200px;
                     margin: 0 auto;
 
                     img {
@@ -135,7 +151,7 @@ body {
                 .row {
                     display: flex;
                     .box {
-                        width: 40%;
+                        width: 30%;
                         height: 300px;
                     }
                     ul {
@@ -151,14 +167,14 @@ body {
                             i {
                                 width: 30px;
                                 text-align: center;
-                                font-size: 20px;
+                                font-size: 16px;
                             }
                             a {
                                 color: black;
                                 padding: 0 10px;
-                                line-height: 50px;
+                                line-height: 40px;
                                 letter-spacing: 2px;
-                                font-size: 24px;
+                                font-size: 20px;
                             }
                         }
                     }
@@ -175,10 +191,10 @@ body {
     }
 
     #main {
-        width: calc(100% - 400px);
+        width: calc(100% - 350px);
         background-color: white;
-        margin: 0 15px;
-        padding: 0 5px;
+        margin: 0 10px;
+        padding: 0 15px;
 
         @media screen and (max-width: 1000px) {
             width: 100%;
@@ -219,14 +235,14 @@ body {
                 transform: translate(-50%, -50%) rotate(45deg);
                 top: 50%;
                 transition-property: transform, top;
-                transition-duration: 0.5s, 0.3s;
+                transition-duration: 0.6s, 0.4s;
             }
 
             &:hover .line3 {
                 transform: translate(-50%, -50%) rotate(-45deg);
                 top: 50%;
                 transition-property: transform, top;
-                transition-duration: 0.5s, 0.3s;
+                transition-duration: 0.6s, 0.4s;
             }
 
             &:hover .line2 {
@@ -253,6 +269,9 @@ body {
 
                     p {
                         padding-top: 35px;
+                    }
+                    @media screen and (max-width: 1000px) {
+                        font-size: 18px;
                     }
                 }
             }
@@ -283,14 +302,14 @@ body {
                     max-width: 100%;
                     display: inline-block;
                 }
-              
+
                 // 固定寬度
                 .col {
                     margin-bottom: 50px;
                     width: 32%;
                     @media screen and (max-width: 1000px) {
                         width: 80%;
-                        margin: 0 auto;
+                        margin: 50px auto;
                     }
                     .image {
                         img {
@@ -302,6 +321,9 @@ body {
                     .textcontent {
                         padding: 30px 0;
                         width: 100%;
+                        @media screen and (max-width: 1000px) {
+                            font-size: 16px;
+                        }
                         h3 {
                             letter-spacing: 3px;
                             padding: 10px 0;
@@ -336,6 +358,12 @@ body {
         .experience {
             line-height: 40px;
             letter-spacing: 3px;
+            @media screen and (max-width: 900px) {
+                font-size: 15px;
+            }
+            @media screen and (max-width: 700px) {
+                font-size: 14px;
+            }
 
             .text_space {
                 h2 {
@@ -346,6 +374,11 @@ body {
                 }
                 .text {
                     padding: 50px 0;
+
+                    a {
+                        color: rgb(184, 30, 125);
+                        font-weight: bold;
+                    }
                 }
                 .wrap_experience {
                     .container {
@@ -369,13 +402,12 @@ body {
                 .container {
                     display: flex;
                     justify-content: center;
-
+                    max-width: 1100px;
                     .col {
                         width: 50%;
                     }
                 }
             }
         }
-      
     }
 }

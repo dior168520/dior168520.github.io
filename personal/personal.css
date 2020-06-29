@@ -21,7 +21,7 @@ body {
 }
 
 #container #nav {
-  width: 400px;
+  width: 350px;
   background-color: white;
 }
 
@@ -31,10 +31,21 @@ body {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  #container #nav {
+    width: 300px;
+  }
+}
+
 #container #nav .navfixed {
-  width: 100%;
-  width: 400px;
+  width: 350px;
   position: fixed;
+}
+
+@media screen and (max-width: 1200px) {
+  #container #nav .navfixed {
+    width: 300px;
+  }
 }
 
 #container #nav .navfixed .navbar {
@@ -49,9 +60,15 @@ body {
   font-size: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+  #container #nav .navfixed .navbar .text {
+    font-size: 18px;
+  }
+}
+
 #container #nav .navfixed .navbar .text h1,
 #container #nav .navfixed .navbar .text p {
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 #container #nav .navfixed .navbar .photo {
@@ -96,6 +113,10 @@ body {
   background-color: #ccc;
 }
 
+#container #nav .navfixed .navbar .row ul li:active {
+  color: #da2a56;
+}
+
 #container #nav .navfixed .navbar .row ul li i {
   width: 30px;
   text-align: center;
@@ -107,7 +128,7 @@ body {
   padding: 0 10px;
   line-height: 50px;
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 #container .mobile_nav {
@@ -125,12 +146,11 @@ body {
 }
 
 #container .mobile_nav .close_nav .close {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 #container .mobile_nav .navfixed {
-  width: 100%;
-  width: 400px;
+  width: 300px;
 }
 
 #container .mobile_nav .navfixed .mobile_navbar {
@@ -142,7 +162,7 @@ body {
   margin: 50px 0;
   text-align: center;
   line-height: 50px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #container .mobile_nav .navfixed .mobile_navbar .text h1,
@@ -151,7 +171,7 @@ body {
 }
 
 #container .mobile_nav .navfixed .mobile_navbar .photo {
-  width: 250px;
+  width: 200px;
   margin: 0 auto;
 }
 
@@ -168,7 +188,7 @@ body {
 }
 
 #container .mobile_nav .navfixed .mobile_navbar .row .box {
-  width: 40%;
+  width: 30%;
   height: 300px;
 }
 
@@ -195,15 +215,15 @@ body {
 #container .mobile_nav .navfixed .mobile_navbar .row ul li i {
   width: 30px;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #container .mobile_nav .navfixed .mobile_navbar .row ul li a {
   color: black;
   padding: 0 10px;
-  line-height: 50px;
+  line-height: 40px;
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -213,10 +233,10 @@ body {
 }
 
 #container #main {
-  width: calc(100% - 400px);
+  width: calc(100% - 350px);
   background-color: white;
-  margin: 0 15px;
-  padding: 0 5px;
+  margin: 0 10px;
+  padding: 0 15px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -269,8 +289,8 @@ body {
   transition-property: top, -webkit-transform;
   transition-property: transform, top;
   transition-property: transform, top, -webkit-transform;
-  -webkit-transition-duration: 0.5s, 0.3s;
-          transition-duration: 0.5s, 0.3s;
+  -webkit-transition-duration: 0.6s, 0.4s;
+          transition-duration: 0.6s, 0.4s;
 }
 
 #container #main .collapse:hover .line3 {
@@ -281,8 +301,8 @@ body {
   transition-property: top, -webkit-transform;
   transition-property: transform, top;
   transition-property: transform, top, -webkit-transform;
-  -webkit-transition-duration: 0.5s, 0.3s;
-          transition-duration: 0.5s, 0.3s;
+  -webkit-transition-duration: 0.6s, 0.4s;
+          transition-duration: 0.6s, 0.4s;
 }
 
 #container #main .collapse:hover .line2 {
@@ -311,6 +331,12 @@ body {
 
 #container #main .about .container .text p {
   padding-top: 35px;
+}
+
+@media screen and (max-width: 1000px) {
+  #container #main .about .container .text {
+    font-size: 18px;
+  }
 }
 
 #container #main .container {
@@ -355,7 +381,7 @@ body {
 @media screen and (max-width: 1000px) {
   #container #main .container .wrap .col {
     width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
   }
 }
 
@@ -367,6 +393,12 @@ body {
 #container #main .container .wrap .col .textcontent {
   padding: 30px 0;
   width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  #container #main .container .wrap .col .textcontent {
+    font-size: 16px;
+  }
 }
 
 #container #main .container .wrap .col .textcontent h3 {
@@ -405,6 +437,18 @@ body {
   letter-spacing: 3px;
 }
 
+@media screen and (max-width: 900px) {
+  #container #main .experience {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #container #main .experience {
+    font-size: 14px;
+  }
+}
+
 #container #main .experience .text_space h2 {
   padding: 20px 0;
 }
@@ -415,6 +459,11 @@ body {
 
 #container #main .experience .text_space .text {
   padding: 50px 0;
+}
+
+#container #main .experience .text_space .text a {
+  color: #b81e7d;
+  font-weight: bold;
 }
 
 #container #main .experience .text_space .wrap_experience .container {
@@ -441,6 +490,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 1100px;
 }
 
 #container #main .experience .Skills .container .col {

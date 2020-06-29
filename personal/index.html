@@ -14,6 +14,8 @@
   <!-- hover -->
   <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/hover.css/2.3.1/css/hover-min.css">
   <link rel="stylesheet" href="./personal.css">
+  <!-- lightbox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
 
   <title>Personal</title>
 </head>
@@ -104,8 +106,10 @@
             <h2>About</h2>
             <div class="line"></div>
             <p>
-              曾任職車架研發人員(設計),在職期間規劃好準備離職上前端課程,我一直在自學前端相關技術,CSS3、HTML5、JavaScript。
-              離職後我到豐原職訓局上「RWD網站前端開發與跨平台介面設計培訓班」,我在職訓局期間實作團體專案作品、個人專題作品，包含API天氣卡片串接,目前自學Webpack、Vue.js。
+              曾任職車架研發人員(設計),我對網頁寫程式很有興趣,從線上hahow好學校學習CSS3/HTML5。
+              離職後我到豐原職訓局上「RWD網站前端開發與跨平台介面設計培訓班」,我在職訓局期間實作團體專案作品、個人專題作品，包含API天氣卡片串接,目前自學Webpack/Vue.js。
+              希望能夠加入大家庭,我本人對寫程式非常喜歡,
+              謝謝您花寶貴時間看我的履歷。
             </p>
           </div>
 
@@ -223,8 +227,8 @@
             </div>
           </div>
 
-          <!-- 隱藏 -->
-          <div class="col " >
+          <!-- sidebar -->
+          <div class="col ">
             <div class="image">
               <a class="hvr-grow" href="https://dior168520.github.io/side_bar/index.html" target="_blank"><img
                   src="./img/Resume.png" alt=""></a>
@@ -236,7 +240,8 @@
                 </li>
               </ul>
               <div class="github">
-                <a href="https://github.com/dior168520/dior168520.github.io/blob/master/side_bar/index.html"target="_blank">Github</a>
+                <a href="https://github.com/dior168520/dior168520.github.io/blob/master/side_bar/index.html"
+                  target="_blank">Github</a>
                 <a href="https://dior168520.github.io/side_bar/index.html" target="_blank">Demo</a>
               </div>
             </div>
@@ -260,6 +265,7 @@
                 課程名稱:109年 RWD網站前端開發與跨平台界面設計培訓班(全日訓練)<br>
                 學習總時數:全期420小時課程<br>
                 日期:2020年2月24日~2020年05月22日結訓<br>
+                <a class="hvr-bob" href="./img/certificate.jpg" data-lightbox="roadtrip">培訓證明</a><br>
                 HTML5 | CSS3 | SCSS<br>
                 RWD切版實作<br>
                 Java Script(ES6)<br>
@@ -347,12 +353,20 @@
     </main>
   </section>
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./js/personal.js"></script>
-  
+  <!-- jquery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+  <!-- lightbox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
 
+  <script>
+    lightbox.option({
+      'resizeDuration': 800,
+      'wrapAround': true, //如果為true右導航箭頭按到最後一張,會帶回第一張圖片
+      'showImageNumberLabel': false //如果為false隱藏表示當前圖像編號和已設置圖像總數
+    })
+  </script>
 
 
 </body>
