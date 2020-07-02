@@ -331,7 +331,7 @@ nav {
             }
 
             hr {
-                border: solid 2px gray;
+                border: solid 1px gray;
                 border-radius: 5%;
             }
         }
@@ -342,31 +342,35 @@ nav {
 #section3 {
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    
+    // padding: 100px 0;
     background-color: black;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    @media screen and (max-width: 768px) {
-        padding: 15% 0;
-    }
-
     .word_box3 {
-        width: auto;
-        margin-left: 35%;
-        padding-top: 3%;
+        width: 100%;
         color: white;
         .fir {
+            text-align: center;
+            line-height: 350px;
+            letter-spacing: 2px;
+            margin: 0;
+           
             @media screen and (max-width: 768px) {
-                font-size: 20px;
+                font-size: 22px;
             }
-        }
-        .sec {
-            padding-left: 20vw;
-            @media screen and (max-width: 768px) {
-                font-size: 20px;
+
+            @media screen and (max-width: 700px) {
+                line-height: 300px;
             }
+            @media screen and (max-width: 600px) {
+                line-height: 250px;
+            }
+            
+          
         }
+      
     }
 }
 
@@ -827,11 +831,11 @@ nav {
                         }
                     }
                     .nearby_content_right {
-                        border-left: #999999 10px solid;
+                        border-left: #999999 3px solid;
                         margin-left: -20px;
                     }
                     .nearby_content_left {
-                        border-right: #999999 10px solid;
+                        border-right: #999999 3px solid;
                         margin-right: -20px;
                     }
                 }
@@ -987,17 +991,7 @@ footer {
     }
 
     @media screen and (max-width: 768px) {
-        #section3 {
-            .word_box3 {
-                width: 100%;
-                margin: 0 auto;
-                text-align: center;
-
-                .sec {
-                    padding-left: 10px;
-                }
-            }
-        }
+     
 
         #section9 {
             background-image: none;

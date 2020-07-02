@@ -7,46 +7,51 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 118px;
+  scroll-behavior: smooth;
 }
-
 nav {
-  background-color: black;
-  opacity: 0.8;
-}
-
-nav .navbar-brand {
-  margin-left: 6%;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 nav .navbar-brand h1 {
-  font-family: "Dancing Script";
-  color: white;
+  font-family: "Dancing Script", cursive;
+  color: black;
   font-size: 70px;
   font-weight: 900;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
   nav .navbar-brand h1 {
-    font-size: 40px;
-    color: white;
+    font-size: 65px;
   }
 }
 
-nav a {
+@media screen and (max-width: 1200px) {
+  nav .navbar-brand h1 {
+    font-size: 62px;
+  }
+}
+
+@media screen and (max-width: 1092px) {
+  nav .navbar-brand h1 {
+    font-size: 55px;
+  }
+}
+
+nav #tel {
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+nav .fa-phone-alt {
+  color: white;
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  nav a {
-    color: white;
-    display: block;
-    margin-left: auto;
-    margin-right: 15px;
-  }
-}
-
-nav #navbarSupportedContent ul {
-  margin-right: 8%;
+nav button:focus {
+  outline: 5px auto #ffffff;
 }
 
 nav #navbarSupportedContent ul li {
@@ -54,23 +59,128 @@ nav #navbarSupportedContent ul li {
   padding: 0 20px;
   list-style: none;
   display: inline;
-  color: white;
 }
 
-@media (max-width: 1230px) {
+@media screen and (max-width: 1300px) {
+  nav #navbarSupportedContent ul li {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  nav #navbarSupportedContent ul li {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 1098px) {
   nav #navbarSupportedContent ul li {
     font-size: 20px;
-    padding: 0 10px;
   }
 }
 
 nav #navbarSupportedContent ul li a {
-  letter-spacing: 2px;
+  color: black;
+  letter-spacing: 3px;
+}
+
+nav #navbarSupportedContent ul .hvr-underline-from-left:before {
+  background-color: #999999;
+}
+
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.scrolled .navbar-brand h1 {
   color: white;
 }
 
-nav #navbarSupportedContent ul li .hvr-underline-from-left:before {
-  background: #999999;
+.scrolled #navbarSupportedContent ul li a {
+  color: white;
+}
+
+
+#back_to_top {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  color: #000;
+  text-decoration: none;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  #back_to_top {
+    width: 55px;
+    height: 55px;
+    right: 10px;
+    bottom: 10px;
+    font-size: 10px;
+  }
+}
+
+#back_to_top:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#back_to_top:hover .fa-angle-up {
+  display: none;
+}
+
+#back_to_top:hover .fa-caret-up {
+  display: block;
+}
+
+#back_to_top .fa-angle-up {
+  margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #back_to_top .fa-angle-up {
+    margin-top: -10px;
+  }
+}
+
+#back_to_top .fa-caret-up {
+  margin-top: -20px;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #back_to_top .fa-caret-up {
+    margin-top: -10px;
+  }
+}
+
+#back_to_top h4 {
+  text-align: center;
+  margin-top: -25px;
+}
+
+@media screen and (max-width: 768px) {
+  #back_to_top h4 {
+    text-align: center;
+    margin-top: -15px;
+    font-size: 10px;
+  }
 }
 
 #swiper_banner {
@@ -164,7 +274,7 @@ nav #navbarSupportedContent ul li .hvr-underline-from-left:before {
 }
 
 #section_A .container .row .item .houses h5 {
-  font-size: 21px;
+  font-size: 18px;
   margin: 30px 0;
   font-weight: bold;
   letter-spacing: 3px;
@@ -219,6 +329,8 @@ nav #navbarSupportedContent ul li .hvr-underline-from-left:before {
   letter-spacing: 3px;
 }
 
+
+
 footer {
   background-color: black;
 }
@@ -238,6 +350,8 @@ footer p {
           justify-content: center;
 }
 
+
+
 @media screen and (max-width: 768px) {
   footer {
     font-size: 15px;
@@ -249,6 +363,8 @@ footer p {
     font-size: 10px;
   }
 }
+
+
 
 /* 鼠標 */
 /* mirar si es valido para IE */
