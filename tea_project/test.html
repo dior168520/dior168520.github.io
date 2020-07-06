@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        transition不支援display屬性的改變,而瀏覽器會將節點屬性的變化同display一起顯示,從而導致動畫效果的失效
+
+#container{width:100px;
+height:100px;
+background-color: red;
+display:block;
+
+}
+#container + #detail{
+width:10px;
+height:10px;
+position:absolute;
+background-color:#666;
+top:15px;
+left:15px;
+opacity:0;
+transition:all 0.4s;
+display: none;
+}
+#container:hover + #detail,#detail:hover{
+opacity:1;
+display: block;
+}
+
+淡入完成了,淡出卻不行,這是因為detail節點不佔位了
+
+#container{width:100px;
+height:100px;
+background-color: red;
+display:block;
+
+}
+#container + #detail{
+width:10px;
+height:10px;
+position:absolute;
+background-color:#666;
+top:15px;
+left:15px;
+opacity:0;
+-webkit-animation:hide 0.4s ease-out;
+display: none;
+}
+#container:hover + #detail,#detail:hover{
+opacity:1;
+display: block;
+-webkit-animation:show 0.4s ease-in;
+transition-delay: 0s;
+}
+@-webkit-keyframes show /* Safari 和 Chrome */
+{
+0% {opacity:0;}
+100% {opacity:1;}
+}
+@-webkit-keyframes hide /* Safari 和 Chrome */
+{
+0% {opacity:1;}
+100% {opacity:0;}
+}
+
+/* 最終實現程式碼(只寫了chrome下的) */
+
+#container{width:100px;
+height:100px;
+background-color: red;
+display:block;
+
+}
+#detail{
+width:10px;
+height:0px;
+position:absolute;
+background-color:#666;
+top:15px;
+left:15px;
+opacity:0;
+-webkit-animation:hide 0.4s ease-out;
+display: block;
+transition:height 1ms;
+transition-delay: 0.4s;
+overflow:hidden;
+}
+#container:hover + #detail{
+height:10px;
+opacity:1;
+display: block;
+-webkit-animation:show 0.4s ease-in;
+transition-delay: 0s;
+}
+#detail:hover{
+height:10px;
+opacity:1;
+display: block;
+-webkit-animation:show 0.4s ease-in;
+transition-delay: 0s;
+}
+@-webkit-keyframes show 
+{
+0% {opacity:0;}
+100% {opacity:1;}
+}
+@-webkit-keyframes hide 
+{
+0% {opacity:1;}
+100% {opacity:0;}
+}
+    </style>
+</head>
+<body>
+    
+
+
+
+    <div id="container"></div>
+<div id="detail"></div>
+
+ 
+
+
+
+ 
+</body>
+</html>
+
+ 

@@ -1,0 +1,121 @@
+html,
+body {
+    margin: 0;
+}
+
+#Banner {
+    .banner {
+        width: 100%;
+        height: auto;
+        position: relative;
+
+        img {
+            width: 100%;
+            display: block;
+            position: absolute;
+            //宣告動畫
+            animation-name: banner_img; //跟標簽(img)說要執行的動畫名字
+            animation-duration: 6s; //設定動畫跑多久,跟img標籤說要跑多久,我設定5秒的時間
+            animation-iteration-count: 1;
+            //跟標籤(img)說這個動畫執行幾次,1次就是執行1次不會重復
+        }
+
+        @keyframes banner_img {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0%);
+                opacity: 1;
+            }
+        }
+    }
+
+    .banner1 {
+        width: 100%;
+        height: auto;
+        opacity: 0;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+#text_photo {
+    .container {
+        width: 100%;
+        margin-top: 15%;
+
+        .row {
+            max-width: 1000px;
+            margin: 0 auto;
+            .text {
+                p {
+                    line-height: 60px;
+                }
+            }
+            .image {
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+#tea {
+    .container {
+        margin-top: 15%;
+        .row {
+            max-width: 1000px;
+            margin: 0 auto;
+            .image {
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+#new {
+    .container_a {
+        max-width: 600px;
+        margin: 60px auto;
+        .row {
+            line-height: 60px;
+            border-bottom: 1px black solid;
+
+            box-sizing: border-box;
+            .date {
+                padding: 0;
+                p {
+                    margin: 0;
+                }
+            }
+            .small_text {
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+// #loction {
+//     .container {
+//         .row {
+//             .IMAGE {
+//                 img {
+//                     width: 100%;
+//                 }
+//             }
+//         }
+//     }
+// }
