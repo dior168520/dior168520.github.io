@@ -4,30 +4,87 @@ body {
 }
 
 #Banner {
+    position: relative;
     .banner {
         width: 100%;
         height: auto;
-        position: relative;
+        position: absolute;
+        //宣告動畫
+        animation-name: banner_img; //跟標簽(banner)說要執行的動畫名字
+        animation-duration: 4s; //設定動畫跑多久,跟banner標籤說要跑多久,我設定5秒的時間
+        animation-iteration-count: 1;
+        //跟標籤(banner)說這個動畫執行幾次,1次就是執行1次不會重復
 
         img {
             width: 100%;
             display: block;
-            position: absolute;
-            //宣告動畫
-            animation-name: banner_img; //跟標簽(img)說要執行的動畫名字
-            animation-duration: 6s; //設定動畫跑多久,跟img標籤說要跑多久,我設定5秒的時間
-            animation-iteration-count: 1;
-            //跟標籤(img)說這個動畫執行幾次,1次就是執行1次不會重復
         }
 
         @keyframes banner_img {
             0% {
-                transform: translateX(-100%);
+                transform: translateY(10%);
                 opacity: 0;
             }
 
             100% {
-                transform: translateX(0%);
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+    }
+
+    .logo {
+        width: 12%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        animation-name: logo;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        img {
+            width: 100%;
+        }
+
+        @keyframes logo {
+            0% {
+                width: 100%;
+                opacity: 0;
+            }
+
+            100% {
+              
+                opacity: 1;
+            
+               
+                
+            }
+        }
+    }
+
+    .text {
+        width: 20%;
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50% , 20%);
+        animation-name: texts;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+        p {
+            width: 100%;
+            color: white;
+           
+            
+        }
+        @keyframes texts {
+            0% {
+                transform: translate(-50% , 90%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translate(-50% , 0%);
                 opacity: 1;
             }
         }
@@ -53,9 +110,44 @@ body {
         .row {
             max-width: 1000px;
             margin: 0 auto;
+            .circle_line {
+                display: flex;
+                .material {
+                    text-align: center;
+                    width: 25%;
+                    position: relative;
+                    span {
+                       
+                        width: 100%;
+                        position: absolute;
+                        bottom: 70%;
+                        left: 0;
+                        transform: translate( 0%, -80%);
+                    }
+                }
+                .circle {
+                    width: 40px;
+                    height: 40px;
+                    border: solid 1px black;
+                    border-radius: 50%;
+                    position: relative;
+                    .line {
+                        width: 1px;
+                        height: 180px;
+                        margin: 0 auto;
+                        border: solid 1px gray;
+                        position: absolute;
+                        top:50%;
+                        left: 50%;
+                        transform: translateY(-63%);
+                    }
+                
+                }
+              
+            }
             .text {
                 p {
-                    line-height: 60px;
+                    line-height: 40px;
                 }
             }
             .image {
@@ -79,23 +171,103 @@ body {
                     width: 100%;
                     display: block;
                 }
+
+                .photo {
+                    padding: 0;
+                    width: 245px;
+                    height: 245px;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+
+            .title_text {
+                p {
+                    line-height: 40px;
+                }
+            }
+
+            .circle_line {
+                position: absolute;
+                right: 10%;
+                top: 1%;
+             
+                .circle {
+                    width: 40px;
+                    height: 40px;
+                    border: solid 1px black;
+                    border-radius: 50%;
+                    position: relative;
+                    .line {
+                        width: 1px;
+                        height: 260px;
+                        margin: 0 auto;
+                        border: solid 1px gray;
+                        position: absolute;
+                        top:50%;
+                        left: 50%;
+                        transform: translateY(-43%);
+                    }
+                
+                }
+                .story {
+                    text-align: center;
+                    width: 25%;
+                    position: relative;
+                    span {
+                        width: 100%;
+                        position: absolute;
+                        right: 30%;
+                        transform: translate( 0, 10%);
+                    }
+                }
+               
+              
+            }
+
+            .circle_line_2 {
+                position: absolute;
+                right: 2%;
+                bottom: 15%;
+             
+                .circle {
+                    width: 30px;
+                    height: 30px;
+                    border: solid 1px black;
+                    border-radius: 50%;
+                    position: relative;
+                    .line {
+                        width: 1px;
+                        height: 260px;
+                        margin: 0 auto;
+                        border: solid 1px gray;
+                        position: absolute;
+                        top:10%;
+                        left: 50%;
+                        transform: translateY(-53%);
+                    }
+                
+                }
+             
+               
+              
             }
         }
     }
 }
 
 #new {
-    .container_a {
-        max-width: 600px;
-        margin: 60px auto;
+    .container {
+        max-width: 900px;
         .row {
             line-height: 60px;
             border-bottom: 1px black solid;
-
             box-sizing: border-box;
+
             .date {
                 padding: 0;
                 p {
+                    
                     margin: 0;
                 }
             }
@@ -107,15 +279,3 @@ body {
         }
     }
 }
-
-// #loction {
-//     .container {
-//         .row {
-//             .IMAGE {
-//                 img {
-//                     width: 100%;
-//                 }
-//             }
-//         }
-//     }
-// }

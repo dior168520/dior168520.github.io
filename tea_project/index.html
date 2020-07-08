@@ -19,8 +19,15 @@
     <section id="Banner">
         <div class="banner">
             <img src="./img/banner.jpg" alt="">
-
         </div>
+        <!-- log -->
+        <div class="logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit debitis eius quisquam, libero aut porro consequatur eum ratione, iure est sunt consectetur maiores, dolores repellendus dicta corporis aperiam error! Nesciunt?</p>
+        </div>
+        <!-- banner使用position失去區塊,我在這放一張一樣圖片 opacity: 0; 位置隱藏起而以避免底下區塊浮上來-->
         <div class="banner1">
             <img src="./img/banner.jpg" alt="">
 
@@ -29,19 +36,25 @@
 
     <section id="text_photo">
         <div class="container">
-            <div class="row align-items-center"
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-            data-aos-offset="100">
+            <div class="row align-items-center" data-aos="fade-up" data-aos-duration="3000" data-aos-offset="90">
+                <div class="circle_line  col-2">                   
+                    <div class="material">
+                        <span>材料介紹</span>
+                    </div>
+                    <div class="circle">
+                        <div class="line"></div>
+                    </div>
+                    
+                </div>
 
-                <div class="text col-6">
+                <div class="text col-5">
+                    <h2>標題1</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugiat expedita aut explicabo
                         voluptas saepe repellendus repellat rerum libero tenetur?
                     </p>
                 </div>
-                <div class="image col-6">
+                <div class="image col-5">
                     <img src="./img/4.png" alt="">
                 </div>
             </div>
@@ -54,21 +67,37 @@
 
     <section id="tea">
         <div class="container">
-            <div class="row align-items-center"data-aos="fade-up"
-            data-aos-duration="3000">
-                <div class="image col-6">
+            <div class="row align-items-center" data-aos="fade-up" data-aos-duration="3000">
+                <div class="image col-5">
                     <img src="./img/1.png" alt="">
                 </div>
 
-                <div class="title_text col-6">
-                    <h2>標題1</h2>
+                <div class="title_text col-5">
+                    <h2>標題2</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex atque minima sequi dignissimos
                         nesciunt!
                         Asperiores expedita earum labore esse dolorum.</p>
                 </div>
+                <div class="circle_line  col-1">                                     
+                    <div class="circle">
+                        <div class="line"></div>
+                    </div>
+                    <div class="story">
+                        <span>茶藝故事</span>
+                    </div>   
+                                    
+                </div>
+
+                <div class="circle_line_2 col-1">                                  
+                    <div class="circle">
+                        <div class="line"></div>
+                    </div>                                                         
+                </div>
+                
+                
             </div>
 
-            <div class="row align-items-center">
+            <div class="row align-items-center"data-aos="fade-up" data-aos-duration="3000">
                 <div class="image col-6 order-1">
                     <img src="./img/2.png" alt="">
                 </div>
@@ -81,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="row align-items-center">
+            <div class="row align-items-center"data-aos="fade-up" data-aos-duration="3000">
                 <div class="image col-6">
                     <img src="./img/5.png" alt="">
                 </div>
@@ -94,14 +123,11 @@
                 </div>
             </div>
 
-            <div class="row align-items-center">
+            <div class="row align-items-center"data-aos="fade-up" data-aos-duration="3000">
                 <div class=" row image col-6 order-1">
-                    <div class="image col-6 ">
-                        <img src="./img/6.png" alt="">
+                    <div class="photo col-6" style="background-image: url(./img/6.png);">
                     </div>
-
-                    <div class="image col-6">
-                        <img src="./img/6.png" alt="">
+                    <div class="photo col-6" style="background-image: url(./img/7.png);">
                     </div>
                 </div>
 
@@ -119,7 +145,7 @@
 
 
     <section id="new">
-        <div class="container_a">
+        <div class="container">
 
             <div class="row ">
                 <div class="date col-3 text-left">
@@ -145,28 +171,6 @@
     </section>
 
 
-    <!-- 
-    <section id="loction">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="contact col-6">
-                    <p>
-                        地址:台北市xxxxxx<br>
-                        TEL:02-xxxxxxx<br>
-                        信箱:dioxxxxxxx<br>
-                        營業時間:AM:09:00~PM:23:00<br>
-                        休息:週休二日
-                    </p>
-                </div>
-
-                <div class="IMAGE col-6">
-                    <img src="./img/假圖.png" alt="">
-                </div>
-            </div>
-        </div>
-
-
-    </section> -->
 
 
     <!-- bootstrap -->
@@ -183,7 +187,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        AOS.init();
+        AOS.init(
+            
+        );
     </script>
 </body>
 
