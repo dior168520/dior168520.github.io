@@ -48,7 +48,6 @@ body {
 
         @keyframes logo {
             0% {
-                width: 100%;
                 opacity: 0;
             }
 
@@ -173,7 +172,7 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         line-height: 40px;
-        background-color: rgb(8, 8, 8);
+        // background-color: rgb(8, 8, 8);
         // opacity: 0.5;
         li {
             padding: 0 30px;
@@ -268,37 +267,38 @@ body {
                     line-height: 40px;
                 }
             }
+            .wrap {
+                .circle_line {
+                    position: absolute;
+                    right: 25%;
+                    top: 1%;
 
-            .circle_line {
-                position: absolute;
-                right: 5%;
-                top: 1%;
-
-                .circle {
-                    width: 40px;
-                    height: 40px;
-                    border: solid 1px black;
-                    border-radius: 50%;
-                    position: relative;
-                    .line {
-                        height: 260px;
-                        margin: 0 auto;
-                        border: solid 1px gray;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translateY(-43%);
+                    .circle {
+                        width: 40px;
+                        height: 40px;
+                        border: solid 1px black;
+                        border-radius: 50%;
+                        position: relative;
+                        .line {
+                            height: 260px;
+                            margin: 0 auto;
+                            border: solid 1px gray;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translateY(-43%);
+                        }
                     }
-                }
-                .story {
-                    text-align: center;
-                    width: 25%;
-                    position: relative;
-                    span {
-                        width: 100%;
-                        position: absolute;
-                        right: 30%;
-                        transform: translate(0, 10%);
+                    .story {
+                        text-align: center;
+                        width: 25%;
+                        position: relative;
+                        span {
+                            width: 100%;
+                            position: absolute;
+                            right: 30%;
+                            transform: translate(0, 10%);
+                        }
                     }
                 }
             }
@@ -364,7 +364,8 @@ body {
 
             .circle_line_3 {
                 position: absolute;
-                bottom: 190px;
+                bottom: 120px;
+                right: 50px;
 
                 .circle {
                     width: 30px;
@@ -374,7 +375,7 @@ body {
                     position: relative;
                     .line {
                         width: 1px;
-                        height: 120px;
+                        height: 100px;
                         margin: 0 auto;
                         border: solid 1px gray;
                         position: absolute;
@@ -386,17 +387,13 @@ body {
             }
 
             .circle_line_a {
-                
-            
-
                 .circle {
                     width: 30px;
                     height: 30px;
                     border: solid 1px black;
                     border-radius: 50%;
                     position: relative;
-                   
-                 
+
                     .line {
                         width: 1px;
                         height: 120px;
@@ -409,7 +406,6 @@ body {
                     }
                 }
             }
-          
         }
     }
 }
@@ -419,7 +415,6 @@ body {
         max-width: 900px;
         margin-bottom: 10%;
         .row {
-        
             line-height: 60px;
             border-bottom: 1px black solid;
             box-sizing: border-box;

@@ -71,7 +71,6 @@ body {
 
 @-webkit-keyframes logo {
   0% {
-    width: 100%;
     opacity: 0;
   }
   100% {
@@ -81,7 +80,6 @@ body {
 
 @keyframes logo {
   0% {
-    width: 100%;
     opacity: 0;
   }
   100% {
@@ -258,7 +256,6 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   line-height: 40px;
-  background-color: #080808;
 }
 
 #Banner #burger:checked + ul li {
@@ -357,13 +354,13 @@ body {
   line-height: 40px;
 }
 
-#tea .container .row .circle_line {
+#tea .container .row .wrap .circle_line {
   position: absolute;
-  right: 5%;
+  right: 25%;
   top: 1%;
 }
 
-#tea .container .row .circle_line .circle {
+#tea .container .row .wrap .circle_line .circle {
   width: 40px;
   height: 40px;
   border: solid 1px black;
@@ -371,7 +368,7 @@ body {
   position: relative;
 }
 
-#tea .container .row .circle_line .circle .line {
+#tea .container .row .wrap .circle_line .circle .line {
   height: 260px;
   margin: 0 auto;
   border: solid 1px gray;
@@ -382,13 +379,13 @@ body {
           transform: translateY(-43%);
 }
 
-#tea .container .row .circle_line .story {
+#tea .container .row .wrap .circle_line .story {
   text-align: center;
   width: 25%;
   position: relative;
 }
 
-#tea .container .row .circle_line .story span {
+#tea .container .row .wrap .circle_line .story span {
   width: 100%;
   position: absolute;
   right: 30%;
@@ -463,7 +460,8 @@ body {
 
 #tea .container .row .circle_line_3 {
   position: absolute;
-  bottom: 190px;
+  bottom: 120px;
+  right: 50px;
 }
 
 #tea .container .row .circle_line_3 .circle {
@@ -476,7 +474,7 @@ body {
 
 #tea .container .row .circle_line_3 .circle .line {
   width: 1px;
-  height: 120px;
+  height: 100px;
   margin: 0 auto;
   border: solid 1px gray;
   position: absolute;
