@@ -7,10 +7,11 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./tea.css">
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./tea.css">
+    <title>tea</title>
 </head>
 
 <body>
@@ -19,42 +20,71 @@
     <section id="Banner">
         <div class="banner">
             <img src="./img/banner.jpg" alt="">
+
         </div>
         <!-- log -->
         <div class="logo">
             <img src="./img/logo.png" alt="">
         </div>
         <div class="text">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit debitis eius quisquam, libero aut porro consequatur eum ratione, iure est sunt consectetur maiores, dolores repellendus dicta corporis aperiam error! Nesciunt?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, fugiat?</p>
         </div>
         <!-- banner使用position失去區塊,我在這放一張一樣圖片 opacity: 0; 位置隱藏起而以避免底下區塊浮上來-->
         <div class="banner1">
             <img src="./img/banner.jpg" alt="">
-
         </div>
+        <!-- menu  hamburger -->
+
+
+        <label for="burger" id="menu" class="mobile_navbar_toggle">
+            <div class="hamburger">
+                <div class="line line_A"></div>
+                <div class="line line_B"></div>
+                <div class="line line_C"></div>
+            </div>
+        </label>
+
+        <input type="checkbox" id="burger">
+        <ul>
+            <div class="row">
+                <div class="col-6 ">
+                    <li><a href="##">材料介紹</a></li>
+                    <li><a href="##">品牌理念</a></li>
+                    <li><a href="##">茶藝故事</a></li>
+                </div>
+
+                <div class="col-6">
+                    <li><a href="##">商品特色</a></li>
+                    <li><a href="##">商店地圈</a></li>
+                    <li><a href="##">合作洽圈</a></li>
+                </div>
+            </div>
+
+        </ul>
+
     </section>
 
     <section id="text_photo">
         <div class="container">
             <div class="row align-items-center" data-aos="fade-up" data-aos-duration="3000" data-aos-offset="90">
-                <div class="circle_line  col-2">                   
+                <div class="circle_line col-2 col-lg-2">
                     <div class="material">
                         <span>材料介紹</span>
                     </div>
                     <div class="circle">
                         <div class="line"></div>
                     </div>
-                    
+
                 </div>
 
-                <div class="text col-5">
+                <div class="text col-10 col-lg-5">
                     <h2>標題1</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugiat expedita aut explicabo
                         voluptas saepe repellendus repellat rerum libero tenetur?
                     </p>
                 </div>
-                <div class="image col-5">
+                <div class="image col-10 col-lg-5">
                     <img src="./img/4.png" alt="">
                 </div>
             </div>
@@ -78,52 +108,69 @@
                         nesciunt!
                         Asperiores expedita earum labore esse dolorum.</p>
                 </div>
-                <div class="circle_line  col-1">                                     
+                <div class="circle_line  col-1">
                     <div class="circle">
                         <div class="line"></div>
                     </div>
                     <div class="story">
                         <span>茶藝故事</span>
-                    </div>   
-                                    
+                    </div>
+
                 </div>
 
-                <div class="circle_line_2 col-1">                                  
+                <div class="circle_line_2 col-1">
                     <div class="circle">
                         <div class="line"></div>
-                    </div>                                                         
+                    </div>
                 </div>
-                
-                
+
+
             </div>
 
-            <div class="row align-items-center"data-aos="fade-up" data-aos-duration="3000">
-                <div class="image col-6 order-1">
+            <div class="row align-items-center" data-aos="fade-up" data-aos-duration="3000">
+                <div class="circle_line  col-1 order-2">
+                    <div class="circle">
+                        <div class="line"></div>
+                    </div>
+                    <div class="story">
+                        <span>茶藝故事</span>
+                    </div>
+
+                </div>
+
+                <div class="circle_line_2 col-1 order-2">
+                    <div class="circle">
+                        <div class="line"></div>
+                    </div>
+                </div>
+
+                <div class="image col-5 order-1">
                     <img src="./img/2.png" alt="">
                 </div>
 
-                <div class="title_text col-6 order-0">
-                    <h2>標題1</h2>
+                <div class="title_text col-5 order-0">
+                    <h2>標題3</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex atque minima sequi dignissimos
                         nesciunt!
                         Asperiores expedita earum labore esse dolorum.</p>
                 </div>
+                
             </div>
 
-            <div class="row align-items-center"data-aos="fade-up" data-aos-duration="3000">
+            <div class="row align-items-center" data-aos="fade-up" data-aos-duration="3000">
                 <div class="image col-6">
                     <img src="./img/5.png" alt="">
                 </div>
 
                 <div class="title_text col-6">
-                    <h2>標題1</h2>
+                    <h2>標題4</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex atque minima sequi dignissimos
                         nesciunt!
                         Asperiores expedita earum labore esse dolorum.</p>
                 </div>
             </div>
 
-            <div class="row align-items-center"data-aos="fade-up" data-aos-duration="3000">
+            <div class="row align-items-center" data-aos="fade-up" data-aos-duration="3000">
                 <div class=" row image col-6 order-1">
                     <div class="photo col-6" style="background-image: url(./img/6.png);">
                     </div>
@@ -134,7 +181,7 @@
 
 
                 <div class="title_text col-6 order-0">
-                    <h2>標題1</h2>
+                    <h2>標題5</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex atque minima sequi dignissimos
                         nesciunt!
                         Asperiores expedita earum labore esse dolorum.</p>
@@ -176,19 +223,19 @@
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
+        </script>
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         AOS.init(
-            
+
         );
     </script>
 </body>

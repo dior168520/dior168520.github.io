@@ -53,7 +53,7 @@ body {
 #Banner .logo {
   width: 12%;
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -146,6 +146,131 @@ body {
   display: block;
 }
 
+#Banner #menu {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  -webkit-animation-name: menubar;
+          animation-name: menubar;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+#Banner #menu .hamburger {
+  height: 38px;
+}
+
+#Banner #menu .hamburger .line {
+  width: 28px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-color: black;
+}
+
+#Banner #menu .hamburger:hover .line_A {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  top: 50%;
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  transition-property: transform, top;
+  transition-property: transform, top, -webkit-transform;
+  -webkit-transition-duration: 0.4s, 0.2s;
+          transition-duration: 0.4s, 0.2s;
+}
+
+#Banner #menu .hamburger:hover .line_B {
+  opacity: 0;
+}
+
+#Banner #menu .hamburger:hover .line_C {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  top: 50%;
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  transition-property: transform, top;
+  transition-property: transform, top, -webkit-transform;
+  -webkit-transition-duration: 0.4s, 0.2s;
+          transition-duration: 0.4s, 0.2s;
+}
+
+#Banner #menu .hamburger .line_A {
+  top: 25%;
+}
+
+#Banner #menu .hamburger .line_C {
+  top: 75%;
+}
+
+#Banner #menu .hamburger .line_C:hover {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  top: 50%;
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  transition-property: transform, top;
+  transition-property: transform, top, -webkit-transform;
+  -webkit-transition-duration: 0.4s, 0.2s;
+          transition-duration: 0.4s, 0.2s;
+}
+
+@-webkit-keyframes menubar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes menubar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#Banner input {
+  display: none;
+}
+
+#Banner ul {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+#Banner #burger:checked + ul {
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  line-height: 40px;
+  background-color: black;
+}
+
+#Banner #burger:checked + ul li {
+  padding: 0 30px;
+  list-style: none;
+}
+
+#Banner #burger:checked + ul li a {
+  color: white;
+  text-decoration: none;
+}
+
 #text_photo .container {
   width: 100%;
   margin-top: 15%;
@@ -186,7 +311,6 @@ body {
 }
 
 #text_photo .container .row .circle_line .circle .line {
-  width: 1px;
   height: 180px;
   margin: 0 auto;
   border: solid 1px gray;
@@ -247,7 +371,6 @@ body {
 }
 
 #tea .container .row .circle_line .circle .line {
-  width: 1px;
   height: 260px;
   margin: 0 auto;
   border: solid 1px gray;
