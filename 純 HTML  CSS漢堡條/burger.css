@@ -1,0 +1,32 @@
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+header label {
+  display: block;
+  width: 100px;
+  text-align: center;
+  font-size: 40px;
+}
+
+header #burger {
+  display: none;
+}
+
+header ul {
+  display: none;
+  background-color: #2e2b2b;
+  width: 30%;
+  line-height: 40px;
+  height: 100vh;
+}
+
+header ul li a {
+  color: white;
+}
+
+header #burger:checked + ul {
+  display: block;
+}
+/*# sourceMappingURL=burger.css.map */
