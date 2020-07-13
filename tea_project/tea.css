@@ -258,7 +258,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   line-height: 40px;
-  background-color: black;
+  background-color: #080808;
 }
 
 #Banner #burger:checked + ul li {
@@ -331,12 +331,13 @@ body {
 }
 
 #tea .container {
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 #tea .container .row {
   max-width: 1000px;
   margin: 0 auto;
+  padding-bottom: 15%;
 }
 
 #tea .container .row .image img {
@@ -358,7 +359,7 @@ body {
 
 #tea .container .row .circle_line {
   position: absolute;
-  right: 10%;
+  right: 5%;
   top: 1%;
 }
 
@@ -398,7 +399,7 @@ body {
 #tea .container .row .circle_line_2 {
   position: absolute;
   right: 2%;
-  bottom: 15%;
+  bottom: 40%;
 }
 
 #tea .container .row .circle_line_2 .circle {
@@ -421,8 +422,93 @@ body {
           transform: translateY(-53%);
 }
 
+#tea .container .row .circle_line_brand {
+  position: absolute;
+  right: 10%;
+  top: 1%;
+}
+
+#tea .container .row .circle_line_brand .circle {
+  width: 40px;
+  height: 40px;
+  border: solid 1px black;
+  border-radius: 50%;
+  position: relative;
+}
+
+#tea .container .row .circle_line_brand .circle .line {
+  height: 260px;
+  margin: 0 auto;
+  border: solid 1px gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-43%);
+          transform: translateY(-43%);
+}
+
+#tea .container .row .circle_line_brand .brand {
+  text-align: center;
+  width: 25%;
+  position: relative;
+}
+
+#tea .container .row .circle_line_brand .brand span {
+  width: 100%;
+  position: absolute;
+  right: 30%;
+  -webkit-transform: translate(0, 10%);
+          transform: translate(0, 10%);
+}
+
+#tea .container .row .circle_line_3 {
+  position: absolute;
+  bottom: 190px;
+}
+
+#tea .container .row .circle_line_3 .circle {
+  width: 30px;
+  height: 30px;
+  border: solid 1px black;
+  border-radius: 50%;
+  position: relative;
+}
+
+#tea .container .row .circle_line_3 .circle .line {
+  width: 1px;
+  height: 120px;
+  margin: 0 auto;
+  border: solid 1px gray;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translateY(-53%);
+          transform: translateY(-53%);
+}
+
+#tea .container .row .circle_line_a .circle {
+  width: 30px;
+  height: 30px;
+  border: solid 1px black;
+  border-radius: 50%;
+  position: relative;
+}
+
+#tea .container .row .circle_line_a .circle .line {
+  width: 1px;
+  height: 120px;
+  margin: 0 auto;
+  border: solid 1px gray;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translateY(-53%);
+          transform: translateY(-53%);
+}
+
 #new .container {
   max-width: 900px;
+  margin-bottom: 10%;
 }
 
 #new .container .row {

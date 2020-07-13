@@ -159,15 +159,13 @@ body {
     input {
         display: none;
     }
-// 隱藏
+    // 隱藏
     ul {
         display: none;
         padding: 0;
         margin: 0;
-
-       
     }
-// nav 清單出現
+    // nav 清單出現
     #burger:checked + ul {
         display: block;
         position: absolute;
@@ -175,9 +173,9 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         line-height: 40px;
-        background-color: black;
+        background-color: rgb(8, 8, 8);
+        // opacity: 0.5;
         li {
-            
             padding: 0 30px;
             list-style: none;
             a {
@@ -192,7 +190,7 @@ body {
     .container {
         width: 100%;
         margin-top: 15%;
-
+        //材料介紹
         .row {
             max-width: 1000px;
             margin: 0 auto;
@@ -244,10 +242,12 @@ body {
 
 #tea {
     .container {
-        margin-top: 15%;
+        margin-top: 10%;
+        // 茶藝故事
         .row {
             max-width: 1000px;
             margin: 0 auto;
+            padding-bottom: 15%;
             .image {
                 img {
                     width: 100%;
@@ -271,7 +271,7 @@ body {
 
             .circle_line {
                 position: absolute;
-                right: 10%;
+                right: 5%;
                 top: 1%;
 
                 .circle {
@@ -306,7 +306,7 @@ body {
             .circle_line_2 {
                 position: absolute;
                 right: 2%;
-                bottom: 15%;
+                bottom: 40%;
 
                 .circle {
                     width: 30px;
@@ -326,6 +326,90 @@ body {
                     }
                 }
             }
+
+            // 品牌概念
+            .circle_line_brand {
+                position: absolute;
+                right: 10%;
+                top: 1%;
+
+                .circle {
+                    width: 40px;
+                    height: 40px;
+                    border: solid 1px black;
+                    border-radius: 50%;
+                    position: relative;
+                    .line {
+                        height: 260px;
+                        margin: 0 auto;
+                        border: solid 1px gray;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateY(-43%);
+                    }
+                }
+                .brand {
+                    text-align: center;
+                    width: 25%;
+                    position: relative;
+                    span {
+                        width: 100%;
+                        position: absolute;
+                        right: 30%;
+                        transform: translate(0, 10%);
+                    }
+                }
+            }
+
+            .circle_line_3 {
+                position: absolute;
+                bottom: 190px;
+
+                .circle {
+                    width: 30px;
+                    height: 30px;
+                    border: solid 1px black;
+                    border-radius: 50%;
+                    position: relative;
+                    .line {
+                        width: 1px;
+                        height: 120px;
+                        margin: 0 auto;
+                        border: solid 1px gray;
+                        position: absolute;
+                        top: 0%;
+                        left: 50%;
+                        transform: translateY(-53%);
+                    }
+                }
+            }
+
+            .circle_line_a {
+                
+            
+
+                .circle {
+                    width: 30px;
+                    height: 30px;
+                    border: solid 1px black;
+                    border-radius: 50%;
+                    position: relative;
+                   
+                 
+                    .line {
+                        width: 1px;
+                        height: 120px;
+                        margin: 0 auto;
+                        border: solid 1px gray;
+                        position: absolute;
+                        top: 0%;
+                        left: 50%;
+                        transform: translateY(-53%);
+                    }
+                }
+            }
+          
         }
     }
 }
@@ -333,7 +417,9 @@ body {
 #new {
     .container {
         max-width: 900px;
+        margin-bottom: 10%;
         .row {
+        
             line-height: 60px;
             border-bottom: 1px black solid;
             box-sizing: border-box;
