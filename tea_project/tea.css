@@ -74,9 +74,9 @@ main #Banner .banner img {
 }
 
 main #Banner .logo {
-  width: 12%;
+  width: 18%;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -113,7 +113,7 @@ main #Banner .logo img {
 main #Banner .text {
   width: 100%;
   position: absolute;
-  bottom: 2%;
+  bottom: 8%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -135,7 +135,7 @@ main #Banner .text p {
   margin: 0 auto;
   width: 500px;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   color: white;
 }
 
@@ -475,7 +475,7 @@ main #new .container .row .small_text p {
 footer .parallax {
   width: 100%;
   height: 100vh;
-  background-image: url(./img/000006.jpg);
+  background-image: url(./img/0714.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
