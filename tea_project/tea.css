@@ -10,7 +10,7 @@ nav {
 }
 
 nav img {
-  width: 70px;
+  width: 120px;
 }
 
 nav span {
@@ -18,15 +18,20 @@ nav span {
 }
 
 .scrolled {
-  opacity: 1;
-  background-color: #130012;
+  opacity: 0.9;
+  background-color: black;
 }
 
-#Banner {
+main {
+  width: 100%;
+  background-image: url(./img/bgk.jpg);
+}
+
+main #Banner {
   position: relative;
 }
 
-#Banner .banner {
+main #Banner .banner {
   width: 100%;
   position: absolute;
   -webkit-animation-name: banner_img;
@@ -37,7 +42,7 @@ nav span {
           animation-iteration-count: 1;
 }
 
-#Banner .banner img {
+main #Banner .banner img {
   width: 100%;
   display: block;
 }
@@ -68,7 +73,7 @@ nav span {
   }
 }
 
-#Banner .logo {
+main #Banner .logo {
   width: 12%;
   position: absolute;
   top: 30%;
@@ -83,7 +88,7 @@ nav span {
           animation-iteration-count: 1;
 }
 
-#Banner .logo img {
+main #Banner .logo img {
   width: 100%;
 }
 
@@ -105,7 +110,7 @@ nav span {
   }
 }
 
-#Banner .text {
+main #Banner .text {
   width: 100%;
   position: absolute;
   bottom: 2%;
@@ -121,12 +126,12 @@ nav span {
 }
 
 @media screen and (max-width: 1200px) {
-  #Banner .text {
+  main #Banner .text {
     display: none;
   }
 }
 
-#Banner .text p {
+main #Banner .text p {
   margin: 0 auto;
   width: 500px;
   text-align: center;
@@ -160,46 +165,46 @@ nav span {
   }
 }
 
-#Banner .banner1 {
+main #Banner .banner1 {
   width: 100%;
   height: auto;
 }
 
-#Banner .banner1 img {
+main #Banner .banner1 img {
   width: 100%;
   display: block;
   opacity: 0;
 }
 
-#text_photo .container {
+main #text_photo .container {
   width: 100%;
   margin-top: 15%;
 }
 
-#text_photo .container .row {
+main #text_photo .container .row {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-#text_photo .container .row .circle_line {
+main #text_photo .container .row .circle_line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media screen and (max-width: 720px) {
-  #text_photo .container .row .circle_line {
+  main #text_photo .container .row .circle_line {
     display: none;
   }
 }
 
-#text_photo .container .row .circle_line .material {
+main #text_photo .container .row .circle_line .material {
   text-align: center;
   width: 25%;
   position: relative;
 }
 
-#text_photo .container .row .circle_line .material span {
+main #text_photo .container .row .circle_line .material span {
   width: 100%;
   position: absolute;
   bottom: 70%;
@@ -208,7 +213,7 @@ nav span {
           transform: translate(0%, -80%);
 }
 
-#text_photo .container .row .circle_line .circle {
+main #text_photo .container .row .circle_line .circle {
   width: 40px;
   height: 40px;
   border: solid 1px black;
@@ -216,7 +221,7 @@ nav span {
   position: relative;
 }
 
-#text_photo .container .row .circle_line .circle .line {
+main #text_photo .container .row .circle_line .circle .line {
   height: 180px;
   margin: 0 auto;
   border: solid 1px gray;
@@ -227,31 +232,31 @@ nav span {
           transform: translateY(-63%);
 }
 
-#text_photo .container .row .text p {
+main #text_photo .container .row .text p {
   line-height: 40px;
 }
 
-#text_photo .container .row .image img {
+main #text_photo .container .row .image img {
   width: 100%;
   display: block;
 }
 
-#tea .container {
+main #tea .container {
   margin-top: 10%;
 }
 
-#tea .container .row {
+main #tea .container .row {
   max-width: 1000px;
   margin: 0 auto;
   padding-bottom: 15%;
 }
 
-#tea .container .row .image img {
+main #tea .container .row .image img {
   width: 100%;
   display: block;
 }
 
-#tea .container .row .image .photo {
+main #tea .container .row .image .photo {
   padding: 0;
   width: 245px;
   height: 245px;
@@ -259,21 +264,21 @@ nav span {
   background-size: cover;
 }
 
-#tea .container .row .title_text p {
+main #tea .container .row .title_text p {
   line-height: 40px;
 }
 
 @media screen and (max-width: 720px) {
-  #tea .container .row .wrap {
+  main #tea .container .row .wrap {
     display: none;
   }
 }
 
-#tea .container .row .wrap .circle_line {
+main #tea .container .row .wrap .circle_line {
   position: absolute;
 }
 
-#tea .container .row .wrap .circle_line .circle {
+main #tea .container .row .wrap .circle_line .circle {
   width: 40px;
   height: 35px;
   border: solid 1px black;
@@ -281,7 +286,7 @@ nav span {
   position: relative;
 }
 
-#tea .container .row .wrap .circle_line .circle .line {
+main #tea .container .row .wrap .circle_line .circle .line {
   height: 200px;
   margin: 0 auto;
   border: solid 1px gray;
@@ -292,52 +297,26 @@ nav span {
           transform: translateY(-43%);
 }
 
-#tea .container .row .wrap .circle_line .story {
+main #tea .container .row .wrap .circle_line .story {
   text-align: center;
   width: 25%;
   position: relative;
 }
 
-#tea .container .row .wrap .circle_line .story span {
+main #tea .container .row .wrap .circle_line .story span {
   width: 100%;
   position: absolute;
   -webkit-transform: translate(0, 35%);
           transform: translate(0, 35%);
 }
 
-#tea .container .row .circle_line_2 {
-  position: absolute;
-  right: 2%;
-  bottom: 40%;
-}
-
-#tea .container .row .circle_line_2 .circle {
-  width: 30px;
-  height: 30px;
-  border: solid 1px black;
-  border-radius: 50%;
-  position: relative;
-}
-
-#tea .container .row .circle_line_2 .circle .line {
-  width: 1px;
-  height: 150px;
-  margin: 0 auto;
-  border: solid 1px gray;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  -webkit-transform: translateY(-53%);
-          transform: translateY(-53%);
-}
-
-#tea .container .row .circle_line_brand {
+main #tea .container .row .circle_line_brand {
   position: absolute;
   right: 10%;
   top: 1%;
 }
 
-#tea .container .row .circle_line_brand .circle {
+main #tea .container .row .circle_line_brand .circle {
   width: 40px;
   height: 40px;
   border: solid 1px black;
@@ -345,7 +324,7 @@ nav span {
   position: relative;
 }
 
-#tea .container .row .circle_line_brand .circle .line {
+main #tea .container .row .circle_line_brand .circle .line {
   height: 260px;
   margin: 0 auto;
   border: solid 1px gray;
@@ -356,13 +335,13 @@ nav span {
           transform: translateY(-43%);
 }
 
-#tea .container .row .circle_line_brand .brand {
+main #tea .container .row .circle_line_brand .brand {
   text-align: center;
   width: 25%;
   position: relative;
 }
 
-#tea .container .row .circle_line_brand .brand span {
+main #tea .container .row .circle_line_brand .brand span {
   width: 100%;
   position: absolute;
   right: 30%;
@@ -370,13 +349,13 @@ nav span {
           transform: translate(0, 10%);
 }
 
-#tea .container .row .circle_line_3 {
+main #tea .container .row .circle_line_3 {
   position: absolute;
   bottom: 120px;
   right: 50px;
 }
 
-#tea .container .row .circle_line_3 .circle {
+main #tea .container .row .circle_line_3 .circle {
   width: 30px;
   height: 30px;
   border: solid 1px black;
@@ -384,7 +363,7 @@ nav span {
   position: relative;
 }
 
-#tea .container .row .circle_line_3 .circle .line {
+main #tea .container .row .circle_line_3 .circle .line {
   width: 1px;
   height: 100px;
   margin: 0 auto;
@@ -397,12 +376,12 @@ nav span {
 }
 
 @media screen and (max-width: 720px) {
-  #tea .container .row .circle_line_a {
+  main #tea .container .row .circle_line_a {
     display: none;
   }
 }
 
-#tea .container .row .circle_line_a .circle {
+main #tea .container .row .circle_line_a .circle {
   width: 30px;
   height: 30px;
   border: solid 1px black;
@@ -410,7 +389,7 @@ nav span {
   position: relative;
 }
 
-#tea .container .row .circle_line_a .circle .line {
+main #tea .container .row .circle_line_a .circle .line {
   width: 1px;
   height: 120px;
   margin: 0 auto;
@@ -422,25 +401,25 @@ nav span {
           transform: translateY(-53%);
 }
 
-#tea .container .row .circle_line {
+main #tea .container .row .circle_line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media screen and (max-width: 720px) {
-  #tea .container .row .circle_line {
+  main #tea .container .row .circle_line {
     display: none;
   }
 }
 
-#tea .container .row .circle_line .feature {
+main #tea .container .row .circle_line .feature {
   text-align: center;
-  width: 25%;
+  width: 15%;
   position: relative;
 }
 
-#tea .container .row .circle_line .feature span {
+main #tea .container .row .circle_line .feature span {
   width: 100%;
   position: absolute;
   bottom: 70%;
@@ -449,7 +428,7 @@ nav span {
           transform: translate(0%, -80%);
 }
 
-#tea .container .row .circle_line .circle {
+main #tea .container .row .circle_line .circle {
   width: 40px;
   height: 40px;
   border: solid 1px black;
@@ -457,7 +436,7 @@ nav span {
   position: relative;
 }
 
-#tea .container .row .circle_line .circle .line {
+main #tea .container .row .circle_line .circle .line {
   height: 180px;
   margin: 0 auto;
   border: solid 1px gray;
@@ -468,12 +447,12 @@ nav span {
           transform: translateY(-63%);
 }
 
-#new .container {
+main #new .container {
   max-width: 900px;
-  margin-bottom: 10%;
+  padding-bottom: 50px;
 }
 
-#new .container .row {
+main #new .container .row {
   line-height: 60px;
   border-bottom: 1px black solid;
   -webkit-box-sizing: border-box;
@@ -481,15 +460,15 @@ nav span {
   padding: 0 45px 0;
 }
 
-#new .container .row .date {
+main #new .container .row .date {
   padding: 0;
 }
 
-#new .container .row .date p {
+main #new .container .row .date p {
   margin: 0;
 }
 
-#new .container .row .small_text p {
+main #new .container .row .small_text p {
   margin: 0;
 }
 /*# sourceMappingURL=tea.css.map */
