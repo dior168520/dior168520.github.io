@@ -3,7 +3,7 @@ AOS.init(
     );
 
 
-    // navbar animation
+// navbar animation
 $(function () {
     $(document).scroll(function () {
         var $nav = $("nav");
