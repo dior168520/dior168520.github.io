@@ -367,32 +367,6 @@ main #tea .container .row .circle_line_3 .circle .line {
           transform: translateY(-53%);
 }
 
-@media screen and (max-width: 992px) {
-  main #tea .container .row .circle_line_a {
-    display: none;
-  }
-}
-
-main #tea .container .row .circle_line_a .circle {
-  width: 30px;
-  height: 30px;
-  border: solid 1px black;
-  border-radius: 50%;
-  position: relative;
-}
-
-main #tea .container .row .circle_line_a .circle .line {
-  width: 1px;
-  height: 120px;
-  margin: 0 auto;
-  border: solid 1px gray;
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  -webkit-transform: translateY(-53%);
-          transform: translateY(-53%);
-}
-
 main #tea .container .row .circle_line {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,7 +413,33 @@ main #tea .container .row .circle_line .circle .line {
           transform: translateY(-63%);
 }
 
-main #tea .container .row .adhere span {
+@media screen and (max-width: 992px) {
+  main #tea .container .row .circle_line_a {
+    display: none;
+  }
+}
+
+main #tea .container .row .circle_line_a .circle {
+  width: 30px;
+  height: 30px;
+  border: solid 1px black;
+  border-radius: 50%;
+  position: relative;
+}
+
+main #tea .container .row .circle_line_a .circle .line {
+  width: 1px;
+  height: 120px;
+  margin: 0 auto;
+  border: solid 1px gray;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translateY(-53%);
+          transform: translateY(-53%);
+}
+
+main #tea .container .row .circle_line_a .adhere span {
   width: 10%;
   position: absolute;
   bottom: 50%;

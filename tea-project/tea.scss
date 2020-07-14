@@ -323,30 +323,6 @@ main {
                     }
                 }
 
-                .circle_line_a {
-                    @media screen and (max-width: 992px) {
-                        display: none;
-                    }
-                    .circle {
-                        width: 30px;
-                        height: 30px;
-                        border: solid 1px black;
-                        border-radius: 50%;
-                        position: relative;
-
-                        .line {
-                            width: 1px;
-                            height: 120px;
-                            margin: 0 auto;
-                            border: solid 1px gray;
-                            position: absolute;
-                            top: 0%;
-                            left: 50%;
-                            transform: translateY(-53%);
-                        }
-                    }
-                }
-
                 // 商品特色
                 .circle_line {
                     display: flex;
@@ -382,19 +358,46 @@ main {
                         }
                     }
                 }
+
                 //品牌堅持
-                .adhere {
-                    span {
-                        width: 10%;
-                        position: absolute;
-                        bottom: 50%;
-                        left: 10px;
-                        transform: translate(0%, -80%);
+                .circle_line_a {
+                    @media screen and (max-width: 992px) {
+                        display: none;
+                    }
+                    .circle {
+                        width: 30px;
+                        height: 30px;
+                        border: solid 1px black;
+                        border-radius: 50%;
+                        position: relative;
+
+                        .line {
+                            width: 1px;
+                            height: 120px;
+                            margin: 0 auto;
+                            border: solid 1px gray;
+                            position: absolute;
+                            top: 0%;
+                            left: 50%;
+                            transform: translateY(-53%);
+                        }
+                    }
+
+                    .adhere {
+                        span {
+                            width: 10%;
+                            position: absolute;
+                            bottom: 50%;
+                            left: 10px;
+                            transform: translate(0%, -80%);
+                        }
                     }
                 }
-                .images_adhere {
 
+                .images_adhere {
+                   
                     img {
+                        // width: 50%;
                         width: 100%;
                     }
                     // .photo {
@@ -443,22 +446,17 @@ footer {
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
-        @media screen and (max-width:960px) {
+        @media screen and (max-width: 960px) {
             height: 90vh;
         }
-        @media screen and (max-width:720px) {
+        @media screen and (max-width: 720px) {
             height: 70vh;
         }
-        @media screen and (max-width:540px) {
+        @media screen and (max-width: 540px) {
             height: 50vh;
         }
-        @media screen and (max-width:320px) {
+        @media screen and (max-width: 320px) {
             height: 40vh;
         }
-        
     }
 }
-
-
-
-
