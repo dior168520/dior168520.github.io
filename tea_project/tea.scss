@@ -25,9 +25,9 @@ nav {
 
 main {
     width: 100%;
-    
+
     background-image: url(./img/01245.jpg);
-    
+
     #Banner {
         position: relative;
         .banner {
@@ -135,7 +135,7 @@ main {
 
                 .circle_line {
                     display: flex;
-                    @media screen and (max-width: 720px) {
+                    @media screen and (max-width: 992px) {
                         display: none;
                     }
                     .material {
@@ -143,7 +143,7 @@ main {
                         width: 25%;
                         position: relative;
                         span {
-                            width: 100%;
+                            width: 20%;
                             position: absolute;
                             bottom: 70%;
                             left: 0;
@@ -184,7 +184,7 @@ main {
 
     #tea {
         .container {
-            margin-top: 10%;
+            margin-top: 5%;
             .row {
                 max-width: 1000px;
                 margin: 0 auto;
@@ -195,13 +195,6 @@ main {
                         width: 100%;
                         display: block;
                     }
-                    .photo {
-                        padding: 0;
-                        width: 245px;
-                        height: 245px;
-                        background-position: center;
-                        background-size: cover;
-                    }
                 }
 
                 .title_text {
@@ -210,7 +203,7 @@ main {
                     }
                 }
                 .wrap {
-                    @media screen and (max-width: 720px) {
+                    @media screen and (max-width: 992px) {
                         display: none;
                     }
                     .circle_line {
@@ -331,7 +324,7 @@ main {
                 }
 
                 .circle_line_a {
-                    @media screen and (max-width: 720px) {
+                    @media screen and (max-width: 992px) {
                         display: none;
                     }
                     .circle {
@@ -357,7 +350,7 @@ main {
                 // 商品特色
                 .circle_line {
                     display: flex;
-                    @media screen and (max-width: 720px) {
+                    @media screen and (max-width: 992px) {
                         display: none;
                     }
                     .feature {
@@ -388,6 +381,29 @@ main {
                             transform: translateY(-63%);
                         }
                     }
+                }
+                //品牌堅持
+                .adhere {
+                    span {
+                        width: 10%;
+                        position: absolute;
+                        bottom: 50%;
+                        left: 10px;
+                        transform: translate(0%, -80%);
+                    }
+                }
+                .images_adhere {
+
+                    img {
+                        width: 100%;
+                    }
+                    // .photo {
+                    //     padding: 0;
+                    //     width: 105px;
+                    //     height: 105px;
+                    //     background-position: center;
+                    //     background-size: cover;
+                    // }
                 }
             }
         }
@@ -426,7 +442,23 @@ footer {
         background-image: url(./img/0714.jpg);
         background-position: center;
         background-size: cover;
-        background-attachment:fixed;
+        background-attachment: fixed;
+        @media screen and (max-width:960px) {
+            height: 90vh;
+        }
+        @media screen and (max-width:720px) {
+            height: 70vh;
+        }
+        @media screen and (max-width:540px) {
+            height: 50vh;
+        }
+        @media screen and (max-width:320px) {
+            height: 40vh;
+        }
+        
     }
-
 }
+
+
+
+

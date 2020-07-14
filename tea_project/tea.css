@@ -192,7 +192,7 @@ main #text_photo .container .row .circle_line {
   display: flex;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 992px) {
   main #text_photo .container .row .circle_line {
     display: none;
   }
@@ -205,7 +205,7 @@ main #text_photo .container .row .circle_line .material {
 }
 
 main #text_photo .container .row .circle_line .material span {
-  width: 100%;
+  width: 20%;
   position: absolute;
   bottom: 70%;
   left: 0;
@@ -242,7 +242,7 @@ main #text_photo .container .row .image img {
 }
 
 main #tea .container {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 main #tea .container .row {
@@ -256,19 +256,11 @@ main #tea .container .row .image img {
   display: block;
 }
 
-main #tea .container .row .image .photo {
-  padding: 0;
-  width: 245px;
-  height: 245px;
-  background-position: center;
-  background-size: cover;
-}
-
 main #tea .container .row .title_text p {
   line-height: 40px;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 992px) {
   main #tea .container .row .wrap {
     display: none;
   }
@@ -375,7 +367,7 @@ main #tea .container .row .circle_line_3 .circle .line {
           transform: translateY(-53%);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 992px) {
   main #tea .container .row .circle_line_a {
     display: none;
   }
@@ -407,7 +399,7 @@ main #tea .container .row .circle_line {
   display: flex;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 992px) {
   main #tea .container .row .circle_line {
     display: none;
   }
@@ -447,6 +439,19 @@ main #tea .container .row .circle_line .circle .line {
           transform: translateY(-63%);
 }
 
+main #tea .container .row .adhere span {
+  width: 10%;
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  -webkit-transform: translate(0%, -80%);
+          transform: translate(0%, -80%);
+}
+
+main #tea .container .row .images_adhere img {
+  width: 100%;
+}
+
 main #new .container {
   max-width: 900px;
   padding-bottom: 70px;
@@ -479,5 +484,29 @@ footer .parallax {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+@media screen and (max-width: 960px) {
+  footer .parallax {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  footer .parallax {
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  footer .parallax {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  footer .parallax {
+    height: 40vh;
+  }
 }
 /*# sourceMappingURL=tea.css.map */
