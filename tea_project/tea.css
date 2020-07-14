@@ -2,6 +2,24 @@ html,
 body {
   margin: 0;
   scroll-behavior: smooth;
+  font-family: arial, verdana;
+}
+
+nav {
+  opacity: 0;
+}
+
+nav img {
+  width: 70px;
+}
+
+nav span {
+  color: white;
+}
+
+.scrolled {
+  opacity: 1;
+  background-color: #130012;
 }
 
 #Banner {
@@ -10,7 +28,6 @@ body {
 
 #Banner .banner {
   width: 100%;
-  height: auto;
   position: absolute;
   -webkit-animation-name: banner_img;
           animation-name: banner_img;
@@ -113,7 +130,7 @@ body {
   margin: 0 auto;
   width: 500px;
   text-align: center;
-  font-size: 30px;
+  font-size: 24px;
   color: white;
 }
 
@@ -146,95 +163,12 @@ body {
 #Banner .banner1 {
   width: 100%;
   height: auto;
-  opacity: 0;
 }
 
 #Banner .banner1 img {
   width: 100%;
   display: block;
-}
-
-#Banner #menu {
-  position: absolute;
-  top: 0;
-  right: 20px;
-  -webkit-animation-name: menubar;
-          animation-name: menubar;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-}
-
-#Banner #menu .hamburger {
-  height: 38px;
-}
-
-#Banner #menu .hamburger .line {
-  width: 28px;
-  height: 3px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border-radius: 5px;
-  background-color: black;
-}
-
-#Banner #menu .hamburger .line_A {
-  top: 25%;
-}
-
-#Banner #menu .hamburger .line_C {
-  top: 75%;
-}
-
-@-webkit-keyframes menubar {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes menubar {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#Banner input {
-  display: none;
-}
-
-#Banner ul {
-  display: none;
-  padding: 0;
-  margin: 0;
-}
-
-#Banner #burger:checked + ul {
-  display: block;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  line-height: 40px;
-}
-
-#Banner #burger:checked + ul li {
-  list-style: none;
-}
-
-#Banner #burger:checked + ul li a {
-  color: white;
-  text-decoration: none;
+  opacity: 0;
 }
 
 #text_photo .container {
@@ -337,8 +271,6 @@ body {
 
 #tea .container .row .wrap .circle_line {
   position: absolute;
-  right: 25%;
-  top: 1%;
 }
 
 #tea .container .row .wrap .circle_line .circle {
@@ -350,7 +282,7 @@ body {
 }
 
 #tea .container .row .wrap .circle_line .circle .line {
-  height: 260px;
+  height: 200px;
   margin: 0 auto;
   border: solid 1px gray;
   position: absolute;
@@ -369,9 +301,8 @@ body {
 #tea .container .row .wrap .circle_line .story span {
   width: 100%;
   position: absolute;
-  right: 30%;
-  -webkit-transform: translate(0, 10%);
-          transform: translate(0, 10%);
+  -webkit-transform: translate(0, 35%);
+          transform: translate(0, 35%);
 }
 
 #tea .container .row .circle_line_2 {
@@ -390,7 +321,7 @@ body {
 
 #tea .container .row .circle_line_2 .circle .line {
   width: 1px;
-  height: 260px;
+  height: 150px;
   margin: 0 auto;
   border: solid 1px gray;
   position: absolute;

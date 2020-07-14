@@ -1,14 +1,44 @@
 html,
 body {
     margin: 0;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;//平滑捲動
+    font-family: arial, verdana;
 }
+
+
+nav {
+    opacity: 0;
+ 
+    img {
+        width: 70px;
+    }
+   
+        
+        span {
+            color: white;
+         }
+      
+    }
+
+
+
+// js才有
+.scrolled {
+    opacity: 1;
+    background-color: rgb(19, 0, 18);
+
+}
+        
+    
+
+
+
+
 
 #Banner {
     position: relative;
     .banner {
         width: 100%;
-        height: auto;
         position: absolute;
         //宣告動畫
         animation-name: banner_img; //跟標簽(banner)說要執行的動畫名字
@@ -75,7 +105,7 @@ body {
             margin: 0 auto;
             width: 500px;
             text-align: center;
-            font-size: 30px;
+            font-size: 24px;
             color: white;
         }
         @keyframes texts {
@@ -94,102 +124,14 @@ body {
     .banner1 {
         width: 100%;
         height: auto;
-        opacity: 0;
+        
         img {
             width: 100%;
             display: block;
+            opacity: 0;
         }
     }
 
-    #menu {
-        position: absolute;
-        top: 0;
-        right: 20px;
-        animation-name: menubar;
-        animation-duration: 10s;
-
-        .hamburger {
-            height: 38px;
-            .line {
-                width: 28px;
-                height: 3px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transition-duration: 0.2s;
-                transform: translate(-50%, -50%);
-                border-radius: 5px;
-                background-color: black;
-            }
-            // &:hover .line_A {
-            //     transform: translate(-50%, -50%) rotate(45deg);
-            //     top: 50%;
-            //     transition-property: transform, top;
-            //     transition-duration: 0.4s, 0.2s;
-            // }
-            // &:hover .line_B {
-            //     opacity: 0;
-            // }
-
-            // &:hover .line_C {
-            //     transform: translate(-50%, -50%) rotate(-45deg);
-            //     top: 50%;
-            //     transition-property: transform, top;
-            //     transition-duration: 0.4s, 0.2s;
-            // }
-
-            .line_A {
-                top: 25%;
-            }
-            .line_C {
-                top: 75%;
-                // &:hover {
-                //     transform: translate(-50%, -50%) rotate(-45deg);
-                //     top: 50%;
-                //     transition-property: transform, top;
-                //     transition-duration: 0.4s, 0.2s;
-                // }
-            }
-        }
-
-        @keyframes menubar {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-    }
-
-    input {
-        display: none;
-    }
-    // 隱藏
-    ul {
-        display: none;
-        padding: 0;
-        margin: 0;
-    }
-    // nav 清單出現
-    #burger:checked + ul {
-        display: block;
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        line-height: 40px;
-     
-        li {
-                
-            list-style: none;
-            a {
-                color: white;
-                text-decoration: none;
-            }
-        }
-    }
 }
 //材料介紹
 #text_photo {
@@ -284,8 +226,8 @@ body {
                 }
                 .circle_line {
                     position: absolute;
-                    right: 25%;
-                    top: 1%;
+                    
+                    // top: 1%;
 
                     .circle {
                         width: 40px;
@@ -294,7 +236,7 @@ body {
                         border-radius: 50%;
                         position: relative;
                         .line {
-                            height: 260px;
+                            height: 200px;
                             margin: 0 auto;
                             border: solid 1px gray;
                             position: absolute;
@@ -310,8 +252,7 @@ body {
                         span {
                             width: 100%;
                             position: absolute;
-                            right: 30%;
-                            transform: translate(0, 10%);
+                            transform: translate(0, 35%);
                         }
                     }
                 }
@@ -330,7 +271,7 @@ body {
                     position: relative;
                     .line {
                         width: 1px;
-                        height: 260px;
+                        height: 150px;
                         margin: 0 auto;
                         border: solid 1px gray;
                         position: absolute;
