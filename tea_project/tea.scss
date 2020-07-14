@@ -188,7 +188,7 @@ main {
             .row {
                 max-width: 1000px;
                 margin: 0 auto;
-                padding-bottom: 15%;
+                padding-bottom: 5%;
                 // 茶藝故事
                 .image {
                     img {
@@ -396,7 +396,7 @@ main {
     #new {
         .container {
             max-width: 900px;
-            padding-bottom: 50px;
+            padding-bottom: 70px;
             .row {
                 line-height: 60px;
                 border-bottom: 1px black solid;
@@ -417,4 +417,16 @@ main {
             }
         }
     }
+}
+
+footer {
+    .parallax {
+        width: 100%;
+        height: 100vh;
+        background-image: url(./img/000006.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment:fixed;
+    }
+
 }
