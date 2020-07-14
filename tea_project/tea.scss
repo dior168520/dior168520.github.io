@@ -1,6 +1,7 @@
 html,
 body {
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 #Banner {
@@ -36,7 +37,7 @@ body {
     .logo {
         width: 12%;
         position: absolute;
-        top: 20%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
         animation-name: logo;
@@ -58,7 +59,7 @@ body {
     }
 
     .text {
-        width: 30%;
+        width: 100%;
         position: absolute;
         bottom: 2%;
         left: 50%;
@@ -71,7 +72,10 @@ body {
             
         }
         p {
-            width: 100%;
+            margin: 0 auto;
+            width: 500px;
+            text-align: center;
+            font-size: 30px;
             color: white;
         }
         @keyframes texts {
@@ -117,34 +121,34 @@ body {
                 border-radius: 5px;
                 background-color: black;
             }
-            &:hover .line_A {
-                transform: translate(-50%, -50%) rotate(45deg);
-                top: 50%;
-                transition-property: transform, top;
-                transition-duration: 0.4s, 0.2s;
-            }
-            &:hover .line_B {
-                opacity: 0;
-            }
+            // &:hover .line_A {
+            //     transform: translate(-50%, -50%) rotate(45deg);
+            //     top: 50%;
+            //     transition-property: transform, top;
+            //     transition-duration: 0.4s, 0.2s;
+            // }
+            // &:hover .line_B {
+            //     opacity: 0;
+            // }
 
-            &:hover .line_C {
-                transform: translate(-50%, -50%) rotate(-45deg);
-                top: 50%;
-                transition-property: transform, top;
-                transition-duration: 0.4s, 0.2s;
-            }
+            // &:hover .line_C {
+            //     transform: translate(-50%, -50%) rotate(-45deg);
+            //     top: 50%;
+            //     transition-property: transform, top;
+            //     transition-duration: 0.4s, 0.2s;
+            // }
 
             .line_A {
                 top: 25%;
             }
             .line_C {
                 top: 75%;
-                &:hover {
-                    transform: translate(-50%, -50%) rotate(-45deg);
-                    top: 50%;
-                    transition-property: transform, top;
-                    transition-duration: 0.4s, 0.2s;
-                }
+                // &:hover {
+                //     transform: translate(-50%, -50%) rotate(-45deg);
+                //     top: 50%;
+                //     transition-property: transform, top;
+                //     transition-duration: 0.4s, 0.2s;
+                // }
             }
         }
 
@@ -172,12 +176,11 @@ body {
     #burger:checked + ul {
         display: block;
         position: absolute;
-        top: 45%;
+        top: 65%;
         left: 50%;
         transform: translate(-50%, -50%);
         line-height: 40px;
-        // background-color: rgb(8, 8, 8);
-        // opacity: 0.5;
+     
         li {
                 
             list-style: none;

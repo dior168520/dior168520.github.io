@@ -1,6 +1,7 @@
 html,
 body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 #Banner {
@@ -53,7 +54,7 @@ body {
 #Banner .logo {
   width: 12%;
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -88,7 +89,7 @@ body {
 }
 
 #Banner .text {
-  width: 30%;
+  width: 100%;
   position: absolute;
   bottom: 2%;
   left: 50%;
@@ -109,7 +110,10 @@ body {
 }
 
 #Banner .text p {
-  width: 100%;
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+  font-size: 30px;
   color: white;
 }
 
@@ -178,52 +182,12 @@ body {
   background-color: black;
 }
 
-#Banner #menu .hamburger:hover .line_A {
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-          transform: translate(-50%, -50%) rotate(45deg);
-  top: 50%;
-  -webkit-transition-property: top, -webkit-transform;
-  transition-property: top, -webkit-transform;
-  transition-property: transform, top;
-  transition-property: transform, top, -webkit-transform;
-  -webkit-transition-duration: 0.4s, 0.2s;
-          transition-duration: 0.4s, 0.2s;
-}
-
-#Banner #menu .hamburger:hover .line_B {
-  opacity: 0;
-}
-
-#Banner #menu .hamburger:hover .line_C {
-  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-          transform: translate(-50%, -50%) rotate(-45deg);
-  top: 50%;
-  -webkit-transition-property: top, -webkit-transform;
-  transition-property: top, -webkit-transform;
-  transition-property: transform, top;
-  transition-property: transform, top, -webkit-transform;
-  -webkit-transition-duration: 0.4s, 0.2s;
-          transition-duration: 0.4s, 0.2s;
-}
-
 #Banner #menu .hamburger .line_A {
   top: 25%;
 }
 
 #Banner #menu .hamburger .line_C {
   top: 75%;
-}
-
-#Banner #menu .hamburger .line_C:hover {
-  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-          transform: translate(-50%, -50%) rotate(-45deg);
-  top: 50%;
-  -webkit-transition-property: top, -webkit-transform;
-  transition-property: top, -webkit-transform;
-  transition-property: transform, top;
-  transition-property: transform, top, -webkit-transform;
-  -webkit-transition-duration: 0.4s, 0.2s;
-          transition-duration: 0.4s, 0.2s;
 }
 
 @-webkit-keyframes menubar {
@@ -257,7 +221,7 @@ body {
 #Banner #burger:checked + ul {
   display: block;
   position: absolute;
-  top: 45%;
+  top: 65%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
