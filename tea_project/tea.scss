@@ -11,6 +11,9 @@ nav {
     img {
         width: 120px;
     }
+    .navbtn {
+        background-color: #635238;
+    }
 
     span {
         color: white;
@@ -19,7 +22,7 @@ nav {
 
 // js才有
 .scrolled {
-    opacity: 0.9;
+    opacity: 0.7;
     background-color: black;
 }
 
@@ -46,12 +49,12 @@ main {
 
             @keyframes banner_img {
                 0% {
-                    transform: translateY(10%);
+                    // transform: translateY(10%);
                     opacity: 0;
                 }
 
                 100% {
-                    transform: translateY(0%);
+                    // transform: translateY(0%);
                     opacity: 1;
                 }
             }
@@ -60,11 +63,11 @@ main {
         .logo {
             width: 18%;
             position: absolute;
-            top: 40%;
+            top: 20%;
             left: 50%;
             transform: translate(-50%, -50%);
             animation-name: logo;
-            animation-duration: 7s;
+            animation-duration: 10s;
             animation-iteration-count: 1;
             img {
                 width: 100%;
@@ -84,7 +87,7 @@ main {
         .text {
             width: 100%;
             position: absolute;
-            bottom: 8%;
+            bottom: 15%;
             left: 50%;
             transform: translate(-50%, -50%);
             animation-name: texts;
@@ -97,7 +100,8 @@ main {
                 margin: 0 auto;
                 width: 500px;
                 text-align: center;
-                font-size: 20px;
+                line-height: 45px;
+                font-size: 18px;
                 color: white;
             }
             @keyframes texts {
@@ -146,7 +150,7 @@ main {
                             width: 20%;
                             position: absolute;
                             bottom: 70%;
-                            left: 0;
+                            left: 18px;
                             transform: translate(0%, -80%);
                         }
                     }
@@ -264,7 +268,7 @@ main {
                 //     }
                 // }
 
-                // 品牌概念
+                // 品牌理念
                 .circle_line_brand {
                     position: absolute;
                     right: 10%;
@@ -293,7 +297,8 @@ main {
                         span {
                             width: 100%;
                             position: absolute;
-                            right: 30%;
+                            right: 10px;
+
                             transform: translate(0, 10%);
                         }
                     }
@@ -388,15 +393,13 @@ main {
                             width: 10%;
                             position: absolute;
                             bottom: 50%;
-                            left: 10px;
+                            left: 0;
                             transform: translate(0%, -80%);
                         }
                     }
                 }
 
                 .images_adhere {
-                 
-
                     img {
                         width: 100%;
                     }
@@ -412,10 +415,31 @@ main {
         }
     }
 
+    .parallax {
+        width: 100%;
+        height: 100vh;
+        background-image: url(./img/0714.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        // @media screen and (max-width: 960px) {
+        //     height: 90vh;
+        // }
+        // @media screen and (max-width: 720px) {
+        //     height: 70vh;
+        // }
+        // @media screen and (max-width: 540px) {
+        //     height: 50vh;
+        // }
+        // @media screen and (max-width: 320px) {
+        //     height: 40vh;
+        // }
+    }
+
     #new {
         .container {
             max-width: 900px;
-            padding-bottom: 70px;
+            padding: 70px;
             .row {
                 line-height: 60px;
                 border-bottom: 1px black solid;
@@ -436,27 +460,11 @@ main {
             }
         }
     }
-}
-
-footer {
-    .parallax {
-        width: 100%;
-        height: 100vh;
-        background-image: url(./img/0714.jpg);
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        // @media screen and (max-width: 960px) {
-        //     height: 90vh;
-        // }
-        // @media screen and (max-width: 720px) {
-        //     height: 70vh;
-        // }
-        // @media screen and (max-width: 540px) {
-        //     height: 50vh;
-        // }
-        // @media screen and (max-width: 320px) {
-        //     height: 40vh;
-        // }
+    footer {
+        opacity: 0.7;
+        background-color: black;
+        p {
+            line-height: 45px;
+        }
     }
 }
