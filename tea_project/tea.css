@@ -485,28 +485,4 @@ footer .parallax {
   background-size: cover;
   background-attachment: fixed;
 }
-
-@media screen and (max-width: 960px) {
-  footer .parallax {
-    height: 90vh;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  footer .parallax {
-    height: 70vh;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  footer .parallax {
-    height: 50vh;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  footer .parallax {
-    height: 40vh;
-  }
-}
 /*# sourceMappingURL=tea.css.map */
