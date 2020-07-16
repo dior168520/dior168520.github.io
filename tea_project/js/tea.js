@@ -15,3 +15,8 @@ $(function () {
 $('nav>div>ul>li>a').on('click', function () {
     $('.navbar-collapse').collapse('hide');
 });
+
+
+
+
+

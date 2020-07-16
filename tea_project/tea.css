@@ -174,6 +174,20 @@ main #Banner .banner1 img {
   opacity: 0;
 }
 
+main #Banner #comback {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-size: 50px;
+  color: #635238;
+}
+
+@media screen and (max-width: 540px) {
+  main #Banner #comback {
+    display: none;
+  }
+}
+
 main #text_photo .container {
   width: 100%;
   margin-top: 15%;
@@ -465,7 +479,7 @@ main #new .container {
 }
 
 main #new .container .row {
-  line-height: 60px;
+  line-height: 50px;
   border-bottom: 1px black solid;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -473,9 +487,6 @@ main #new .container .row {
 }
 
 main #new .container .row .date {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 0;
 }
 
@@ -483,11 +494,19 @@ main #new .container .row .date p {
   margin: 0;
 }
 
+main #new .container .row .message {
+  padding: 0;
+}
+
+main #new .container .row .message p {
+  margin: 0;
+}
+
 main #new .container .row .news_message::before {
   content: "NEWS";
   position: absolute;
   bottom: 30%;
-  left: -70px;
+  left: -90px;
   padding: 5px;
   color: red;
   font-weight: bold;
@@ -529,12 +548,26 @@ main #new .container .row .small_text p {
   margin: 0;
 }
 
+main #google_map {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+main #google_map iframe {
+  width: 100%;
+  height: 70vh;
+}
+
 main footer {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 main footer p {
-  line-height: 45px;
+  width: 100%;
+  line-height: 35px;
   color: white;
+  margin: 0;
 }
 /*# sourceMappingURL=tea.css.map */
