@@ -19,37 +19,37 @@
 
 
     <nav class="navbar navbar-dark navbar-expand-lg navbar-light fixed-top ">
-        <a class="navbar-brand" href="#">
-            <img src="./img/nav-logo.png" alt="">
-        </a>
+        <!-- 漢堡條 -->
         <button class="navbtn navbar-toggler " type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span>☰</span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto ">
-                <li class="nav-item active ">
+        <!-- logo + nav選單 -->
+        <div class="collapse navbar-collapse nav_logo" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto align-items-center">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/nav-logo.png" alt="">
+                </a>
+                <li class="nav-item  px-3">
                     <a class="nav-link text-white" href="#title1">材料介紹 </a>
                 </li>
 
-                <li class="nav-item active">
+                <li class="nav-item px-3">
                     <a class="nav-link text-white" href="#title2">茶藝故事 </a>
                 </li>
 
-                <li class="nav-item active">
+                <li class="nav-item px-3">
                     <a class="nav-link text-white" href="#title3">品牌理念 </a>
                 </li>
 
-                <li class="nav-item active">
+                <li class="nav-item px-3">
                     <a class="nav-link text-white" href="#title4">商品特色 </a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item px-3">
                     <a class="nav-link text-white" href="#title5">品牌堅持 </a>
                 </li>
             </ul>
-
         </div>
     </nav>
 
@@ -60,8 +60,8 @@
             <div class="banner">
                 <img src="./img/banner.jpg" alt="">
             </div>
-            <!-- log -->
-            <div class="logo">
+            <!--banner log -->
+            <div class="banner_logo">
                 <img src="./img/logo.png" alt="">
             </div>
             <div class="text">
@@ -71,9 +71,6 @@
             <div class="banner1">
                 <img src="./img/banner.jpg" alt="">
             </div>
-
-
-
         </section>
 
         <section id="text_photo">
@@ -211,12 +208,13 @@
                         </div>
                     </div>
 
-                    <div class="  images_adhere col-12 col-lg-5 order-2 ">
-                        <img src="./img/6.png" alt="">
+                    <div class="  images_adhere col-12 col-lg-7 order-2 ">
+                        <img class="col-lg-5 pt-5"src="./img/6.png" alt="">
+                        <img class="col-lg-5 pt-5" src="./img/7.png" alt="">
                     </div>
+                  
 
-                    <div class="title_text col-12 col-lg-5 order-1">
-
+                    <div class="title_text col-12 col-lg-3 order-1">
                         <!-- <h2 id="title5">品牌堅持</h2> -->
                         <p id="title5">喝一杯單品茶的趣味無窮，山頭細心照料的葉菁，在土壤節氣的滋養下，經由絕佳的製茶工藝，成為手上這杯冷暖隨意的茶湯。產地、品種、發酵、烘焙、沖泡手法…
                             造就千變萬化的茶香滋味。
@@ -234,7 +232,7 @@
         <section id="new">
             <div class="container">
                 <div class="row ">
-                    <div class="date col-3 text-left">
+                    <div class="date col-3 text-left  news_message">
                         <p>2020.07.15</p>
                     </div>
                     <div class="small_text col-9 text-left">
@@ -244,7 +242,7 @@
                 </div>
 
                 <div class="row text ">
-                    <div class="date col-3 text-left">
+                    <div class="date col-3 text-left ">
                         <p>2020.07.09</p>
                     </div>
                     <div class="small_text col-9 text-left">

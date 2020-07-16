@@ -2,15 +2,13 @@ html,
 body {
     margin: 0;
     scroll-behavior: smooth; //平滑捲動
-    font-family: arial, verdana;
+    font-family: "Josefin Sans", Helvetica, Arial, "微軟正黑體", "Heiti TC", "メイリオ", sans-serif;
 }
 
 nav {
     opacity: 0;
 
-    img {
-        width: 120px;
-    }
+    //    button color
     .navbtn {
         background-color: #635238;
     }
@@ -20,9 +18,17 @@ nav {
     }
 }
 
+.nav_logo {
+    a {
+        img {
+            width: 120px;
+        }
+    }
+}
+
 // js才有
 .scrolled {
-    opacity: 0.7;
+    opacity: 0.6;
     background-color: black;
 }
 
@@ -60,24 +66,22 @@ main {
             }
         }
 
-        .logo {
+        .banner_logo {
             width: 18%;
             position: absolute;
             top: 20%;
             left: 50%;
             transform: translate(-50%, -50%);
-            animation-name: logo;
+            animation-name: banner_logo;
             animation-duration: 10s;
             animation-iteration-count: 1;
             img {
                 width: 100%;
             }
-
-            @keyframes logo {
+            @keyframes banner_logo {
                 0% {
                     opacity: 0;
                 }
-
                 100% {
                     opacity: 1;
                 }
@@ -128,6 +132,7 @@ main {
             }
         }
     }
+
     //材料介紹
     #text_photo {
         .container {
@@ -157,13 +162,13 @@ main {
                     .circle {
                         width: 40px;
                         height: 40px;
-                        border: solid 1px black;
+                        border: solid 0.5px black;
                         border-radius: 50%;
                         position: relative;
                         .line {
                             height: 180px;
                             margin: 0 auto;
-                            border: solid 1px gray;
+                            border: solid 0.5px gray;
                             position: absolute;
                             top: 50%;
                             left: 50%;
@@ -200,7 +205,6 @@ main {
                         display: block;
                     }
                 }
-
                 .title_text {
                     p {
                         line-height: 40px;
@@ -212,19 +216,16 @@ main {
                     }
                     .circle_line {
                         position: absolute;
-
-                        // top: 1%;
-
                         .circle {
-                            width: 40px;
-                            height: 35px;
-                            border: solid 1px black;
+                            width: 50px;
+                            height: 40px;
+                            border: solid 0.5px black;
                             border-radius: 50%;
                             position: relative;
                             .line {
                                 height: 200px;
                                 margin: 0 auto;
-                                border: solid 1px gray;
+                                border: solid 0.5px gray;
                                 position: absolute;
                                 top: 50%;
                                 left: 50%;
@@ -277,13 +278,13 @@ main {
                     .circle {
                         width: 40px;
                         height: 40px;
-                        border: solid 1px black;
+                        border: solid 0.5px black;
                         border-radius: 50%;
                         position: relative;
                         .line {
                             height: 260px;
                             margin: 0 auto;
-                            border: solid 1px gray;
+                            border: solid 0.5px gray;
                             position: absolute;
                             top: 50%;
                             left: 50%;
@@ -298,7 +299,6 @@ main {
                             width: 100%;
                             position: absolute;
                             right: 10px;
-
                             transform: translate(0, 10%);
                         }
                     }
@@ -312,14 +312,14 @@ main {
                     .circle {
                         width: 30px;
                         height: 30px;
-                        border: solid 1px black;
+                        border: solid 0.5px black;
                         border-radius: 50%;
                         position: relative;
                         .line {
                             width: 1px;
                             height: 100px;
                             margin: 0 auto;
-                            border: solid 1px gray;
+                            border: solid 0.5px gray;
                             position: absolute;
                             top: 0%;
                             left: 50%;
@@ -349,13 +349,13 @@ main {
                     .circle {
                         width: 40px;
                         height: 40px;
-                        border: solid 1px black;
+                        border: solid 0.5px black;
                         border-radius: 50%;
                         position: relative;
                         .line {
                             height: 180px;
                             margin: 0 auto;
-                            border: solid 1px gray;
+                            border: solid 0.5px gray;
                             position: absolute;
                             top: 50%;
                             left: 50%;
@@ -372,7 +372,7 @@ main {
                     .circle {
                         width: 30px;
                         height: 30px;
-                        border: solid 1px black;
+                        border: solid 0.5px black;
                         border-radius: 50%;
                         position: relative;
 
@@ -380,7 +380,7 @@ main {
                             width: 1px;
                             height: 120px;
                             margin: 0 auto;
-                            border: solid 1px gray;
+                            border: solid 0.5px gray;
                             position: absolute;
                             top: 0%;
                             left: 50%;
@@ -447,11 +447,51 @@ main {
                 padding: 0 45px 0;
 
                 .date {
+                    display: flex;
                     padding: 0;
+
+                   
                     p {
                         margin: 0;
                     }
                 }
+
+                .news_message {
+
+                    &::before {
+                        content: "NEWS";
+                        position: absolute;
+                        bottom: 30%;
+                        left: -70px;
+                        padding: 5px;
+                        color: red;
+                        font-weight: bold;
+                        animation-name:scale_news ;
+                        animation-duration: 2s;
+                        animation-iteration-count: infinite;
+                        transition: all 1s;
+                        
+                    }
+
+                    @keyframes scale_news {
+
+                        0% {
+                            font-size: 20px;
+                        }
+
+                        50% {
+                            font-size: 22px;
+                        }
+
+                        100% {
+                            font-size: 24px;
+                        }
+                        
+                    }
+                }
+
+               
+               
                 .small_text {
                     p {
                         margin: 0;

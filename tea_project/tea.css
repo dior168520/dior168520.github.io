@@ -1,16 +1,13 @@
+@charset "UTF-8";
 html,
 body {
   margin: 0;
   scroll-behavior: smooth;
-  font-family: arial, verdana;
+  font-family: "Josefin Sans", Helvetica, Arial, "微軟正黑體", "Heiti TC", "メイリオ", sans-serif;
 }
 
 nav {
   opacity: 0;
-}
-
-nav img {
-  width: 120px;
 }
 
 nav .navbtn {
@@ -21,8 +18,12 @@ nav span {
   color: white;
 }
 
+.nav_logo a img {
+  width: 120px;
+}
+
 .scrolled {
-  opacity: 0.7;
+  opacity: 0.6;
   background-color: black;
 }
 
@@ -69,26 +70,26 @@ main #Banner .banner img {
   }
 }
 
-main #Banner .logo {
+main #Banner .banner_logo {
   width: 18%;
   position: absolute;
   top: 20%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation-name: logo;
-          animation-name: logo;
+  -webkit-animation-name: banner_logo;
+          animation-name: banner_logo;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
 
-main #Banner .logo img {
+main #Banner .banner_logo img {
   width: 100%;
 }
 
-@-webkit-keyframes logo {
+@-webkit-keyframes banner_logo {
   0% {
     opacity: 0;
   }
@@ -97,7 +98,7 @@ main #Banner .logo img {
   }
 }
 
-@keyframes logo {
+@keyframes banner_logo {
   0% {
     opacity: 0;
   }
@@ -213,7 +214,7 @@ main #text_photo .container .row .circle_line .material span {
 main #text_photo .container .row .circle_line .circle {
   width: 40px;
   height: 40px;
-  border: solid 1px black;
+  border: solid 0.5px black;
   border-radius: 50%;
   position: relative;
 }
@@ -221,7 +222,7 @@ main #text_photo .container .row .circle_line .circle {
 main #text_photo .container .row .circle_line .circle .line {
   height: 180px;
   margin: 0 auto;
-  border: solid 1px gray;
+  border: solid 0.5px gray;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -268,9 +269,9 @@ main #tea .container .row .wrap .circle_line {
 }
 
 main #tea .container .row .wrap .circle_line .circle {
-  width: 40px;
-  height: 35px;
-  border: solid 1px black;
+  width: 50px;
+  height: 40px;
+  border: solid 0.5px black;
   border-radius: 50%;
   position: relative;
 }
@@ -278,7 +279,7 @@ main #tea .container .row .wrap .circle_line .circle {
 main #tea .container .row .wrap .circle_line .circle .line {
   height: 200px;
   margin: 0 auto;
-  border: solid 1px gray;
+  border: solid 0.5px gray;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -308,7 +309,7 @@ main #tea .container .row .circle_line_brand {
 main #tea .container .row .circle_line_brand .circle {
   width: 40px;
   height: 40px;
-  border: solid 1px black;
+  border: solid 0.5px black;
   border-radius: 50%;
   position: relative;
 }
@@ -316,7 +317,7 @@ main #tea .container .row .circle_line_brand .circle {
 main #tea .container .row .circle_line_brand .circle .line {
   height: 260px;
   margin: 0 auto;
-  border: solid 1px gray;
+  border: solid 0.5px gray;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -347,7 +348,7 @@ main #tea .container .row .circle_line_3 {
 main #tea .container .row .circle_line_3 .circle {
   width: 30px;
   height: 30px;
-  border: solid 1px black;
+  border: solid 0.5px black;
   border-radius: 50%;
   position: relative;
 }
@@ -356,7 +357,7 @@ main #tea .container .row .circle_line_3 .circle .line {
   width: 1px;
   height: 100px;
   margin: 0 auto;
-  border: solid 1px gray;
+  border: solid 0.5px gray;
   position: absolute;
   top: 0%;
   left: 50%;
@@ -394,7 +395,7 @@ main #tea .container .row .circle_line .feature span {
 main #tea .container .row .circle_line .circle {
   width: 40px;
   height: 40px;
-  border: solid 1px black;
+  border: solid 0.5px black;
   border-radius: 50%;
   position: relative;
 }
@@ -402,7 +403,7 @@ main #tea .container .row .circle_line .circle {
 main #tea .container .row .circle_line .circle .line {
   height: 180px;
   margin: 0 auto;
-  border: solid 1px gray;
+  border: solid 0.5px gray;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -419,7 +420,7 @@ main #tea .container .row .circle_line .circle .line {
 main #tea .container .row .circle_line_a .circle {
   width: 30px;
   height: 30px;
-  border: solid 1px black;
+  border: solid 0.5px black;
   border-radius: 50%;
   position: relative;
 }
@@ -428,7 +429,7 @@ main #tea .container .row .circle_line_a .circle .line {
   width: 1px;
   height: 120px;
   margin: 0 auto;
-  border: solid 1px gray;
+  border: solid 0.5px gray;
   position: absolute;
   top: 0%;
   left: 50%;
@@ -472,11 +473,56 @@ main #new .container .row {
 }
 
 main #new .container .row .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 0;
 }
 
 main #new .container .row .date p {
   margin: 0;
+}
+
+main #new .container .row .news_message::before {
+  content: "NEWS";
+  position: absolute;
+  bottom: 30%;
+  left: -70px;
+  padding: 5px;
+  color: red;
+  font-weight: bold;
+  -webkit-animation-name: scale_news;
+          animation-name: scale_news;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@-webkit-keyframes scale_news {
+  0% {
+    font-size: 20px;
+  }
+  50% {
+    font-size: 22px;
+  }
+  100% {
+    font-size: 24px;
+  }
+}
+
+@keyframes scale_news {
+  0% {
+    font-size: 20px;
+  }
+  50% {
+    font-size: 22px;
+  }
+  100% {
+    font-size: 24px;
+  }
 }
 
 main #new .container .row .small_text p {
