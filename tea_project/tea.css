@@ -530,11 +530,11 @@ main #new .container .row .small_text p {
 }
 
 main footer {
-  opacity: 0.7;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 main footer p {
   line-height: 45px;
+  color: white;
 }
 /*# sourceMappingURL=tea.css.map */
