@@ -508,7 +508,7 @@ main #new .container .row .news_message::before {
   bottom: 30%;
   left: -90px;
   padding: 5px;
-  color: red;
+  color: black;
   font-weight: bold;
   -webkit-animation-name: scale_news;
           animation-name: scale_news;
