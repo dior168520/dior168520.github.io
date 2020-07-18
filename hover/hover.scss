@@ -1,0 +1,86 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 360px;
+
+
+    .btn {
+        border: 1px solid #3498db;
+        background: none; //背景關閉
+        padding: 10px 20px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer; //指標
+        margin: 10px;
+        transition: 0.8s; //延遲
+        position: relative;
+        overflow: hidden;
+       
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 0%; 
+            background: #3498db;
+            z-index: -1;
+            transition: 0.8s; //延遲
+        }
+        
+
+    
+    }
+
+    .btn1 , .btn2{
+        color:#3498db ; //文字顏色
+        &:hover {
+            color:#fff ; //hover 出現白色
+        }
+
+
+    }
+    .btn3 , .btn4{
+        color:#fff ;
+
+        &:hover {
+            color:#3498db ; //hover 字出現藍色
+        }
+ 
+    }
+
+    .btn1::before , .btn3::before {
+        top: 0;
+        border-radius: 0 0 50% 50%;
+        
+    }
+
+    .btn2::before , .btn4::before {
+        top: 0;
+        border-radius: 0 0 50% 50%;
+        
+    }
+
+    .btn3::before , .btn4::before {
+      height: 180%; 
+        
+    }
+
+    .btn1:hover::before , .btn2:hover::before{
+        height: 180%;
+    }
+
+    .btn3:hover::before , .btn4:hover::before{
+        height: 0%;
+    }
+
+
+
+
+   
+}
+
