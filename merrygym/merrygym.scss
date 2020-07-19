@@ -7,17 +7,22 @@ html,
 body {
   // height: 100%;
   margin: 0;
-  font-family: "微軟正黑體";
+  font-family: "Noto Serif TC", serif;
   scroll-behavior: smooth;
 }
+
 
 // navbar
 nav {
   width: 100%;
   position: relative;
+  position: fixed;
+  z-index: 9;
+
+  // opacity: 0;
+
   .container {
     width: 100%;
-    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +31,7 @@ nav {
     .logo_icon {
       img {
         display: block;
-        width: 100px;
+        width: 70px;
         @media screen and (max-width: 1200px) {
           width: 95px;
         }
@@ -64,6 +69,11 @@ nav {
           }
         }
       }
+    }
+
+    .scrolled {
+      opacity: 0.7;
+      background-color: black;
     }
     // icon fb ig line
     .icon {
@@ -213,7 +223,7 @@ nav {
       img {
         max-width: 100%;
         width: 100%; //全部圖片滿板
-        height: 90vh;
+
         display: block;
         @media screen and (max-width: 1600px) {
           height: 80vh;
@@ -264,6 +274,46 @@ nav {
   }
 }
 
+#text_scop {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    .wrap {
+      // margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        width: 80%;
+        text-align: justify;
+        letter-spacing: 2px;
+        line-height: 30px;
+        font-size: 16px;
+      }
+
+      .btn {
+        width: 20%;
+       
+      
+
+        p {
+          width: 120px;
+          margin: 0 auto;
+          background-color: black;
+          color: white;
+          text-align: center;
+          line-height: 30px;
+          
+        }
+       
+      
+
+      }
+    }
+  }
+}
+
 // parallax
 #parallax {
   width: 100%;
@@ -289,8 +339,7 @@ nav {
   .swiper_New {
     width: 90%;
     height: auto;
-    padding: 8% 0;
-   
+    padding: 4% 0;
 
     @media screen and (max-width: 1200px) {
       width: 95%;
@@ -843,3 +892,5 @@ footer {
     }
   }
 }
+
+
