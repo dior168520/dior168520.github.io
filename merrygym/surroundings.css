@@ -6,7 +6,7 @@
 
 body,
 html {
-  font-family: "微軟正黑體";
+  font-family: "Noto Serif TC", serif;
   margin: 0;
   scroll-behavior: smooth;
 }

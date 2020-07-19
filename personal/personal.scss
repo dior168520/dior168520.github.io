@@ -22,25 +22,23 @@ body {
         @media screen and (max-width: 1100px) {
             display: none;
         }
-     
+
         .navfixed {
             width: 250px;
             margin: 0 auto;
             position: fixed;
 
-           
-
             .navbar {
                 width: 100%;
-                
+
                 .text {
                     width: 100%;
-                    padding: 20px 0 ;
+                    padding: 20px 0;
                     text-align: center;
                     line-height: 50px;
                     font-size: 14px;
                     color: white;
-                  
+
                     h1 {
                         letter-spacing: 4px;
                     }
@@ -59,12 +57,12 @@ body {
                 }
 
                 .photo {
-                   width: 200px;
-                   margin: 0 auto;
+                    width: 200px;
+                    margin: 0 auto;
 
                     img {
                         width: 100%;
-                     
+
                         display: block;
                         border-radius: 50%;
                     }
@@ -265,18 +263,42 @@ body {
                     line-height: 40px;
                     text-align: justify;
                     letter-spacing: 2px;
-                    h2 {
-                        padding: 20px 0;
+                    .flex {
+                        display: flex;
+                        align-items: center;
+                        i {
+                            padding: 0 10px;
+                        }
+                        h2 {
+                            padding: 20px 0;
+                        }
                     }
+
                     .line {
-                        border-bottom: 2px gray solid;
+                       
+
+                        background-color: black;
+                        height: 2px;
+                        animation-name: line_animation;
+                        animation-duration: 5s; //動畫延遲播放時間
+                        
+                    }
+
+                    @keyframes line_animation {
+                        0% {
+                            width: 1%;
+                        }
+
+                        100% {
+                            width: 100%;
+                        }
                     }
 
                     p {
                         padding-top: 50px;
                         font-size: 14px;
                     }
-                   
+
                     @media screen and (max-width: 800px) {
                         font-size: 16px;
                     }
@@ -292,12 +314,23 @@ body {
             max-width: 1400px;
             margin: 0 auto;
             .Portfolio {
-                h2 {
-                    text-align: justify;
-                    padding: 20px 0;
+                .flex {
+                    display: flex;
+                    align-items: center;
+                    i {
+                        padding: 0 10px;
+                    }
+                    h2 {
+                        text-align: justify;
+                        padding: 20px 0;
+                    }
                 }
+
                 .line {
-                    border-bottom: 2px gray solid;
+                    background-color: black;
+                    height: 2px;
+                    animation-name: line_animation;
+                    animation-duration: 8s; //動畫延遲播放時間
                 }
 
                 @media screen and (max-width: 800px) {
@@ -332,10 +365,7 @@ body {
                         img {
                             width: 100%;
                             display: block;
-                                                
-                           
                         }
-                        
                     }
 
                     .textcontent {
@@ -389,11 +419,23 @@ body {
             }
 
             .text_space {
-                h2 {
-                    padding: 20px 0;
+                .flex {
+                    display: flex;
+                    align-items: center;
+                    i {
+                        padding: 0 10px;
+                    }
+
+                    h2 {
+                        padding: 20px 0;
+                    }
                 }
+
                 .line {
-                    border-bottom: 2px gray solid;
+                    background-color: black;
+                    height: 3px;
+                    animation-name: line_animation;
+                    animation-duration: 5s; //動畫延遲播放時間
                 }
                 .text {
                     padding: 50px 0;
@@ -419,11 +461,23 @@ body {
                 .container_a {
                     max-width: 1400px;
                     margin: 30px auto;
-                    h2 {
-                        padding: 20px 0;
+                    .flex {
+                        display: flex;
+                        align-items: center;
+                        i {
+                            padding: 0 10px;
+                        }
+                        h2 {
+                            padding: 20px 0;
+                        }
                     }
+
                     .line {
-                        border-bottom: 2px gray solid;
+                        background-color: black;
+                        height: 3px;
+                        animation-name: line_animation;
+                        animation-duration: 8s; //動畫延遲播放時間
+                        
                     }
                 }
 
@@ -431,6 +485,7 @@ body {
                     display: flex;
                     justify-content: center;
                     max-width: 1400px;
+                    margin-bottom: 50px;
                     .col {
                         width: 50%;
                     }

@@ -323,12 +323,48 @@ body {
   letter-spacing: 2px;
 }
 
-#container #main .about .container .text h2 {
+#container #main .about .container .text .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container #main .about .container .text .flex i {
+  padding: 0 10px;
+}
+
+#container #main .about .container .text .flex h2 {
   padding: 20px 0;
 }
 
 #container #main .about .container .text .line {
-  border-bottom: 2px gray solid;
+  background-color: black;
+  height: 2px;
+  -webkit-animation-name: line_animation;
+          animation-name: line_animation;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+@-webkit-keyframes line_animation {
+  0% {
+    width: 1%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes line_animation {
+  0% {
+    width: 1%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 #container #main .about .container .text p {
@@ -353,13 +389,31 @@ body {
   margin: 0 auto;
 }
 
-#container #main .container .Portfolio h2 {
+#container #main .container .Portfolio .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container #main .container .Portfolio .flex i {
+  padding: 0 10px;
+}
+
+#container #main .container .Portfolio .flex h2 {
   text-align: justify;
   padding: 20px 0;
 }
 
 #container #main .container .Portfolio .line {
-  border-bottom: 2px gray solid;
+  background-color: black;
+  height: 2px;
+  -webkit-animation-name: line_animation;
+          animation-name: line_animation;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
 }
 
 @media screen and (max-width: 800px) {
@@ -476,12 +530,30 @@ body {
   }
 }
 
-#container #main .experience .text_space h2 {
+#container #main .experience .text_space .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container #main .experience .text_space .flex i {
+  padding: 0 10px;
+}
+
+#container #main .experience .text_space .flex h2 {
   padding: 20px 0;
 }
 
 #container #main .experience .text_space .line {
-  border-bottom: 2px gray solid;
+  background-color: black;
+  height: 3px;
+  -webkit-animation-name: line_animation;
+          animation-name: line_animation;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 #container #main .experience .text_space .text {
@@ -510,12 +582,30 @@ body {
   margin: 30px auto;
 }
 
-#container #main .experience .Skills .container_a h2 {
+#container #main .experience .Skills .container_a .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container #main .experience .Skills .container_a .flex i {
+  padding: 0 10px;
+}
+
+#container #main .experience .Skills .container_a .flex h2 {
   padding: 20px 0;
 }
 
 #container #main .experience .Skills .container_a .line {
-  border-bottom: 2px gray solid;
+  background-color: black;
+  height: 3px;
+  -webkit-animation-name: line_animation;
+          animation-name: line_animation;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
 }
 
 #container #main .experience .Skills .container {
@@ -526,6 +616,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 1400px;
+  margin-bottom: 50px;
 }
 
 #container #main .experience .Skills .container .col {
