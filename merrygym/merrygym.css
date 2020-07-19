@@ -363,6 +363,15 @@ nav #menu .hamburger .line_C:hover {
           align-items: center;
 }
 
+@media screen and (max-width: 800px) {
+  #text_scop .container .wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #text_scop .container .wrap p {
   width: 80%;
   text-align: justify;
