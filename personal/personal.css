@@ -372,16 +372,22 @@ body {
   font-size: 14px;
 }
 
-@media screen and (max-width: 800px) {
-  #container #main .about .container .text {
-    font-size: 16px;
-  }
+#container #main .about .container .about_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media screen and (max-width: 700px) {
-  #container #main .about .container .text {
-    font-size: 14px;
-  }
+#container #main .about .container .about_content .mockup {
+  width: 70%;
+}
+
+#container #main .about .container .about_content .mockup img {
+  display: block;
+  width: 100%;
 }
 
 #container #main .container {
@@ -414,18 +420,6 @@ body {
           animation-name: line_animation;
   -webkit-animation-duration: 8s;
           animation-duration: 8s;
-}
-
-@media screen and (max-width: 800px) {
-  #container #main .container .Portfolio {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  #container #main .container .Portfolio {
-    font-size: 14px;
-  }
 }
 
 #container #main .container .wrap {

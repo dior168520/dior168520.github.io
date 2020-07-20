@@ -275,22 +275,18 @@ body {
                     }
 
                     .line {
-                       
-
                         background-color: black;
                         height: 2px;
                         animation-name: line_animation;
                         animation-duration: 5s; //動畫延遲播放時間
-                        
-                    }
+                        @keyframes line_animation {
+                            0% {
+                                width: 1%;
+                            }
 
-                    @keyframes line_animation {
-                        0% {
-                            width: 1%;
-                        }
-
-                        100% {
-                            width: 100%;
+                            100% {
+                                width: 100%;
+                            }
                         }
                     }
 
@@ -298,13 +294,21 @@ body {
                         padding-top: 50px;
                         font-size: 14px;
                     }
+                }
+                .about_content {
+                    display: flex;
+                    justify-content: center;
 
-                    @media screen and (max-width: 800px) {
-                        font-size: 16px;
+                    .mockup {
+                       width: 70%;
+                        img {
+                            display: block;
+                            width: 100%;
+                        }
+                       
                     }
-                    @media screen and (max-width: 700px) {
-                        font-size: 14px;
-                    }
+
+                 
                 }
             }
         }
@@ -333,12 +337,7 @@ body {
                     animation-duration: 8s; //動畫延遲播放時間
                 }
 
-                @media screen and (max-width: 800px) {
-                    font-size: 16px;
-                }
-                @media screen and (max-width: 700px) {
-                    font-size: 14px;
-                }
+            
             }
             // 作品集
             .wrap {
@@ -477,7 +476,6 @@ body {
                         height: 3px;
                         animation-name: line_animation;
                         animation-duration: 8s; //動畫延遲播放時間
-                        
                     }
                 }
 
