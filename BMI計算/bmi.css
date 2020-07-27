@@ -1,0 +1,173 @@
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    background: #f4f5f4;
+    font-size: 15px;
+    font-family: " Helvetica, sans-serif";
+    min-height: 100%;
+    padding-bottom: 6em;
+    margin: 0;
+}
+.wrap header {
+    width: 100%;
+    padding: 4% 20px;
+    background-color:white;
+}
+.wrap header h1 {
+    color: black;
+}
+.wrap header .grid-item.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap header .form-group label {
+    color: black;
+    font-weight: normal;
+    font-size: 18px;
+}
+.wrap header .form-group input {
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.wrap header .btn-Result {
+    text-decoration: none;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+   color: black;
+    font-size: 14px;
+    transition: box-shadow 100ms;
+}
+
+.wrap header .btn-Result:active {
+    background: #dea821;
+}
+.wrap header .btn-Result.Level01 {
+    position: relative;
+    background: transparent;
+    border: 6px solid #ffd366;
+    color: #ffd366;
+}
+.wrap header .btn-Result.Level01:before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    background: #ffd366;
+    border: 4px solid #4a4a4a;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+.wrap header .btn-Result.Level01:after {
+    content: "";
+    background: url(https://github.com/bnmghjtyu0/Javascript-BMI/blob/master/img/icons_loop.png?raw=true) no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 19px;
+    position: absolute;
+    bottom: 6px;
+    right: 7px;
+}
+.wrap main {
+    padding: 2%;
+}
+.wrap main h3.title {
+    text-align: center;
+    font-size: 24px;
+    color: #424242;
+    margin-bottom: 20px;
+}
+.wrap main .grid-listView {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+@media (max-width: 576px) {
+    .wrap main .grid-listView {
+        width: calc(100% - 15px);
+    }
+}
+.wrap main .grid-listView li {
+    margin-bottom: 20px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 12px 12px;
+    background: #fff;
+    border-left: 6px solid #fff;
+}
+@media (max-width: 576px) {
+    .wrap main .grid-listView li {
+        grid-template-columns: 1fr;
+    }
+}
+.wrap main .grid-listView li.thin {
+    border-color: #31baf9;
+}
+.wrap main .grid-listView li.nice {
+    border-color: #86d73f;
+}
+.wrap main .grid-listView li.common {
+    border-color: gray;
+}
+.wrap main .grid-listView li.fatA {
+    border-color: #ff982d;
+}
+.wrap main .grid-listView li.fatAA {
+    border-color: #ff6c03;
+}
+.wrap main .grid-listView li.fatAAA {
+    border-color: #ff6c03;
+}
+.wrap main .grid-listView li.fatAAAA {
+    border-color: #ff1200;
+}
+.wrap main .grid-listView li .grid-item {
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: #4a4a4a;
+}
+.wrap main .grid-listView li .grid-item em {
+    font-style: normal;
+    font-size: 12px;
+    margin-right: 6px;
+    color: #424242;
+}
+.wrap main .grid-listView li .grid-item span {
+    color: #4a4a4a;
+}
+.wrap footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffd366;
+    padding: 20px 0;
+}
+.wrap footer .pic {
+    text-align: center;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 12px;
+}
+@media (max-width: 576px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+}

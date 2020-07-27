@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bmi.css">
+    
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="container">
+                <h1>健康體檢表格</h1>
+                <div class="grid-3">
+                    
+                    <div class="grid-item">
+                        <div class="form-group">
+                            <label for="">身高cm</label>
+                            <input type="text" id="peopleHeight" class="form-control" placeholder="請輸入身高" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="">體重kg</label>
+                            <input type="text" id="peopleWeight" class="form-control" placeholder="請輸入體重" required>
+                        </div>
+                    </div>
+                    <div class="grid-item flex-center">
+                        <a href="#" id="calculatorBMI" class="btn-Result">新增資料</a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <main>
+           
+           <div class="container">
+               <div class="row">
+                <h3 class="title">BMI 紀錄</h3>
+                <ul class="grid-listView"></ul>
+               </div>
+           </div>
+           
+        </main>
+ 
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="./bmi.js"></script>
+</body>
+
+</html>
