@@ -543,7 +543,7 @@ body {
 
 #container #main .experience .text_space .line {
   background-color: black;
-  height: 3px;
+  height: 2px;
   -webkit-animation-name: line_animation;
           animation-name: line_animation;
   -webkit-animation-duration: 5s;
@@ -595,7 +595,7 @@ body {
 
 #container #main .experience .Skills .container_a .line {
   background-color: black;
-  height: 3px;
+  height: 2px;
   -webkit-animation-name: line_animation;
           animation-name: line_animation;
   -webkit-animation-duration: 8s;
