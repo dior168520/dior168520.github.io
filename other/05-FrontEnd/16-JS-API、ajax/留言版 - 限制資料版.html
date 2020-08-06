@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="post_comment">
+        <h1>XXX留言版</h1>
+        <form id="post_data" action="" method="post">
+            <input type="hidden" name="date" value="">
+            <div class="form_group">
+                <label for="#title">標題</label>
+                <input id="title" type="text" name="title" required>
+            </div>
+            <div class="form_group">
+                <label for="#content">內容</label>
+                <textarea id="content" cols="30" rows="10" name="content"></textarea>
+            </div>
+            <div class="form_group">
+                <label for="#href">超連結</label>
+                <input id="href" type="text" name="href">
+            </div>
+            <div class="form_group">
+                <label for="#image_url">圖片連結</label>
+                <input id="image_url" type="text" name="image_url">
+            </div>
+
+            <div class="buttons">
+                <button type="reset">清除內容</button>
+                <div class="submit_btn">新增留言</div>
+            </div>
+        </form>
+    </div>
+
+    <div class="cards"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>

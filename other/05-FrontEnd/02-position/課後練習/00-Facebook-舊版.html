@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		/* 初始化 */
+		body{
+			margin:0;
+		}
+
+		#blue_bar {
+			width: 100%;
+			height: 43px;
+			background-color:blue;
+		}
+
+		#content {
+			width:70%;
+			height:356px;
+
+			margin:auto;
+
+			background-color:aqua;
+		}
+
+		#background {
+			width:100%;
+			height:313px;
+
+			background-color:brown;
+		}
+
+		#profile {
+			width:60%;
+			padding-left:40%;
+
+			height:43px;
+
+			background-color:green;
+		}
+
+		#img {
+			width:170px;
+			height:170px;
+
+			border:3px white solid;
+			/* 外框線 必定要寫3個參數 顏色 樣式 粗細 */
+
+			background-color: yellow;
+			border-radius: 50%;
+			/* 圓滑度 可以寫任何單位 寫50%會直接變圓形 */
+
+			/* background-image系列 */
+			background-image: url(https://img.ltn.com.tw/Upload/partner/page/2019/09/11/190911-4824-01-bIL1w.jpg);
+			/* 背景圖片 */
+			background-size:cover;
+			/* 背景圖片大小 */
+			background-position: center;
+			/* 背景圖片位置: 上 下 左 右 中間*/
+
+
+			/* position系列 */
+			/* position: relative; */
+			/* left: 100px; */
+				/* 從左往右移動 */
+			/* right: 100px; */
+				/* 從右往左移動 */
+			/* top: 100px; */
+				/* 從上往下移動 */
+			/* bottom: 100px; */
+				/* 從下往上移動 */
+
+			position:absolute;
+			left: 15px;
+			bottom:-26px;
+
+			/* 定位 relative = 自己本身的位置做移動 */
+			/* 	    absolute = 以父層有position:relative屬性的標籤為基準做移動  如果父層都沒有relative 則會以body標籤為基準*/
+		}
+
+		#background{
+			position: relative;
+		}
+
+		.float {
+			float:left;
+		}
+
+		.bold {
+			font-weight: bold;
+		}
+
+		#btn {
+			height:43px;
+			margin:auto;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div id="blue_bar"></div>
+	<div id="content">
+		<div id="background">
+			<div id="img"></div>
+		</div>
+		<div id="profile">
+			<div id="btn">
+				<div id="news" class="float bold">動態時報</div>
+				<div id="about" class="float bold">關於</div>
+				<div id="friends" class="float bold">朋友</div>
+				<div id="photo" class="float bold">相片</div>
+				<div id="classic" class="float bold">典藏</div>
+				<div id="more" class="float bold">更多</div>
+			</div>
+		</div>
+	</div>
+<!-- div標籤特性: 自動占滿一橫行,除非設定寬度 -->
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        h1{
+            position: relative;
+        }
+
+        h1::before {
+            content:"安安";
+            color:red;
+        }
+
+        h1::after {
+            content:"";
+            position: absolute;
+            left:0;
+            color:blue;
+            display:inline-block;
+            width:100px;
+            height:100px;
+            margin-left:30px;
+            padding:30px;
+            background-color:green;
+        }
+
+        h1:hover::after {
+            background-color:red;
+        }
+
+        /* !偽元素一定要content屬性 */
+        /* 偽元素會做為該標籤的子層 */
+        /* 偽元素放圖片不要使用content,用background-image可以調整圖片大小 */
+
+    </style>
+</head>
+<body>
+
+
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ut numquam dolor provident beatae, natus voluptatibus velit fuga soluta, delectus tempore sed reiciendis veniam placeat dignissimos enim magni, libero earum!
+    </h1>
+    
+</body>
+</html>

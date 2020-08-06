@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        // 陣列 = 儲存各種類型資料的複合式資料型態 ,可儲存原始資料型態:數字 字串 布林, 也可以儲存陣列
+        // 呼叫陣列內部資料的方法使用[]<-方括弧 , 特別需要注意的是陣列中的資料順序從__開始計算 , 而這些呼叫第幾筆陣列資料的數字則稱為 ______(index)
+
+        // 給陣列輸入的方法有兩種
+        // 1. 直接透過宣告創造一個含有資料的陣列
+        // ex: var arrayA = ["a","b","c","d"];
+
+        // 2. 透過程式碼計算出數值放入陣列之中
+        // ex: var arrayB = []  <-先宣告一個空陣列等著使用
+        //     arrayB[0] = "abc" <-特別注意寫資料進入陣列中需要告知放入第幾筆資料
+
+
+        // 若要將陣列中的某個值儲存成一個變數,可以透過"indexOf()"去找到該陣列的資料位在陣列中的第幾個索引值
+        // var arrayA = [1,3,5,7,9];
+        // var index_A = arrayA.indexOf(3);
+        // console.log(index_A);
+
+        // 要調查一個陣列的資料筆數可以透過一個常見的指令"length"(長度)來查詢
+        // 陣列能夠儲存大量資料取出來做計算很方便,但是若是要將所有資料取出來做計算怎麼辦?
+        // 這時候就需要配合"for迴圈"將所有儲存的資料逐一取出做計算
+
+        // for迴圈是什麼?
+        // for迴圈可以當作是一個計數器, 當你被罰跑一百圈操場時, 老師就會用這個計數器計算圈數, 你每跑完一圈操場, 老師手上的計數器就會加一
+        // 在使用for迴圈之前我們要先了解所謂的判斷式, 這和我們剛開始介紹JS的原始資料型態___有關
+
+        // 當我們在做數字的比較時, 有三種方法可以做比較: < (小於)  > (大於)  ===(等於), 下方範例可以猜一下答案究竟是什麼?
+        // console.log(7 < 7);
+        // console.log(7 > 7);
+        // console.log(7 == 7);
+        // console.log(7 >= 7);
+        // console.log(7 <= 7); 
+
+
+        // 了解"數值比較"之後就能正式進入for迴圈:
+        // for(let i = 0 ; i < 12 ; i = i + 3) {
+        //     console.log(i)
+        // }
+
+
+        //對照版   for(變數起點 ; 判斷式終點 ; 每跑完一次算幾圈) {
+        // 每圈要執行的程式碼
+        // }
+
+        // for迴圈特別的地方在於可以將宣告為起點的變數放進程式碼內部, 將該變數當作索引值處理陣列中的每筆資料
+        // var arrayB = [0,1,2,3,4,5,6,7,8,9,10];
+
+        // for(let index = 0 ; index < arrayB.length ; index++){
+        //     console.log("資料總筆數是:",arrayB.length , "目前索引值是:",arrayB[index] )
+        // }
+
+        // for (let index = 0; index < array.length; index++) {
+        //     const element = array[index];
+
+        // }
+
+        //  透過上面範例,各位同學有沒有注意到一件事情? 上面有提到陣列的特性 -> 陣列內資料長度 = 資料總筆數-1
+        //  而我們寫的判斷式用 < (小於) 正好代表當數字等於陣列資料長度時就會停止計算(變數最大值永遠是陣列資料總筆數-1)
+        // 所以能夠透過這個方式來將陣列的全部資料列出來做處理的動作
+
+
+        // ex:將陣列資料經過處理放入另一個陣列儲存
+
+        // var arrayB = [0,1,2,3,4,5,6,7,8,9,10];
+        // var arrayC = []
+
+        // for(let index = 0 ; index < arrayB.length ; index++){
+        //     arrayC[index] = arrayB[index] + 1 ;
+        //     console.log(arrayC[index],arrayB[index])
+        // }
+
+
+
+
+        var arrayA = ["嗨",
+            [11, '上'],
+            [false, '/'],
+            ['19'], '益'
+        ] //多維陣列
+
+        var arrayB = ["資", 123, true, '訊'] //一維陣列
+
+        console.log('11/19'+' '+'上益資訊')
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+ button {
+    border: none;
+    background-color: unset;
+    text-align: unset;
+    padding: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.buttons button,
+.submit_btn {
+    width: 200px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    margin: 0 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.buttons button:hover,
+.submit_btn:hover {
+    background-color: coral;
+}
+
+.post_comment {
+    width: 60%;
+    padding: 60px 10%;
+    margin: auto;
+    background-color: lightgray;
+    font-size: 20px;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.form_group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 20px;
+}
+
+.form_group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 20px;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 30px 0;
+}
+
+.card a {
+    display: flex;
+    color: unset;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: white;
+    background-color: black
+}
+
+.image_box {
+    width: 300px;
+}
+
+img {
+    width: 100%;
+}
+
+.news {
+    width: calc(100% - 300px);
+    padding: 15px;
+}
+
+.news * {
+    margin: 10px 0;
+}
+
+.title {
+    margin: 0;
+}

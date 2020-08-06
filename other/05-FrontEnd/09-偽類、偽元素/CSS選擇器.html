@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        *{}
+        /* 通用選擇器 */
+
+        /* div{} */
+        /* 標籤選擇器 */
+
+        /* #ID */
+        /* id選擇器 */
+
+        /* .class */
+        /* class選擇器 */
+
+        /* a:hover */
+        /* 偽類 */
+
+        /* a::before */
+        /* 偽元素 */
+
+
+    /* 複合選擇器 */
+
+        div span {
+            font-size:50px;
+            color: red;
+        }
+        /* 後代選擇器 */
+
+
+        div ~ span {
+            font-size: 50px;
+            color: blue;
+        }
+        /* 同層選擇器 */
+
+        div + span {
+            font-size: 50px;
+            color: red;
+        }
+        /* 相鄰選擇器 */
+
+
+        .box {
+            width:100px;
+            height:100px;
+            background-color:blue;
+            position: relative;
+            left:0;
+            transition: 3s;
+        }
+
+        .box.active{
+            left:200px;
+            background-color:red;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <span>123456789</span>
+    </div>
+    <div>123456</div>
+    <div>123456</div>
+    <a>123456</a>
+    <span>678910</span>
+
+    <div class="box"></div>
+
+    <script>
+
+        var box = document.querySelector('.box');
+
+        box.onclick = function(){
+            box.classList.add('active')
+        }
+
+
+    </script>
+
+</body>
+</html>

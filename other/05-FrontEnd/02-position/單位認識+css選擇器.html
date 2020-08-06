@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* CSS共有幾種方式能夠選擇 */
+        
+        body{}
+        /* 標籤選擇器,可以直接選擇標籤給予樣式 */
+
+        #ID{}
+        /* ID選擇器,選擇html中相同ID的標籤給予樣式 */
+
+        .class{}
+        /* class選擇器,選擇html中相同class的標籤給予樣式 */
+
+        *{}
+        /* 通用選擇器,選擇所有在html內的標籤並給予樣式 */
+
+
+
+
+
+
+
+
+        #box1 {
+            width:100px;
+            height:100px;
+            background-color: red;
+        }
+        /* px = Pixel 像素。螢幕上所顯示的最小單位。在網頁中最常見的基礎單位 */
+
+        #box2{
+            width:100pt;
+            height:100pt;
+            background-color: yellow;
+        }
+        /* pt = Point 點。1pt＝1/72 英吋。不常見 */
+
+
+        #box3 {
+            width:10vw;
+            height:10vh;
+            background-color: green;
+        }
+        /* vw = viewwidth(可見範圍的寬度) */
+        /* vh = viewheight(可見範圍的高度) */
+        /* vw vh 都是針對螢幕可見範圍的百分比,這個數值會隨著瀏覽器(或裝置)的寬高而隨時變化 */
+        /* 螢幕可見範圍 = 瀏覽器(或裝置)扣除本身上方工具列或右邊滾軸這些程式本身的介面後,剩餘的
+        顯示畫面 */
+        /* 動態數值 */
+
+
+        #box4 {
+            width:10%;
+            height:10%;
+            background-color: blue;
+        }
+        /* %(百分比):和vw、vh的可見螢幕百分比不同,這裡的百分比是子層取自於"父層"的寬(或高),如父層
+        寬度100px 子層寬度10% ,那麼這個10%就會被經過計算成 100px x 10% = 10px */
+        /* 使用%(百分比)需要特別注意,%取自於父層的寬或高,但是若父層本身沒有設定寬或高,則無法取得
+        任何數值(= 0px),例如:body標籤只有預設寬度沒有高度,直接給Box用height:10%會是 0px */
+        /* 後期RWD在做內容的寬高時,都會統一由父層做定位,子層做寬高,內容再依照子層的寬高寫% ,能
+        準確的放置內容 */
+
+        #box5 {
+            width:300px;
+            height:300px;
+            background-color: indigo;
+            padding-top:calc(150px - 25px);
+            box-sizing: border-box;
+        }
+
+        #box6 {
+            width:50px;
+            height:50px;
+            margin:auto;
+            background-color: purple;
+        }
+        /* calc()(計算):calc來自英文計算(calculate),是一種讓電腦自己進行運算的動態單位,括號內
+        填入計算式讓電腦進行運算,常見的用法為百分比減去px值,目的為保持在特殊位置(如:水平、垂直置
+        中) */
+
+
+    </style>
+
+</head>
+
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    <div id="box5">
+        <div id="box6"></div>
+    </div>
+
+
+    <div id="top"></div>
+    id = 身分證(個人,每個人只能有一個)
+
+    <div class="box top white"></div>
+    class = 暱稱(透過外型取名,可以有多個)
+</body>
+
+</html>

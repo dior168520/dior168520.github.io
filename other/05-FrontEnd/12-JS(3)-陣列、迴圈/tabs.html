@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .tab_btns {
+            display: flex;
+        }
+
+        .tab_btn {
+            border: 1px solid;
+            padding: 5px 20px;
+        }
+
+        .tab_content {
+            display: none;
+            max-width: 450px;
+            border: 1px solid;
+            padding: 10px;
+        }
+
+        .tab_content.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab_btns">
+        <div class="tab_btn">Tab1</div>
+        <div class="tab_btn">Tab2</div>
+        <div class="tab_btn">Tab3</div>
+        <div class="tab_btn">Tab4</div>
+    </div>
+
+    <div class="tab_contents">
+        <div class="tab_content ">
+            <h1>Tab1 Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptas qui, maiores incidunt molestias
+                asperiores cum? Mollitia unde architecto pariatur, perferendis omnis, quasi qui commodi fugit quos
+                asperiores facere praesentium.
+            </p>
+        </div>
+        <div class="tab_content">
+            <h1>Tab2 Title</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quis quas reiciendis illum eligendi fuga
+                nobis perspiciatis, ad, iste tempore omnis delectus ratione maiores quasi possimus ex aut iusto facere.
+            </p>
+        </div>
+        <div class="tab_content active">
+            <h1>Tab3 Title</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore ex aspernatur, voluptates optio
+                excepturi saepe laudantium cupiditate laboriosam consequuntur architecto sit veritatis numquam, possimus
+                doloremque, inventore et ullam? Aut!
+            </p>
+        </div>
+        <div class="tab_content">
+            <h1>Tab4 Title</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore ex aspernatur, voluptates optio
+                excepturi saepe laudantium cupiditate laboriosam consequuntur architecto sit veritatis numquam, possimus
+                doloremque, inventore et ullam? Aut!
+            </p>
+        </div>
+    </div>
+
+
+    <script>
+         //綁定按鍵事件
+        var tab_btns = document.querySelectorAll(".tab_btn");
+        var tab_contents = document.querySelectorAll(".tab_content");
+
+        for (let index = 0; index < tab_btns.length; index++) {
+            const element = tab_btns[index];
+            // console.log(element);
+
+            element.addEventListener("click", function () {
+
+                //知道是按了哪一個按鈕? ->2
+                console.log(index); //第n個按鈕
+                var x = index+1;
+
+                //拿掉 所有人的active
+                remove_all_active();
+
+                //再加上自己的active
+                var tab_content = document.querySelector(".tab_content");
+                tab_content[index].classList.add('active');
+            });
+        }
+
+        function remove_all_active(){
+            for (let index = 0; index < tab_contents.length; index++) {
+                const element = tab_contents[index];
+                element.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+
+</html>

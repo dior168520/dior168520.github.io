@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box-group {
+            display: flex;
+        }
+
+        .box {
+            width: 33.33%;
+            background-color: red;
+        }
+
+        .box .bg-img {
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .ellipsis {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-group">
+        <div class="box">
+            <div class="bg-img"
+                style="background-image: url('https://icatcare.org/app/uploads/2018/06/Layer-1704-1920x840.jpg');"
+                title="Test">
+            </div>
+            <div class="ellipsis">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nihil?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur libero delectus numquam dolore.
+                    Sed
+                    libero, eos cum laborum doloribus odio at ratione officia ipsa esse nisi consequuntur sunt nihil quo
+                    consectetur! Ducimus soluta et, laboriosam corporis blanditiis accusamus laborum natus voluptatibus
+                    architecto in iste ipsum iure quasi deleniti quia libero.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="bg-img"
+                style="background-image: url('https://img.huffingtonpost.com/asset/5dcc613f1f00009304dee539.jpeg?cache=QaTFuOj2IM&ops=crop_834_777_4651_2994%2Cscalefit_720_noupscale');">
+            </div>
+            <div>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nihil?</h1>
+                <p class="JQellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quia dolores
+                    officia eos minima aut
+                    assumenda praesentium debitis quod consequatur provident, voluptatibus earum exercitationem porro
+                    fuga
+                    quidem, velit atque cum.assumenda praesentium debitis quod consequatur provident, voluptatibus earum
+                    exercitationem porro
+                    fuga
+                    quidem, velit atque cum.
+                    assumenda praesentium debitis quod consequatur provident, voluptatibus earum exercitationem porro
+                    fuga
+                    quidem, velit atque cum.
+                    assumenda praesentium debitis quod consequatur provident, voluptatibus earum exercitationem porro
+                    fuga
+                    quidem, velit atque cum.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="bg-img"
+                style="background-image: url('https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_weight_other/1800x1200_cat_weight_other.jpg?resize=600px:*');">
+            </div>
+            <div>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nihil?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sit nostrum et quidem neque quasi
+                    eveniet
+                    temporibus perspiciatis obcaecati, numquam adipisci optio dolores soluta quos fugit. Non eaque
+                    adipisci
+                    iusto.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(function () {
+            var len = 500; // 超過50個字以"..."取代
+            $(".JQellipsis").each(function (i) {
+                if ($(this).text().length > len) {
+                    $(this).attr("title", $(this).text());
+                    var text = $(this).text().substring(0, len - 1) + "...";
+                    $(this).text(text);
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box1 {
+            width: 150px;
+            /* 寬度 */
+            height: 150px;
+            /* 高度 */
+            background-color: red;
+            /* 背景顏色 */
+
+            /* margin:150px; */
+            /* 外距(跟其他標籤之間的距離) */
+
+            /* margin-bottom:150px; */
+            /* 外距可以指定方向->上(top) 下(bottom) 左(left) 右(right) */
+
+            /* margin: 150px 0 0 150px; */
+            /* margin:上 右 下 左 */
+            /* 透過寫上多個參數指定方向 以順時針為主 */
+
+            /* margin:150px 0; */
+            /* margin:上下 左右 */
+            /* 寫兩個參數 指定上下 和 左右 */
+
+            /* margin:auto; */
+            /* 外距可以透過特殊的參數:auto 做到"水平"置中的效果 */
+            /* 水平置中必須父層的寬度 大於 子層的寬度 */
+        }
+
+    #box2 {
+        width: 150px;
+        /* 寬度 */
+        height: 150px;
+        /* 高度 */
+        background-color: blue;
+        /* 背景顏色 */
+
+        /* padding: 50px; */
+        /* 內距:父層標籤邊緣和子層標籤的距離, 像是水果禮盒要有報紙包著 */
+        /* 跟外距(margin)相似 可以指定方向 */
+
+        /* padding-top:10px; */
+
+        /* padding: 0 20px; */
+
+        /* padding: 10px 0 10px 0; */
+
+        /* padding沒有auto的參數做使用 */
+
+        padding-left: 50px;
+        /* 標籤會因為內距(padding)而"變大" */
+        }
+
+        #box3 {
+            width: 50px;
+            /* 寬度 */
+            height: 50px;
+            /* 高度 */
+            background-color: green;
+            /* 背景顏色 */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1"></div>
+
+
+    <!-- 巢狀結構: 標籤中包著另一個標籤 -->
+    <div id="box2">
+        <!-- box2 = 父層 -->
+        <div id="box3"></div>
+        <!-- box3 = 子層 -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .btn{
+            width: 50px;
+            height: 50px;
+            background-color: gray;
+            color: white;
+            font-size:50px;
+            border-radius: 50%;
+            /* 按鈕樣式 */
+
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            /* 水平垂直置中 */
+
+            transition: 1s;
+        }
+
+        .btn.active{
+            transform: rotate(45deg);
+            background-color:red;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="btn">
+        <span>+</span>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <script>
+
+        // JS
+        // var btn = document.querySelector('.btn')
+        
+        // btn.onclick = function(){
+        //     if(btn.getAttribute('class') == 'btn' ){
+        //         btn.classList.add('active')
+        //     }else{
+        //         btn.classList.remove('active')
+        //     }
+        // }
+
+
+        //JQ
+        $('.btn').click(function(){
+            if($('.btn').hasClass('active')){
+                $('.btn').removeClass('active')
+            }else{
+                $('.btn').addClass('active')
+            }
+        })
+
+
+    </script>
+</body>
+</html>

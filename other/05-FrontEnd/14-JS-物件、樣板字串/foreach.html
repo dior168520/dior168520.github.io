@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="title01" class="red_title">  </h1>
+
+    <script>
+
+        // for迴圈和foreach的差別 -> for迴圈指定執行次數,適合不特定用途
+        //                          foreach針對陣列做處理
+        var titles = document.querySelector(".red_title");  //array
+        var array = ["安安", "嗨"]
+
+        // foreach正式寫法
+        array.forEach(function (single_data, index , array) {
+            titles.innerHTML = titles.innerHTML + `單筆資料: "${single_data}",索引值: "${index}", 陣列全部資料 ${array} <br>`
+        })
+
+        // arrayName.forEach( function(single_data) {
+        //     指定標籤變數.innerHTML = 指定標籤變數.innerHTML + `單筆資料:${single_data}`
+        // } ) 
+
+        // foreach正式寫法
+        // 陣列.forEach(function (正在處理的單筆資料的變數名稱, 陣列索引值) {
+        //     陣列要放進資料的元素.innerHTML = titles.innerHTML + `我的陣列索引值"${index}", 文字是"${template}"<br>`
+        // })
+
+
+        // ES6方法
+        array.forEach( (single_data,index) =>{titles.innerHTML = titles.innerHTML + `我的第${index + 1}筆資料:"${single_data}", 索引值是:"${index}"<br>`})
+
+        // ()=>{
+
+        // } ES6箭頭 函式
+
+        // function(){
+
+        // } 函式
+
+
+        // ES6新增語法"樣板字串"
+        // `在內部的文字,字串會被當字串,HTML標籤會正常被當作標籤使用`
+        // innerHTML = 該元素的子層
+
+    </script>
+</body>
+
+</html>

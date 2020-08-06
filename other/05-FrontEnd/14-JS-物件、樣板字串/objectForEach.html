@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .cards {
+            display:flex;
+            padding:30px 10%;
+        }
+
+        .card {
+            border:1px solid black;
+            width: 25%;
+            padding:15px;
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .product_pic {
+            width:100%;
+        }
+
+        img {
+            width:100%;
+        }
+
+        .product_text {
+            line-height: 1.8;
+            font-size:20px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="cards"></div>
+
+
+    <script>
+
+        var products = [{
+            product_name:'可口可樂',
+            calories: '9999',
+            price: '28',
+            description: '洗馬桶專用',
+            product_img: 'https://cdn.shopify.com/s/files/1/2141/9909/products/Coke_330mL_1024x1024.png?v=1552708852'
+        },{
+            product_name:'雪碧',
+            calories: '250',
+            price: '25',
+            description: '雪碧好好ㄏ',
+            product_img: 'https://www.coca-cola.hk/content/dam/journey/hk/zh/private/brands/sprite/16147a_Final_Sprite_330mL.png'
+        },{
+            product_name:'沙士',
+            calories: '150',
+            price: '20',
+            description: '沙士喝起來像牙膏',
+            product_img: 'https://d.ecimg.tw/items/DBAB7EA72379402/000001_1552447956.jpg'
+        },{
+            product_name:'蘋果西打',
+            calories: '200',
+            price: '23',
+            description: '要倒了 :(',
+            product_img: 'https://applesidra.com.tw/wp-content/uploads/2018/06/%E8%A5%BF%E6%89%93PET600ml-1-1-1.png'
+        }]
+
+        var cards = document.querySelector('.cards');
+
+        products.forEach(function(product){
+            cards.innerHTML += `        
+            <div class="card">
+            <div class="product_pic">
+                <img src="${product.product_img}" alt="">
+            </div>
+            <div class="product_content">
+                <h1>飲料名稱:${product.product_name}</h1>
+                <div class="product_text">
+                    熱量:${product.calories}大卡<br>
+                    價錢:${product.price}元<br>
+                    介紹: ${product.description} 
+                    </div>
+                </div>
+            </div>
+            `
+        })
+
+    </script>
+</body>
+
+</html>

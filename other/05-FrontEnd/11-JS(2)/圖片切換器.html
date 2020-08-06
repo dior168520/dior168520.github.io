@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img class="bat" src="https://as.chdev.tw/web/article/3/7/4/38902c17-77ae-4145-a177-811bf46103311582183153.jpg" alt="">
+
+    
+    <script>
+        // 邏輯概念:知道功能的起始
+        // 當我"點擊"到圖片時,幫我"偵測圖片路徑是否等於第一張圖",若等於就換成下一張圖
+        //     onclick                     if else
+        
+        var bat_img = document.querySelector('.bat')
+        var old_img = bat_img.getAttribute('src')
+
+        console.log(old_img)
+
+        bat_img.onclick = function() {
+            if(old_img = 'https://as.chdev.tw/web/article/3/7/4/38902c17-77ae-4145-a177-811bf46103311582183153.jpg')
+            {
+                bat_img.setAttribute('src' , 'https://as.chdev.tw/web/article/photos/1/5/8/ba12aa22c13e80b4ab22d81eea7770156fbd3778.jpg')
+            }else{
+                bat_img.setAttribute('src' , 'https://as.chdev.tw/web/article/3/7/4/38902c17-77ae-4145-a177-811bf46103311582183153.jpg')
+            }
+        }
+        
+
+
+    </script>
+</body>
+</html>

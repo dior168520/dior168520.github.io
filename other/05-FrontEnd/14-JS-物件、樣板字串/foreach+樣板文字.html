@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            margin: auto;
+        }
+
+        .cards {
+            display: flex;
+        }
+
+        .card {
+            width: 33.3%;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .img {
+            width: 100%;
+        }
+
+        .img img {
+            width: 100%;
+        }
+
+        .text {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cards">
+            <div class="card">
+                <h1>飲料名稱</h1>
+                <h2>可口可樂</h2>
+                <div class="img">
+                    <img src="https://cdn.shopify.com/s/files/1/2141/9909/products/Coke_330mL_1024x1024.png?v=1552708852"
+                        alt="">
+                </div>
+                <div class="text">
+                    <p>熱量:1234大卡</p>
+                    <p>價錢:5678元</p>
+                    <p>介紹:可口可樂是由美國可口可樂公司生產出品的一種可樂。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        var card = document.querySelector('.cards');
+
+        var drinks = [{
+            img: "https://media.istockphoto.com/photos/pig-picture-id120534386?k=6&m=120534386&s=612x612&w=0&h=nsy1ZpqPri6EfAaAOYgjLjpT5GjHGkgtEq0YTRiG6UU=",
+            name: "可口可樂",
+            calories: "111",
+            price: "333",
+            intro: "好ㄏ好ㄏ好ㄏ好ㄏ好ㄏ好ㄏ"
+        }, {
+            img: "https://media.istockphoto.com/photos/pig-picture-id120534386?k=6&m=120534386&s=612x612&w=0&h=nsy1ZpqPri6EfAaAOYgjLjpT5GjHGkgtEq0YTRiG6UU=",
+            name: "可口可樂",
+            calories: "222",
+            price: "333",
+            intro: "好ㄏ好ㄏ好ㄏ好ㄏ好ㄏ好ㄏ"
+        }, {
+            img: "https://media.istockphoto.com/photos/pig-picture-id120534386?k=6&m=120534386&s=612x612&w=0&h=nsy1ZpqPri6EfAaAOYgjLjpT5GjHGkgtEq0YTRiG6UU=",
+            name: "可口可樂",
+            calories: "333",
+            price: "333",
+            intro: "好ㄏ好ㄏ好ㄏ好ㄏ好ㄏ好ㄏ"
+        }]
+
+
+
+        drinks.forEach(drink => {
+
+            card.innerHTML += `<div class="card">
+                <h1>飲料名稱</h1>
+                <h2>${drink.name}</h2>
+                <div class="img">
+                    <img src="${drink.img}" alt="">
+                </div>
+                <div class="text">
+                    <p>熱量:${drink.calories}大卡</p>
+                    <p>價錢:${drink.price}元</p>
+                    <p>介紹:${drink.intro}</p>
+                </div>
+            </div>`
+        })
+
+    </script>
+</body>
+
+</html>
