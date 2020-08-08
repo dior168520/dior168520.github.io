@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,KAAK,CAAC;EACF,MAAM,EAAE,MAAM;EACd,SAAS,EAAE,MAAM;EACjB,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,IAAI;CAUlB;;AAdD,AAOI,KAPC,CAOD,IAAI,CAAC;EACD,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,WAAW,EAAE,KAAK;EAClB,MAAM,EAAE,aAAa;CAExB",
+    "sources": [
+        "gride.scss"
+    ],
+    "names": [],
+    "file": "gride.css"
+}
