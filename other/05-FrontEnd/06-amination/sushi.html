@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #all {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .sushi_size {
+            width: 250px;
+            height: 250px;
+            background-size: cover;
+            background-position: center center;
+            display: inline-block;
+            position: relative;
+        }
+
+        .sushi_box01 {
+            background-image: url("img/sushi01.png");
+        }
+
+        .sushi_box01:hover {
+            animation: spin 2s 1 cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+
+        .sushi_box02 {
+            background-image: url("img/sushi02.png");
+        }
+
+        .sushi_box02:hover {
+            animation: jump 2s 1 ease-in-out;
+        }
+
+        .sushi_box03 {
+            background-image: url("img/sushi03.png");
+            transform-origin: center;
+        }
+
+        .sushi_box03:hover {
+            animation: shake 2s 1 cubic-bezier(0.77, 0, 0.175, 1);
+        }
+
+        .sushi_box04 {
+            background-image: url("img/sushi04.png");
+        }
+
+        .sushi_box04:hover {
+            animation: grow 2s 1 cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+
+        .sushi_box05 {
+            background-image: url("img/sushi05.png");
+        }
+
+        .sushi_box05:hover {
+            animation: hop 2s 1 cubic-bezier(0.77, 0, 0.175, 1);
+        }
+
+        .sushi_box06 {
+            background-image: url("img/sushi06.png");
+        }
+
+        .sushi_box06:hover {
+            animation: hooray 2s 1;
+        }
+
+        @keyframes spin {
+            10% {
+                transform: rotate(20deg);
+            }
+
+            40% {
+                transform: rotate(-50deg);
+            }
+
+            100% {
+                transform: rotate(3600deg);
+            }
+        }
+
+        @keyframes jump {
+            15% {
+                transform: translateY(10px) scale(1.1, 0.9);
+            }
+
+            25% {
+                transform: translateY(-120px) scale(0.9, 1.1);
+            }
+
+            28% {
+                transform: translateY(-130px) scale(0.9, 1.15);
+            }
+
+            30% {
+                transform: translateY(-120px) scale(0.9, 1.1);
+            }
+
+            40% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-80px) scale(0.9, 1.1);
+            }
+
+            60% {
+                transform: translateY(0px);
+            }
+
+            70% {
+                transform: translateY(-60px) scale(0.9, 1.1);
+            }
+
+            78% {
+                transform: translateY(0px);
+            }
+
+            86% {
+                transform: translateY(-20px);
+            }
+
+            91% {
+                transform: translateY(0px);
+            }
+
+            95% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            5%,
+            15%,
+            25%,
+            35%,
+            45%,
+            55%,
+            65%,
+            75%,
+            85%,
+            95% {
+                transform: translateX(-30px) rotate(-20deg);
+            }
+
+            10%,
+            20%,
+            30%,
+            40%,
+            50%,
+            60%,
+            70%,
+            80%,
+            90% {
+                transform: translateX(30px) rotate(20deg);
+            }
+        }
+
+        @keyframes grow {
+            5% {
+                transform: scale(0.9);
+            }
+
+            70% {
+                transform: scale(1.7);
+            }
+
+            80% {
+                transform: scale(0.8);
+            }
+
+            90% {
+                transform: scale(1.2)
+            }
+
+            95% {
+                transform: scale(0.9)
+            }
+
+            99% {
+                transform: scale(1.1)
+            }
+        }
+
+        @keyframes hop {
+            0% {
+                transform: translateX(0);
+            }
+
+            12% {
+                transform: translateY(-100px) rotate(-20deg);
+            }
+
+            25% {
+                transform: translateX(-20px);
+            }
+
+            37% {
+                transform: translateY(-100px) rotate(20deg);
+            }
+
+            50% {
+                transform: translateX(20px);
+            }
+
+            62% {
+                transform: translateY(-100px) rotate(-20deg);
+            }
+
+            75% {
+                transform: translateX(-20px);
+            }
+
+            87% {
+                transform: translateY(-100px) rotate(20deg);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes hooray {
+
+            0%,
+            20%,
+            40%,
+            60%,
+            80% {
+                transform-origin: bottom;
+                transform: translateX(-60px) skewX(-20deg) scale(1.1);
+            }
+
+            5%,
+            15%,
+            25%,
+            35%,
+            45%,
+            55%,
+            65%,
+            75%,
+            85%,
+            95% {
+                transform: scale(0.9);
+            }
+
+            10%,
+            30%,
+            50%,
+            70%,
+            90% {
+                transform-origin: bottom;
+                transform: translateX(60px) skewX(20deg) scale(1.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+        <div class="sushi_size sushi_box01"></div>
+        <div class="sushi_size sushi_box02"></div>
+        <div class="sushi_size sushi_box03"></div>
+        <div class="sushi_size sushi_box04"></div>
+        <div class="sushi_size sushi_box05"></div>
+        <div class="sushi_size sushi_box06"></div>
+    </div>
+</body>
+
+</html>

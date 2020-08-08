@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #red_box {
+            width:500px;
+            height:500px;
+            background-color:red;
+        }
+
+        #blue_box {
+            width:50%;
+            height:50%;
+            background-color:blue;
+        }
+        /* 真理: %是 去拿"父層"的數值當做自己的值 */
+
+        #box {
+            width:1000px;
+            height:500px;
+            background-color:green;
+        }
+
+        /* body標籤有寬度 , 沒有高度 */
+        /* body的寬度 = 瀏覽器寬度 */
+
+    </style>
+</head>
+<body>
+
+    <div id="box"></div>
+
+    <!-- <div id="red_box">
+    父層
+        
+        <div id="blue_box"></div>
+        子層
+
+    </div> -->
+
+
+</body>
+</html>

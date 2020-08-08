@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box {
+            width:100px;
+            height:100px;
+            background-color:black;
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+
+    <script>
+        //事件(觸發程式碼的方法)
+
+        var box = document.querySelector('.box')
+
+        //方法1.
+        // box.onclick = function() {
+        //     box.textContent = "哈囉"
+        // }
+
+        //方法2.
+        box.onclick = function() {
+            box_content()
+        }
+
+        function box_content() {
+            box.textContent = "哈囉"
+        }
+
+
+
+        // var title = document.querySelector('')
+
+        // 函式(有名字)
+        // function test() {
+        //     console.log('test')
+        // }
+        // test()
+
+        //匿名函式(沒有名字,需要有變數或"事件"儲存)
+        // var aaa = function() {
+        //     console.log('hi')
+        // }
+
+
+
+
+    </script>
+</body>
+</html>

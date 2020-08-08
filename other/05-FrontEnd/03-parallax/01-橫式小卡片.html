@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: "微軟正黑體";
+        }
+
+        body {
+            margin: 0;
+            background-color: #222;
+        }
+
+        .card {
+            width: 800px;
+            height: 600px;
+            border: solid 1px black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .left {
+            width: 30%;
+            height: 100%;
+            background-image: url("img/chocolate.jpg");
+            background-size: cover;
+            float: left;            
+        }
+
+        .right {
+            width: 70%;
+            height: 100%;
+            float: left;   
+            background-color: #eee;
+            padding: 30px 20px; 
+            box-sizing: border-box;  
+        }
+
+        .smalltitle {
+            font-size: 14px;
+            color: #888
+        }
+
+        h3 {
+            color: #604437;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            background-color: #604437;
+            padding: 5px 15px;
+            margin-right: 15px;
+            color: #eee;
+            border-radius: 10px;
+            border: solid 1px #eee;
+
+            /* transition是設定動畫效果的屬性，transition-duration是設定動畫漸變時間，單位是時間單位(s / ms) */
+            transition-duration: 0.5s;
+
+            /* cursor是改變滑鼠移入時的鼠標icon */
+            cursor: pointer;
+        }
+
+        /* hover是滑鼠移入時改變css樣式 */
+        li:hover {
+            background-color: #eee;
+            color: #604437;
+            border: solid 1px #604437;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="left"></div>
+        <div class="right">
+            <h1>巧克力 <span class="smalltitle">跟人生一樣苦</span></h1>
+            <hr>
+            <p>最早拿來飲用的是馬雅人，而最初是由當地的墨西哥人所製作的，16世紀初期的西班牙探險家哥倫布在墨西哥發現當地的阿茲特克國王飲用一種可可豆加水和香料製成的飲料，科爾特斯品嘗後在1528年帶回西班牙，並在西非一個小島上種植了可可樹。西班牙人將可可豆磨成了粉，從中加入了水和糖，在加熱後被製成的飲料稱為「巧克力」，深受大眾的歡迎。不久其製作方法被義大利人學會，並且很快傳遍整個歐洲。</p>
+            <h3>製作</h3>
+            <p>可可豆經過發酵、乾燥、烘焙、研磨，製成可可汁。可可汁可製成可可脂與可可粉，或選高品質的粗製可可汁經進一步加工製成巧克力。可可液塊（Cocoa liquor）是可可塊與可可脂液體混合物凝固後的物質，兩種成分的比例大致相等。</p>
+            <h3>種類</h3>
+            <ul>
+                <li>無味巧克力</li>
+                <li>黑巧克力</li>
+                <li>白巧克力</li>
+                <li>紅寶石巧克力</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+            width: 1600px;
+            height: 300px;
+            border: 1px solid #000;
+            position: relative;
+        }
+
+        .block .box {
+            width: 100px;
+            height: 100px;
+            background-color: #f42;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .block .box1 {
+            left: 50px;
+            animation-name: ani1;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        .block .box2 {
+            left: 350px;
+            animation-name: ani2;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        .block .box3 {
+            left: 650px;
+        }
+
+        .rect {
+            width: 1000px;
+            height: 500px;
+            border: 1px solid #000;
+        }
+
+        .rect .ball {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            animation: go 5s infinite alternate;
+        }
+
+        .rect .ball1 {
+            animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+
+        .rect .ball2 {
+            animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .rect .ball3 {
+            animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+        }
+
+        .rect .ball4 {
+            animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        }
+
+        .rect .ball5 {
+            animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        }
+
+        /* keyframes內 寫0% ~ 100% 寫css屬性 */
+        @keyframes ani1 {
+            50% {
+                transform: translateX(50px);
+            }
+        }
+
+        @keyframes ani2 {
+            50% {
+                transform: rotate(3600deg);
+            }
+        }
+
+        @keyframes go {
+            100% {
+                transform: translateX(900px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+
+    <div class="rect">
+        <div class="ball ball1"></div>
+        <div class="ball ball2"></div>
+        <div class="ball ball3"></div>
+        <div class="ball ball4"></div>
+        <div class="ball ball5"></div>
+    </div>
+</body>
+</html>

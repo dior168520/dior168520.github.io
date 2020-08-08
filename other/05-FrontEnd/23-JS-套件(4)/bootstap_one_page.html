@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <title>Hello, world!</title>
+
+    <style>
+        #banner_section .swiper-slide img {
+            width: 100%;
+        }
+
+        #banner_section .bg-img {
+            width: 100%;
+            height: 80vh;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        #section_1 {
+            background-color: lightcyan;
+            padding: 30px 0;
+        }
+
+        #section_1 .card {
+            margin-bottom: 30px;
+        }
+
+        #section_2 {
+            position: relative;
+            height: 6000px;
+        }
+
+        #section_2 .title {
+            color: white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #section_2 .parallax-text {
+            color: white;
+            position: absolute;
+            left: 50%;
+            top: 60%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+
+        .parallax-window {
+            position: sticky;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            background-image: url('img/img1.jpg');
+        }
+
+        #section_3 {
+            padding: 60px;
+        }
+
+        #section_3 .row .col-12 {
+            display: flex;
+            align-items: center;
+        }
+
+        footer {
+            height: 60px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Volkswagen_logo_2019.svg/1024px-Volkswagen_logo_2019.svg.png"
+                    height="60" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="banner_section">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="bg-img" title="for_seo_use" style="background-image: url('/img/img1.jpg');"></div>
+                    <!-- <img src="/img/img1.jpg" alt=""> -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-img" style="background-image: url('/img/img2.jpg');"></div>
+                    <!-- <img src="/img/img2.jpg" alt=""> -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-img" style="background-image: url('/img/img3.jpg');"></div>
+                    <!-- <img src="/img/img3.jpg" alt=""> -->
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section id="section_1">
+        <div class="container">
+            <h1 class="text-center">Title</h1>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <img src="/img/img1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <img src="/img/img2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <img src="/img/img3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section_2">
+        <div class="parallax-window">
+            <h1 class="title">Title</h1>
+
+            <p class="parallax-text lax" data-lax-opacity="(document.querySelector('#section_2').offsetTop) 1,(document.querySelector('#section_2').offsetTop+1000) 1,(document.querySelector('#section_2').offsetTop+2000) 0">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae tempore tenetur quis perferendis
+                aliquid aut totam fuga, minima veritatis quibusdam delectus. Nihil excepturi, quibusdam repellat eveniet
+                consequatur est animi adipisci veritatis, doloribus, aliquid suscipit sint. Libero aliquid ipsam
+                tempore, ab maxime minima voluptas amet, neque sequi voluptatem reiciendis at error.
+            </p>
+
+            <p class="parallax-text lax" data-lax-opacity="(document.querySelector('#section_2').offsetTop+1000) 0,(document.querySelector('#section_2').offsetTop+2000) 1,(document.querySelector('#section_2').offsetTop+3000) 1,(document.querySelector('#section_2').offsetTop+4000) 0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem recusandae, cumque placeat incidunt
+                perferendis numquam earum, animi porro molestiae deleniti corrupti eligendi nostrum repellendus,
+                cupiditate quia dolorum autem dolores rem temporibus expedita? Itaque, eos dolore. Quae rem repellat
+                incidunt saepe beatae voluptatum commodi perferendis consectetur a sequi tempore rerum dolorum dolore,
+                deleniti vel aperiam modi accusamus assumenda reprehenderit. Aliquid quasi impedit quas nobis totam
+                provident sapiente. Harum culpa, aspernatur provident labore veritatis ipsum non nihil esse, in sapiente
+                quas! Omnis!
+            </p>
+
+            <p class="parallax-text lax" data-lax-opacity="(document.querySelector('#section_2').offsetTop+3000) 0,(document.querySelector('#section_2').offsetTop+4000) 1,(document.querySelector('#section_2').offsetTop+5000) 1">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque alias praesentium ut quas sunt
+                pariatur, facere aspernatur non repellendus fugit, vero assumenda illo officia enim dignissimos,
+                incidunt in odit beatae? Eum rerum, autem qui rem repudiandae voluptas repellat nobis tenetur quisquam
+                facere. Ad eveniet sapiente magnam laboriosam magni placeat non?
+            </p>
+        </div>
+    </section>
+
+
+    <section id="section_3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <img class="img-fluid" src="img/img1.jpg" alt="">
+                </div>
+                <div class="col-md-6 col-12">
+                    <div>
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repudiandae accusamus
+                            provident possimus expedita totam soluta delectus illo autem impedit</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 order-1 order-md-2">
+                    <img class="img-fluid" src="img/img2.jpg" alt="">
+                </div>
+                <div class="col-md-6 col-12 order-1">
+                    <div>
+                        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repudiandae accusamus
+                            provident possimus expedita totam soluta delectus illo autem impedit, veritatis quod quas
+                            magnam. Est tempore nihil itaque excepturi amet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+
+        window.onload = function () {
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+        }
+        
+        
+
+
+    </script>
+</body>
+
+</html>

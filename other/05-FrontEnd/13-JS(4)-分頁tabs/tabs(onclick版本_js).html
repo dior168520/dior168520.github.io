@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .tab_btns {
+            display: flex;
+        }
+
+        .tab_btn {
+            border: 1px solid;
+            padding: 5px 20px;
+        }
+
+        .tab_content {
+            display: none;
+            max-width: 450px;
+            border: 1px solid;
+            padding: 10px;
+        }
+
+        .tab_content.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab_btns">
+        <div id="tab_btn_1" class="tab_btn">Tab1</div>
+        <div id="tab_btn_2" class="tab_btn">Tab2</div>
+        <div id="tab_btn_3" class="tab_btn">Tab3</div>
+        <div id="tab_btn_4" class="tab_btn">Tab4</div>
+    </div>
+
+    <div class="tab_contents">
+        <div id="tab_content_1" class="tab_content active">
+            <h1>Tab1 Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptas qui, maiores incidunt molestias
+                asperiores cum? Mollitia unde architecto pariatur, perferendis omnis, quasi qui commodi fugit quos
+                asperiores facere praesentium.
+            </p>
+        </div>
+        <div id="tab_content_2" class="tab_content ">
+            <h1>Tab2 Title</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quis quas reiciendis illum eligendi fuga
+                nobis perspiciatis, ad, iste tempore omnis delectus ratione maiores quasi possimus ex aut iusto facere.
+            </p>
+        </div>
+        <div id="tab_content_3" class="tab_content ">
+            <h1>Tab3 Title</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore ex aspernatur, voluptates optio
+                excepturi saepe laudantium cupiditate laboriosam consequuntur architecto sit veritatis numquam, possimus
+                doloremque, inventore et ullam? Aut!
+            </p>
+        </div>
+        <div id="tab_content_4" class="tab_content ">
+            <h1>Tab4 Title</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore ex aspernatur, voluptates optio
+                excepturi saepe laudantium cupiditate laboriosam consequuntur architecto sit veritatis numquam, possimus
+                doloremque, inventore et ullam? Aut!
+            </p>
+        </div>
+    </div>
+
+
+    <!-- 
+        Step.1 綁定按鍵事件
+        Step.2 切換tab_content的active
+     -->
+
+    <script>
+        var tab_btn_1 = document.querySelector("#tab_btn_1");
+        var tab_btn_2 = document.querySelector("#tab_btn_2");
+        var tab_btn_3 = document.querySelector("#tab_btn_3");
+        var tab_btn_4 = document.querySelector("#tab_btn_4");
+
+        var tab_content_1 = document.querySelector("#tab_content_1");
+        var tab_content_2 = document.querySelector("#tab_content_2");
+        var tab_content_3 = document.querySelector("#tab_content_3");
+        var tab_content_4 = document.querySelector("#tab_content_4");
+
+        tab_btn_1.onclick = function () {
+            //刪掉所有的active
+            remove_all_active()
+
+            //加上自己的active
+            tab_content_1.classList.add('active');
+        };
+
+        tab_btn_2.onclick = function () {
+            //刪掉所有的active
+            remove_all_active()
+
+            //加上自己的active
+            tab_content_2.classList.add('active');
+        };
+
+        tab_btn_3.onclick = function () {
+            //刪掉所有的active
+            remove_all_active()
+
+            //加上自己的active
+            tab_content_3.classList.add('active');
+        };
+
+        tab_btn_4.onclick = function () {
+            //刪掉所有的active
+            remove_all_active()
+
+            //加上自己的active
+            tab_content_4.classList.add('active');
+        };
+
+
+        function remove_all_active() {
+            tab_content_1.classList.remove('active');
+            tab_content_2.classList.remove('active');
+            tab_content_3.classList.remove('active');
+            tab_content_4.classList.remove('active');
+        }
+
+    </script>
+</body>
+
+</html>

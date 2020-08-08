@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    快捷鍵認識:
+
+    Shift + alt + F = 一鍵自動整理 (內容將會按照VS code預設排版進行程式碼排列 但是不會刪除空行)
+    程式碼閱讀性很重要!!
+
+    Ctrl + F = 搜尋 (尋找html和style之間相同的ID相當好用)
+
+    Ctrl + L = 整行反白 (按下後游標處整行程式碼會反白,可以直接剪下或複製貼上)
+
+    Ctrl + X = 剪下 (剪下整段反白的程式碼到其他地方貼上,移動程式碼時相當好用)
+    Ctrl + C = 複製 
+    Ctrl + V = 貼上 (學生交作業必備技能,不會的話該去學如何使用電腦!!)
+
+
+    Ctrl + D = 多選反白的文字內容並在檔案中選取同樣段落的文字,多選後可以進行多行編輯,下面四行"安安安"請試著反白一行並使用Ctrl + D多選起來並刪除
+
+    嗨嗨嗨  <-反白這段內容後按ctrl + D
+    嗨嗨嗨
+    嗨嗨嗨
+    嗨嗨嗨
+
+    美化排版專用
+
+    tab = 自動幫我產生4個空格(VS code預設排版樣式)
+
+    shift + tab = 減少4個空格
+
+    在VS code的外掛加持下,標籤都不需要先打好<> 而是直接打標籤名稱讓系統幫你挑出你需要的標籤和預設內容,
+    CSS也是同樣,屬性打出大概名字後直接按tab即可幫你打好屬性名稱而且顯示所有可輸入的參數
+    練習範例:試著將底下三個標籤和css屬性依靠tab鍵完成
+    div
+    style
+    width
+    
+
+
+
+    巢狀結構認識:
+
+    在有開頭、結尾的標籤內放入其他標籤,這樣就能稱作最簡易的巢狀結構
+    巢狀結構在稱呼上只分為"父層"和"子層"代表上下關係,超過三層以上的巢狀結構並沒有"祖父層"或"孫子層"的稱呼,
+    下方範例可以簡單了解父層與子層
+
+    <div id="father">
+        <div id="son">
+            <div id="notGrandson"></div>
+        </div>
+    </div>
+
+    VS code同樣在html中有針對標籤的快捷鍵,配合數學的運算式能快速建立出一個巢狀結構
+    程式語言對應數學的運算式:
+    
+    程式語言    vs  數學算式
+        +      =    +(相加)
+        -      =    -(相減)
+        *      =    x(相乘)
+        /      =    ÷(相除)
+        ()     =    優先運算
+
+    VS code的巢狀結構快捷鍵只用得到"相加"和"相乘",還有VS code自身的運算子: >(包含)
+    在運算式寫好後,如同標籤和CSS的快捷鍵一樣按下tab就可以將這段運算式轉換成一個巢狀結構
+
+    範例:
+
+    div>div*3+(div>div)*2   <-寫完我後按下tab後即可得到下方的巢狀結構
+    
+    <div>                   <-我是上方運算式按下tab後的結果
+        <div></div>
+        <div></div>
+        <div></div>
+        <div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+    練習:
+
+    試著寫出下方五個運算式並看看結果
+
+    div+div
+    div*2
+    div>div
+    div+div>div
+    div+(div>div)*2
+
+    挑戰練習:
+
+    理解上方練習後請反推這段巢狀結構快捷鍵運算式如何產生
+
+    <div>
+        <div>
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    答案:
+
+</body>
+</html>

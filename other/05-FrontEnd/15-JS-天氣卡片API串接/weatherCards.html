@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1140px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .card {
+            width: calc(33.33% - 60px );
+            background-color: lightblue;
+            padding:15px;
+            margin:15px;
+        }
+
+        img {
+            width:100%;
+        }
+
+        .card * {
+            margin:15px 0;
+            text-align: center;
+        }
+
+        .time{
+            text-align:center ;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="time"></h1>
+    <div class="cards">
+        <!-- <div class="card">
+            <div class="weather_icon">
+                <img src="./imgs/haru.png" alt="">
+            </div>
+            <h1 class="location">台中市</h1>
+            <div class="weather">陰天</div>
+            <div class="max-temper">最高溫:26c</div>
+            <div class="min-temper">最低溫:20c</div>
+            <div class="CI">有點涼</div>
+        </div> -->
+    </div>
+
+
+    <script>
+
+        //告訴網頁去指定網址拿資料回來使用
+        fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-65BFDF04-89C7-4B2C-BC06-7D18A29D0BDE')
+            .then(function (response) {
+                return response.json();
+            }) //先確認網站是否有回應(response),若有回應則回傳該網站的資料以json格式做回傳 
+
+            .then(function (weather_data) {
+                var weather_cards = document.querySelector('.cards')
+
+                //取得物件的鍵值,將各項元素拆解成變數
+                var locations = weather_data.records.location //全台縣市陣列
+                
+                //因為要抓取全台灣天氣資料,以全台縣市陣列做forEach(對每筆資料做處理),拿出各縣市的天氣因子
+                locations.forEach(function(location){
+                    var location_name = location.locationName //地點
+
+                    var Wx = location.weatherElement[0].time[0].parameter.parameterName //天氣
+
+                    var CI = location.weatherElement[3].time[0].parameter.parameterName //天氣敘述
+
+                    var maxT = location.weatherElement[4].time[0].parameter.parameterName //最高溫度
+
+                    var minT = location.weatherElement[2].time[0].parameter.parameterName //最低溫度
+
+
+                    //判斷Wx變數等於什麼天氣 放上相對應的天氣icon
+
+                    var Wx_vaule = location.weatherElement[0].time[0].parameter.parameterValue//天氣代碼
+
+                    // 邏輯運算符 
+                    // &&(and) = 兩個條件都要達成才會得到true
+                    // ||(or) = 其中一個達成就會得到true
+
+                    if(Wx_vaule == 1){
+                        var weather_img = './imgs/haru.png'
+                    }else if (Wx_vaule > 1 && Wx_vaule < 8 ){
+                        var weather_img = './imgs/kumori.png'
+                    }else {
+                        var weather_img = './imgs/ame.png'
+                    }
+
+
+                    weather_cards.innerHTML += `
+                    <div class="card">
+                        <div class="weather_icon">
+                            <img src="${weather_img}" alt="">
+                        </div>
+                        <h1 class="location">${location_name}</h1>
+                        <div class="weather">${Wx}</div>
+                        <div class="max-temper">最高溫:${maxT}c</div>
+                        <div class="min-temper">最低溫:${minT}c</div>
+                        <div class="CI">${CI}</div>
+                    </div>
+                    `
+                })
+
+                var time = document.querySelector('.time')
+                var date = new Date();
+
+                var current_date = date.getFullYear() + '年' + (date.getMonth() + 1) + '月' + date.getDate() + '日'
+
+                var current_time = date.getHours() + ':' + date.getMinutes()
+
+                // console.log(current_time)
+
+                time.innerHTML += `${current_date}<br>${current_time}`
+
+
+                // console.log(locations);
+            }); //將回傳的json格式宣告成myJson變數做使用
+
+
+    </script>
+
+</body>
+
+</html>

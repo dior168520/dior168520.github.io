@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="title"></div>
+
+    <script>
+        var title = document.querySelector('.title')
+
+        var array = ['123','456']
+
+        array.forEach( (single_data) => {
+            title.innerHTML = title.innerHTML + `<h1>我的第一組數字: ${single_data}</h1><br>`
+        } )
+
+        // i = i + 2 -> i += 2  等號前後是相同的變數可以透過 += 做簡寫
+
+
+    </script>
+    
+</body>
+</html>

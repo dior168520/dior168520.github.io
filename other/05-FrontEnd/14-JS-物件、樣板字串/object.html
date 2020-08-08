@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //物件(object)
+        //網站間傳輸資料的基本資料型態,
+        //透過定義大量的 "鍵-值" 來儲存各種資料型態
+        //特別注意物件中可儲存 "陣列", 陣列中也可以儲存 "物件"
+
+        var objectA = {
+        // key(鍵): value(值)
+            name: '尹君毅',
+            weight: 96,
+            age: 27,
+            address: '台中市新社區',
+            single: true,
+            skill:[ '網頁前端開發', '睡覺', '吃飯' ]
+        }
+
+        // console.log(objectA.skill[1])
+
+        var skillA = objectA.skill[1];
+
+        console.log(skillA)
+
+        // var arrayA = [
+        //     '123',
+        //     '123',
+        //     {
+        //     // key(鍵): value(值)
+        //         name: '尹君毅',
+        //         weight: 96,
+        //         age: 27,
+        //         address: '台中市新社區',
+        //         single: true,
+        //         skill:[ '網頁前端開發', '睡覺', '吃飯' ]
+        //     }
+        //     ]
+
+        // console.log(arrayA[2].skill[1])
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #777;
+        }
+        
+        .warp {
+            width: 1100px;
+            height: 500px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .topbar {
+            width: 100%;
+            background-color: #4267B2;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            vertical-align: middle;
+        }
+
+        input {
+            width: 300px;
+            height: 30px;
+            border-radius: 5px;
+            padding: 5px;
+            /* box-sizing: border-box 就是讓元素自動扣掉padding及border的寬度 */
+            box-sizing: border-box;
+            margin-left: 15px;
+        }
+
+        .photowall {
+            width: 100%;
+            height: 350px;
+            background-color: #C1C1C1;
+            position: relative;
+        }
+
+        .updata_btn {
+            position: absolute;
+            bottom: 40px;
+            right: 160px;
+            background-color: #eee;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .event_btn {
+            position: absolute;
+            bottom: 40px;
+            right: 20px;
+            background-color: #eee;
+            text-decoration: none;
+            padding: 5px;
+        }
+        
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border: solid 3px #eee;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 80px;
+            left: 30px;
+            background-color: #555;
+        }
+
+        .bottombar {
+            width: 100%;
+            background-color: #eee;
+        }
+
+        ul {
+            margin: 0;
+            margin-left: 160px;
+        }
+
+        li {
+            float: left;
+            list-style: none;
+            margin-right: 20px;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="warp">
+        <div class="topbar">
+            <img class="icon" src="img/icon.png">
+            <input type="text" placeholder="搜尋人、事、物">
+        </div>
+        <div class="photowall">
+            <a href="" class="updata_btn">更新資料</a>
+            <a href="" class="event_btn">查看活動資訊</a>
+        </div>
+        <div class="avatar"></div>
+        <div class="bottombar">
+            <ul>
+                <li>動態消息</li>
+                <li>關於</li>
+                <li>朋友</li>
+                <li>相片</li>
+                <li>更多</li>
+                <div style="clear: both;"></div>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

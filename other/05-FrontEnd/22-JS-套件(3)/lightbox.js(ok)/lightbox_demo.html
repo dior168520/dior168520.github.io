@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+
+</head>
+<body>
+
+   
+    <a href="img/cat1.jpg" data-lightbox="roadtrip" data-title="喵喵">Image #2</a>
+    <a href="img/cat2.jpg" data-lightbox="roadtrip">Image #3</a>
+    <a href="img/cat2.jpg" data-lightbox="roadtrip">Image #3</a>
+    <a href="img/cat2.jpg" data-lightbox="roadtrip">Image #3</a>
+    <a href="img/cat2.jpg" data-lightbox="roadtrip">Image #3</a>
+    <a href="img/cat2.jpg" data-lightbox="roadtrip">Image #3</a>
+
+
+    <!-- lightbox需要有JQuery做為前置才能使用 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+        lightbox.option({
+            albumLabel:"cats %1 of %2"
+        })
+    </script>
+</body>
+</html>

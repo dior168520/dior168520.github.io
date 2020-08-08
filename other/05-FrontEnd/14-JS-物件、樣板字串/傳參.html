@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .box {
+            width:100px;
+            height:100px;
+            background-color:red;
+            margin:15px 0;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box" onclick="data(1)"></div>
+    <div class="box" onclick="data(2)"></div>
+    <div class="box" onclick="data(3)"></div>
+    <div class="box" onclick="data(4)"></div>
+    <div class="box" onclick="data(5)"></div>
+
+    <script>
+
+        function data(data) {
+            console.log("我現在點擊到的是方塊"+data)
+        }
+
+        data(1)
+    // 將括弧內的值放入函式中變成"變數"執行
+    
+    </script>
+
+</body>
+</html>

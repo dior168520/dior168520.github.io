@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="img_A" class="imgs"
+        src="https://as.chdev.tw/web/article/3/7/4/38902c17-77ae-4145-a177-811bf46103311582183153.jpg" alt="">
+
+
+    <script>
+        //找到這張圖片
+        var main_img = document.querySelector(".imgs"); //一個
+
+        main_img.addEventListener("click", function () {
+            main_img.src = "https://api.time.com/wp-content/uploads/2019/11/fish-with-human-face-tik-tok-video.jpg";
+        });
+
+    </script>
+</body>
+
+</html>

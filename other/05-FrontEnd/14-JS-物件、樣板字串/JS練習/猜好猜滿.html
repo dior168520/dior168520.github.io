@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text">
+
+    <button onclick="check()">點我確認答案!</button>
+
+    <div class="text"></div>
+
+    <script>
+        var input = document.querySelector('input')
+        var answer_text = document.querySelector('.text')
+
+        var answer = getRandomInt(1000) //隨機產生一個1000以內的數字,產生亂數的函式在最下方
+
+        function check() {
+            if(input.value == answer){
+                answer_text.textContent = '答對了!!!!'
+            }else if(input.value > answer ){ //如果數字大於答案的話
+                if(input.value - answer > 100){ //如果數字距離答案超過100
+                    random = getRandomInt(100)//隨機產生一個低於答案的數字放入提示中
+                    range_number = random - answer
+                    if(range_number < 0){
+                        range_number = range_number*-1
+                    }  
+                }else{//如果數字距離答案不超過100的話
+                    random = getRandomInt(10) //隨機產生一個低於答案
+                    range_number = random - answer
+                    if(range_number < 0){
+                        range_number = range_number*-1
+                    }
+                }
+                answer_text.textContent = `太大了!範圍在${input.value}~${range_number}之間`
+            }else{//如果數字小於答案的話
+                if(answer - input.value > 100){//如果數字距離答案超過100
+                    random = getRandomInt(100)//隨機產生一個高於答案100以內的數字放入提示
+                    range_number = random + answer
+                }else{//如果數字距離答案小於100
+                    random = getRandomInt(10)//隨機產生一個高於答案10以內的數字放入提示
+                    range_number = random + answer
+                }
+
+                answer_text.textContent = `太小了!範圍在${input.value}~${range_number}之間`
+            }
+        }
+        // else if() 多條件判斷式
+
+
+        //安安 我是隨機產生亂數的函式
+        function getRandomInt(max) {
+           return Math.floor(Math.random() * Math.floor(max));
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #box1 {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            position: relative;
+        }
+
+        #box2 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            top:200px;
+            left:200px;
+            color:white
+        }
+
+        #box3 {
+            width: 300px;
+            height: 300px;
+            background-color: green;
+        }
+
+        #box4 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            top:100px;
+            left:100px;
+        }
+
+        #box5 {
+            width: 350px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+            z-index: 3;
+            text-align: right;
+        }
+
+        #box6 {
+            width: 100px;
+            height: 300px;
+            background-color: purple;
+            position: absolute;
+            z-index: 4;
+            padding:5px;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">我有relative
+        <div id="box2">我的絕對定位根據父層(box1)的relative</div>
+    </div>
+    <div id="box3">我沒有relative
+        <div id="box4">我的父層(box3)沒有relative,我以body為根據</div>
+    </div>
+    <div id="box5">我的Z-index比box6小,被蓋住惹</div>
+    <div id="box6">我的Z-index比box5大,把box5蓋住惹</div>
+</body>
+
+</html>

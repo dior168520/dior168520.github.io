@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000;
+            padding: 20px 30px;
+        }
+
+        .block h1, .block p {
+            /* opacity是透明度 為0 ~ 1 沒有單位 */
+            opacity: 0;
+            transition-duration: 0.3s;
+        }
+
+        .block:hover h1, .block:hover p {
+            opacity: 1;
+        }
+
+        .block:hover p {
+            transition-delay: 0.5s;
+        }
+
+        .cross {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            position: relative;
+        }
+
+        .cross .line {
+            width: 80px;
+            height: 10px;
+            border: 1px solid #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition-duration: 0.3s;
+        }
+
+        .cross:hover .line1 {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        .cross:hover .line2 {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+
+        .collapse {
+            width: 150px;
+            height: 150px;
+            border: 1px solid #000;
+            position: relative;
+        }
+
+        .collapse .line {
+            width: 120px;
+            height: 15px;
+            border: 1px solid #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transition-duration: 0.1s;
+            transform: translate(-50%, -50%);
+        }
+
+        .collapse .line1 {
+            top: 25%;
+        }
+
+        .collapse .line3 {
+            top: 75%;
+        }
+
+        .collapse:hover .line1 {
+            transform: translate(-50%, -50%) rotate(45deg);
+            top: 50%;
+            transition-property: transform, top;
+            transition-duration: 0.5s, 0.1s;
+        }
+
+        .collapse:hover .line3 {
+            transform: translate(-50%, -50%) rotate(-45deg);
+            top: 50%;
+            transition-property: transform, top;
+            transition-duration: 0.5s, 0.1s;
+        }
+
+        .collapse:hover .line2 {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <h1>我是標題</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi veritatis saepe animi delectus necessitatibus fuga inventore sit tempora aliquid excepturi qui officia ipsum cumque architecto incidunt assumenda commodi, minus voluptates.</p>
+    </div>
+
+    <div class="cross">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+    </div>
+
+    <div class="collapse">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+    </div>
+</body>
+</html>

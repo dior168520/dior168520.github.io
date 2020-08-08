@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .box {  
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-top: 100vh;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box lax" data-lax-translate-x="vh 0,0 vw" data-lax-anchor="self">
+
+    </div>
+    <h1 id="scrollTop"></h1>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script>
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            $('#scrollTop').html(scroll);
+        });
+
+        window.onload = function () {
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .red{
+            font-size: 50px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="title">Title</h1>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // 原生JS
+        //
+        // var title = document.querySelector("#title");
+        // title.classList.add("red");
+
+        //JQuery
+        //
+        $("#title").addClass("red");
+    </script>
+</body>
+</html>

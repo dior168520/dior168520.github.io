@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+
+    .btn {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: 10;
+    }
+
+    .left {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    }
+
+    .right {
+    position: absolute;
+    right: 30px;
+    top: 50%
+    }
+
+    .w-100 {
+    width: 100%;
+    }
+
+    .d-flex {
+        display:flex;
+    }
+
+    .d-flex span {
+        font-size:30px;
+        margin:0 15px;
+        padding:15px;
+    }
+
+    .d-flex span.active {
+        background-color:blue;
+        color:white
+    }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="d-flex">
+        <span class="active">產品名稱</span>
+        <span>產品名稱</span>
+        <span>產品名稱</span>
+        <span>產品名稱</span>
+    </div>
+
+    <div class="swiper-container banner_swiper w-100">
+        <div class="swiper-wrapper w-100">
+            <div class="swiper-slide w-100">
+
+                123
+
+            </div>
+            <div class="swiper-slide w-100">
+
+                123
+
+            </div>
+            <div class="swiper-slide w-100">
+
+                123
+
+            </div>
+            <div class="swiper-slide w-100">
+
+                123
+
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="btn left"></div>
+        <div class="btn right"></div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <script>
+        var BannerSwiper = new Swiper('.banner_swiper', {
+            navigation: {
+                nextEl: '.right',
+                prevEl: '.left',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+        });
+
+        BannerSwiper.on('slideChange', function () {
+            var product_name = document.querySelectorAll('.d-flex span')
+
+            product_name.forEach(function(product){
+                product.classList.remove('active')
+            })
+
+            product_name[BannerSwiper.activeIndex].classList.add('active')
+
+        });
+
+
+    </script>
+</body>
+
+</html>

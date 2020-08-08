@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+            width: 800px;
+            height: 600px;
+            border: 1px solid #000;
+            display: flex;
+            /* 指定子元素是否要換行，會依照交錯軸方向換行 */
+            /* flex-wrap: nowrap; */
+
+            /* flex-flow: |direction| |wrap| */
+            flex-flow: row nowrap;
+
+            
+
+            /* 改變主軸線的方向及位置，交錯軸不會改變 */
+            /* flex-direction: row; */
+
+            /* 根據主軸線的方向進行對齊 */
+            justify-content: flex-start;
+            /* justify-items: center; */
+
+            /* 根據交錯軸的方向進行對齊 items是將子元素視為個別群體進行對齊 */
+            align-items: flex-start;
+            
+            /* 根據交錯軸的方向進行對齊 content是將所有子元素視為群體進行對齊 */
+            /* align-content: space-evenly; */
+        }
+
+        .box {
+            flex-basis: 200px;
+            width: 200px;
+            height: 200px;
+            font-size: 50px;
+            text-align: center;
+            line-height: 200px;
+            flex-shrink: 0;
+        }
+
+
+        .a {
+            background-color: #e72;
+            /* flex-grow: 1; */
+        }
+
+        .b {
+            background-color: #2e7;
+            /* order就是子元素的編號 是整數 沒有單位*/
+            /* order: 1; */
+            /* flex-grow: 2; */
+        }
+        
+        .c {
+            background-color: #72e;
+            /* flex-grow: 3; */
+        }
+
+        .d {
+            background-color: #22e;
+        }
+
+        .e {
+            background-color: #fe2;
+        }
+
+        .f {
+            background-color: #e2e;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+    </div>
+</body>
+</html>

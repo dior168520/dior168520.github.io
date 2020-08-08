@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="scene">
+        <div data-depth="1">
+            <img src="/imgs/layer1.png" alt="">
+        </div>
+        <div data-depth="0.8">
+            <img src="/imgs/layer2.png" alt="">
+        </div>
+        <div data-depth="0.6">
+            <img src="/imgs/layer3.png" alt="">
+        </div>
+        <div data-depth="0.4">
+            <img src="/imgs/layer4.png" alt="">
+        </div>
+        <div data-depth="0.2">
+            <img src="/imgs/layer5.png" alt="">
+        </div>
+        <div data-depth="0">
+            <img src="/imgs/layer6.png" alt="">
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+</body>
+
+</html>

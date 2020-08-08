@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        .float {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #000;
+            float: left;
+        }
+
+        .static {
+            border: 1px solid #000;
+            width: 200px;
+            height: 100px;
+            position: static;
+            left: 30px;
+        }
+
+        .relative {
+            border: 1px solid #000;
+            width: 300px;
+            height: 300px;
+            position: relative;
+            left: 30px;
+            top: 20px;
+        }
+
+        .absolute {
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .fixed {
+            border: 1px solid #000;
+            width: 150px;
+            height: 150px;
+            position: fixed;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS 定位系統 Position</h1>
+    <div class="float">div的特性會左右填滿，並自動排列下來，除非加上float屬性</div>
+    <div class="float">div的特性會左右填滿，並自動排列下來，除非加上float屬性</div>
+    <div style="clear: both"></div>
+    <div class="static">預設position屬性就是static，不會受到定位系統屬性影響</div>
+    <div class="relative">
+        <div class="absolute">position改成absolute，定位方式為絕對定位</div>
+        position改成relative，定位方式為相對定位，會受到定位系統屬性影響
+    </div>
+    <div class="absolute">position改成absolute，定位方式為絕對定位</div>
+    <div class="fixed">position改成fixed，會定位在視窗中特定位置</div>
+</body>
+
+</html>
