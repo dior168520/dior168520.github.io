@@ -297,21 +297,72 @@ body {
                         font-size: 18px;
                     }
                 }
-                .about_content {
-                    display: flex;
-                    justify-content: center;
+          
 
-                    .mockup {
-                       width: 70%;
-                        img {
-                            display: block;
-                            width: 100%;
-                        }
-                       
-                    }
+// swiper banner
+#section_C {
+    width: 100%;
+    .swiper_banner {
+      width: 100%;
+      height: auto;
+      .swiper-wrapper {
+        width: 100%;
+  
+        img {
+          max-width: 100%;
+          width: 100%; //全部圖片滿板
+  
+          display: block;
+          @media screen and (max-width: 1600px) {
+            height: 80vh;
+          }
+          @media screen and (max-width: 1500px) {
+            height: 75vh;
+          }
+          @media screen and (max-width: 1400px) {
+            height: 70vh;
+          }
+          @media screen and (max-width: 1300px) {
+            height: 65vh;
+          }
+  
+          @media screen and (max-width: 1200px) {
+            height: 60vh;
+          }
+          @media screen and (max-width: 1050px) {
+            height: 50vh;
+          }
+          @media screen and (max-width: 950px) {
+            height: 45vh;
+          }
+          @media screen and (max-width: 850px) {
+            height: 40vh;
+          }
+          @media screen and (max-width: 750px) {
+            height: 35vh;
+          }
+        }
+      }
+  
+      .swiper_pagination {
+        text-align: center;
+        z-index: 30;
+        position: absolute;
+        .swiper-pagination-bullet {
+          background-color: black;
+          padding: 2px;
+        }
+      }
+      .swiper_pagination {
+        color: white;
+      }
+      .arrow_button {
+        color: #fff;
+      }
+    }
+  }
 
-                 
-                }
+
             }
         }
 
