@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <title>Document</title>
+
+    <audio id="music2" src="./bgmusic.mp3" loop="loop">
+        你的瀏覽器不支援audio標籤。</audio>
+</head>
+
+<script>
+    function playPause() {
+        var music = document.getElementById('music2');
+        var music_btn = document.getElementById('music_btn2');
+        if (music.paused) {
+            music.play();
+            music_btn.src = ' ./stop-circle-solid.svg ';
+        }
+        else {
+            music.pause();
+            music_btn.src = './play-circle-solid.svg';
+        }
+    }
+    
+</script>
+
+<body>
+
+  <a href="javascript:playPause();">
+        <img src="./play-circle-solid.svg" width="48" height="50" id="music_btn2" style="cursor:pointer;"></a>
+
+
+</body>
+
+</html>

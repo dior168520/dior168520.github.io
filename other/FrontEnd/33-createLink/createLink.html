@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    p{
+      text-align: center;
+      padding: 50px 0;
+    }
+    a{
+      font-size: 32px;
+      font-family: Arial;
+    }
+    div{
+      display: flex;
+      justify-content: center;
+    }
+    button{
+      width: 200px;
+      height: 50px;
+      margin: 0 20px;
+      border: 0;
+      background-color: green;
+      color: white;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  
+  <p></p>
+
+  <div>
+    <button class="btn1">Get Link 1</button>
+  </div>
+
+
+<script>
+  
+  window.onload = function(){
+    // const 宣告常數
+    const linkText = [
+      'Yahoo Link',
+    ]
+
+    const linkUrl = [
+      'http://tw.yahoo.com',
+    ]
+
+    const btn1 = document.querySelector('.btn1');
+    const pp = document.querySelector('p');
+
+    btn1.onclick = function(){
+      let att = document.createTextNode(linkText[0]);
+      let adda = document.createElement('a');
+      adda.appendChild(att);
+      adda.setAttribute('href', linkUrl[0]);
+      pp.appendChild(adda)
+    }
+
+
+  }
+
+</script>
+</body>
+</html>

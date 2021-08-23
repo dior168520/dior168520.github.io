@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+.myDiv{
+	display:none;
+    text-align:center;
+}  
+.myDiv img{
+  margin: 0 auto;
+}
+.myDiv span{
+	text-align: center;
+    background: #ffdede;
+    padding: 6px 10px;
+    display: block;
+    width: 100px;
+    border: 1px solid #d47c7c;
+    margin: 8px auto;
+}
+#showOne{
+	color:red;
+    border:1px solid red;
+    padding:10px;
+}
+#showTwo{
+	color:green;
+    border:1px solid green;
+    padding:10px;
+}
+#showThree{
+	color:blue;
+    border:1px solid blue;
+    padding:10px;
+}
+</style>
+<body>
+    
+
+<select id="myselection">
+	<option>Select Option</option>
+    
+	<option value="One">Taipei 104 </option>
+	<option value="Two">田園風景</option>
+	<option value="Three">富士山</option>
+</select>
+<div id="showOne" class="myDiv">
+	<img src="./img/001.jpg" alt="Manager"/><span>Taipei 104</span>
+</div>
+<div id="showTwo" class="myDiv">
+	<img src="./img/002.jpg" alt="HR"/><span>田園風景</span>
+</div>
+<div id="showThree" class="myDiv">
+	<img src="./img/003.jpg" alt="Developer"/><span>富士山</span>
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('#myselection').on('change', function(){
+    	var demovalue = $(this).val(); 
+        $("div.myDiv").hide();
+        $("#show"+demovalue).show();
+    });
+});
+</script>
+
+
+</body>
+</html>

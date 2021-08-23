@@ -1,0 +1,79 @@
+
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*end of css reset */
+body,*{
+  font-family: 'Noto Sans TC', sans-serif;
+}
+html {
+ background:url('https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80') center no-repeat;
+ background-size: cover;
+ height: 100%;
+ width: 100%;
+}
+.wrap{
+  width: 800px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.6);
+  padding: 50px;
+}
+h1{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color:    #ffffff;
+  background: rgb(122, 122, 122, 0.7);
+  padding: 5px;
+}
+
+.list {
+  margin: 0 auto;
+  padding: 50px;
+  text-align: left;
+  list-style: none;
+}
+
+.list li {
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+}
+
+.addList {
+ text-align: center;
+ margin-top: 20px;
+}
+
+.addList .text {
+  padding:10px;
+  border: 2px solid rgb(73, 41, 10);
+}
+.addList .send {
+  padding: 10px;
+  cursor: pointer;
+  background: #ffff6f;
+}
+.list li{
+  background: rgb(255, 255, 112, 0.6);
+  padding: 5px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.list li a{
+  text-decoration: none;
+  color: red;
+}

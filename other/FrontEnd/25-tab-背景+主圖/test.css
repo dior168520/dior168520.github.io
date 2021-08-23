@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(27, 0, 62);
+    color: white;
+
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: red;
+    display: block;
+}
+
+header {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+header a {
+    display: block;
+    line-height: 2;
+    color: rgb(255, 255, 255);
+    width: 150px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 12px;
+
+    margin: auto;
+    text-decoration: none;
+
+}
+
+header p {
+    margin: auto;
+    width: 500px;
+}
+
+main {
+    text-align: center;
+    width: 100%;
+}
+
+.step1 {
+    padding-bottom: 30px;
+}
+
+.step1 ul {
+    display: flex;
+    justify-content: center;
+}
+
+.step1 ul li img {
+    width: 100%;
+}
+
+.step1 li {
+
+    flex-direction: column;
+    margin: 20px;
+}
+
+.step1 .img1 {
+    width: 200px;
+    height: 320px;
+    display: block;
+}
+
+.step1 .img2 {
+    width: 200px;
+    height: 320px;
+    display: block;
+}
+
+.step1 .img3 {
+    width: 200px;
+    height: 320px;
+    display: block;
+}
+
+/* ============Step2============== */
+
+.step2 {
+    padding-bottom: 60px;
+}
+
+.step2 p {
+    background-color: #fff;
+    width: 400px;
+    height: 230px;
+    margin: auto;
+    color: black;
+    padding: 30px;
+}
+
+
+/* ============Step3============== */
+
+.step3 {
+    padding-bottom: 60px;
+}
+
+.step3 ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.step3 li {
+    flex-basis: 600px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: block;
+}
+
+.step3 li img {
+    width: 200px;
+}
+
+/* ============Step4============== */
+.step4 {}
+
+.step4 h3 {}
+
+.step4 span {
+    background-color: #fff;
+    width: 400px;
+    height: 520px;
+    margin: auto;
+    color: black;
+    padding: 30px;
+    display: block;
+
+    margin-bottom: 30px;
+}
+.add_photo {
+    width: 100%;
+    position: relative;
+   
+}
+
+
+.background {
+    position: relative;
+}
+.tab_content_2 {
+    
+    display: none;
+}
+
+.tab_content_2.active{
+    display: block;
+}
+
+.tab_content_2 .change_1 img {
+    width: 500px ;
+}
+
+/* .background {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    
+
+} */
+
+
+.pig{
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    /* opacity: 0.8; */
+    
+}
+.tab_content {
+    
+    display: none;
+   
+   
+  }
+.tab_content.active {
+    display: block;
+    
+    
+}
+.tab_content .change_1 img {
+    width: 70%;
+}
+
+
+
+
+.step4 .sharebtn {}
