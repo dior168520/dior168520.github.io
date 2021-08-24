@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>街口年末聖誕賀卡頁</title>
+
+    <!-- Swiper's -->
+    <link rel="stylesheet" href="./swiper_style.css" />
+
+    <!-- Link Swiper's CSS 套件 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- style css-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./snow.css">
+
+    <!-- Fontawesome 套件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- cdn  -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- music  -->
+    <audio id="music2" src="./bgmusic.mp3" loop="loop">
+        你的瀏覽器不支援audio標籤。</audio>
+
+    <!--===============  JS  ================= -->
+    <script src="./JS/jquery-3.5.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- script  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+
+    <!-- lightbox需要有JQuery做為前置才能使用 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+    <script src="./package.json"></script>
+</head>
+
+<body style="border: 1px solid red;">
+    <!--=============== 音樂播放 ================= -->
+    <section class="playmusicbtn">
+        <a href="javascript:playPause();">
+            <img src="./img/playmusic.png" width="50" height="50" id="music_btn2" style="cursor:pointer;"></a>
+    </section>
+
+    <!-- snow -->
+    <div class="snow_bg">
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+
+
+    </div>
+
+    <!--=============== 固定漂浮 tabbar================= -->
+    <div class="tabbar">
+        <ul class="uptop" id="uptop">
+            <li> <a href="https://tw.yahoo.com/" target="_blank">
+                    <p>街口官網</p>
+                </a></li>
+            <li> <a href="https://tw.yahoo.com/" target="_blank">
+                    <p>APP活動</p>
+                </a></li>
+            <li> <a href="https://tw.yahoo.com/" target="_blank">
+                    <p>其他優惠</p>
+                </a></li>
+            <li id="to-top"> <i class="fas fa-sort-up"></i><br> TOP </li>
+        </ul>
+    </div>
+
+    <!--=============== 背景裝飾 ================= -->
+    <div class="deco">
+        <img class="snowbg" src="./img/snowbg01.png" alt="">
+        <img class="snowbg2" src="./img/snowbg03.png" alt="">
+    </div>
+
+    <!--=============== nav bar 上方選單 ================= -->
+    <nav class="main-sel">
+        <!-- 街口logo -->
+        <a href="#">
+            <img class="logo" src="./img/logo_RGBwhite.png" alt="JKOPAY" /></a>
+
+        <!-- navbar -->
+        <div class="topMain">
+            <ul class="activity">
+                <li>
+                    <a href="#">
+                        <h3>年度回顧</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>抽獎去</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>免費福利吉祥物設計師款</h3>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- socialmedia 右上方社群 -->
+
+            <ul class="socm">
+                <li>
+                    <a href="https://www.facebook.com/JKOPAY" target="_blank">
+                        <img src="./img/socialmediaicon_fb.png" alt="Facebook" /></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/jkopayapp/" target="_blank">
+                        <img src="./img/socialmediaicon_ig.png" alt="IG" /></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/jkopay-co-ltd/" target="_blank">
+                        <img src="./img/socialmediaicon_linkedIn.png" alt="LinkedIn" /></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!--=============== header ================= -->
+    <header>
+        <!-- animation動畫飛豬 -->
+        <img class="pigreindeer" src="./img/pigreindeer.png" alt="">
+        <img class="pigreindeer2" src="./img/pigreindeer.png" alt="">
+        <img class="titleimg" src="./img/titleimg1.png" alt="標題圖">
+        <p>被拉開的距離，用愛再次靠近 <br>
+            馬上寄送愛‧Sharing分享賀卡，與家人好友<br>
+            <!-- <span class="yellowtext">*小提醒：每寄出一個分享賀卡，即可獲得1個雪鈴金幣* -->
+        </p></span>
+    </header>
+
+    <!-- ======================  Swiper ======================= -->
+    <img src="./img/pigbubble.png" alt="" style="width: 40%; margin: 0 auto; display: block;" data-aos="flip-up">
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> <a href="https://www.jkos.com/"><img src="./img/pic01.jpg" alt=""></a> </div>
+            <div class="swiper-slide"><img src="./img/pic02.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/pic01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/pic02.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/pic01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/pic02.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/pic01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/pic02.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/pic01.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+
+    <!-- ======================  遊戲 ======================= -->
+    <div class="game">
+        <img src="./img/pigbubble.png" alt="" style="width: 40%; margin: 0 auto; display: block;" data-aos="flip-up">
+        <img class="line" src="./img/gameline.png" alt="line">
+        <img class="board" src="./img/snowbg02.png" alt="board">
+        <img class="piggift" data-aos="fade-left" src="./img/piggift.png" alt="piggift">
+
+        <div id="app">
+            <img class="marker" src="./img/marker.png" alt="marker">
+            <img class="wheel" src="./img/wheel.png" alt="wheel">
+            <img class="wheel2" src="./img/wheel2.png" alt="wheel2">
+            <img class="button" src="./img/button.png" alt="button">
+            <div class="display"></div>
+        </div>
+    </div>
+    
+    <div class="gamerules">
+        <h2>活動說明與辦法</h2> <br>
+        <p>活動期間：2017/5/1至2017/8/25 23:59止 <br>
+            於活動期間於全省通路(各大便利商店、量販店、地區超市)， <br>
+            購買順開科技股份有限公司（以下簡稱：生活飲料）生活運動飲料品項， <br>
+            憑106年3-4月、106年５-６月、106年７-８月印有品名 <br>
+            之中文明細實統一發票參加抽獎（電子發票無法參加本次活動）。 </p>
+    </div>
+    <div class="brandlist">
+        <ul>
+            <li> <img  src="./img/pig04.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, provident!</p>
+                <a  href=""><img src="./img/designbtn01.png" alt=""></a>
+            </li>
+            <li> <img src="./img/pig04.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, provident!</p>
+                <a href="#"><img src="./img/designbtn01.png" alt=""></a>
+            </li>
+            <li> <img src="./img/pig04.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, provident!</p>
+                <a href="#"><img src="./img/designbtn01.png" alt=""></a>
+            </li>
+            <li> <img src="./img/pig04.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, provident!</p>
+                <a href="#"><img src="./img/designbtn01.png" alt=""></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="cardarea">
+        <img class="pigbubble3" src="./img/pigbubble.png" alt="" data-aos="flip-up">
+        <img class="step1_imgtitle" src="./img/downloadimgtitle.png" alt="downloadimgtitle">
+
+        <div class="designcard">
+            <ul>
+                <li><img src="./img/designcard01.png" alt="">
+                    <a href="./img/designcard01.png"download><img src="./img/download.png" alt="" ></a>
+                </li>
+                <li><img src="./img/designcard01.png" alt="">
+                    <a href="#"><img src="./img/download.png" alt="" ></a>
+                </li>
+                <li><img src="./img/designcard01.png" alt="">
+                    <a href="#"><img src="./img/download.png" alt=""></a>
+                </li>
+                <li><img src="./img/designcard01.png" alt="">
+                    <a href="#"><img src="./img/download.png" alt=""></a>
+                </li>
+                <li><img src="./img/designcard01.png" alt="">
+                    <a href="#"><img src="./img/download.png" alt=""></a>
+                </li>
+                <li><img src="./img/designcard01.png" alt="">
+                    <a href="#"><img src="./img/download.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+
+        
+        <!-- <img class="messageboard_imgtitle" src="./img/messageboardimg01.png" alt=""> -->
+    </div>
+
+    <footer>
+        <p>版權所有 ©2021 JKOS Network CO., LTD all rights reserved </p>
+    </footer>
+</body>
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+<!-- ======================   背景音樂 ======================= -->
+<script>
+    function playPause() {
+        var music = document.getElementById('music2');
+        var music_btn = document.getElementById('music_btn2');
+        if (music.paused) {
+            music.play();
+            music_btn.src = './pausemusic.png';
+        }
+        else {
+            music.pause();
+            music_btn.src = './playmusic.png';
+        }
+    }
+</script>
+
+<!-- ======================   HTML 轉成 IMG ======================= -->
+<script>
+    $(document).ready(function () {
+        var element = $("#imageCanvas"); // global variable
+        var getCanvas; // global variable
+
+        $("#btn-Preview-Image").on('click', function () {
+            html2canvas(element, {
+                onrendered: function (canvas) {
+                    $("#imageCanvas").append(canvas);
+                    getCanvas = canvas;
+
+                }
+            });
+        });
+
+        $("#btn-Convert-Html2Image").on('click', function () {
+            var imgageData = getCanvas.toDataURL("image/png");
+            // Now browser starts downloading it instead of just showing it
+            var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+            $("#btn-Convert-Html2Image").attr("download", "jkoscard.png").attr("href", newData);
+        });
+    });
+</script>
+
+<!-- ======================   覆蓋於 canvas 上方的文字及圖片 ======================= -->
+<script type="text/javascript">
+    var text_title = "";
+    var text_title1 = "";
+    var text_title2 = "";
+
+    var canvas = document.getElementById('imageCanvas');
+    var ctx = canvas.getContext('2d');
+    var img = new Image();
+    img.crossOrigin = "anonymous";
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    window.addEventListener('load', DrawPlaceholder)
+
+    function DrawPlaceholder() {
+        img.onload = function () {
+            DrawOverlay(img);
+            DrawText();
+            DynamicText(img)
+        };
+        img.src = 'https://test-img.jkos.com.tw/mofang/m-d7c29a84-2624a.jpg';
+
+    }
+
+    // 覆蓋上方的藍色
+    function DrawOverlay(img) {
+
+        // ctx.fillStyle = 'rgba(30, 144, 255, 0)';
+
+        //圖片大小調整
+        canvas.width = 650;
+        canvas.height = 1050;
+        ctx.drawImage(img, 0, 0, img.width, img.height, 0, 0, 650, 1050);
+        img.src = './img/background01.jpg';
+    }
+
+    // 畫布上的標題文字
+    function DrawText() {
+        ctx.fillStyle = "black";
+        ctx.textBaseline = 'middle';
+        ctx.font = "20px 'Montserrat'";
+        ctx.fillText(text_title, 150, 150);//  文字圖片位置
+        ctx.fillText(text_title1, 250, 250);//  文字圖片位置
+        ctx.fillText(text_title2, 300, 300);//  文字圖片位置
+    }
+
+    function DynamicText(img) {
+        document.getElementById('name').addEventListener('keyup', function () {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            DrawOverlay(img);
+            DrawText();
+            text_title = this.value;
+            ctx.fillText(text_title, 150, 150);//  文字圖片位置
+
+        });
+
+        document.getElementById('name1').addEventListener('keyup', function () {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            DrawOverlay(img);
+            DrawText();
+            text_title1 = this.value;
+            ctx.fillText(text_title1, 250, 250);//  文字圖片位置
+        });
+
+        document.getElementById('name2').addEventListener('keyup', function () {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            DrawOverlay(img);
+            DrawText();
+            text_title2 = this.value;
+            ctx.fillText(text_title1, 300, 300);//  文字圖片位置
+        });
+
+    }
+
+    function handleImage(e) {
+        var reader = new FileReader();
+        var img = "";
+        var src = "";
+        reader.onload = function (event) {
+            img = new Image();
+            img.onload = function () {
+                canvas.width = img.width;
+                canvas.height = img.height;
+                ctx.drawImage(img, 0, 0);
+            }
+            img.src = event.target.result;
+            src = event.target.result;
+            canvas.classList.add("show");
+            DrawOverlay(img);
+            DrawText();
+            DynamicText(img);
+        }
+
+        reader.readAsDataURL(e.target.files[0]);
+    }
+
+    //外框小点
+    (function ($) {
+        var wai = $('.wai');
+        if (wai.length < 1) return;
+        var html = '';
+        for (var i = 0; i < 24; i++) {
+            html += '<span></span>';
+        }
+        wai.append(html);
+        var r = 0;
+        wai.children('span').each(function () {
+            $(this).css({
+                transform: 'rotate(' + r + 'deg)'
+            })
+            r = r + 15;
+        });
+    })(jQuery);
+
+    //游戏项
+    (function ($) {
+        var r = 0;
+        $('.xuanxiang>span').each(function () {
+            $(this).css({
+                transform: 'rotate(' + r + 'deg)'
+            })
+            r = r + 30;
+        })
+    })(jQuery);
+
+    //游戏
+    (function ($) {
+        var btn = $('.nei');
+        if (btn.length < 1) return;
+        var a = $('.xuanxiang');
+        if (a.length < 1) return;
+        var rotate = 0;
+        btn.on('click', function () {
+            var num = Math.floor(Math.random() * 1800 + 360);
+            rotate = rotate + num;
+            var yu = rotate % 60;
+            if (yu > 10 && yu < 30) rotate -= 20;
+            if (yu > 30 && yu < 50) rotate += 20;
+            a.css({
+                transform: 'rotate(' + rotate + 'deg)'
+            });
+        });
+    })(jQuery);
+
+
+    // ======================game=========================
+
+    function ratating() {
+        var timer = null;
+        var rdm = 0;
+        clearInterval(timer);
+        timer = setInterval(function () {
+            if (Math.floor(rdm / 360) < 3) {
+                rdm = Math.floor(Math.random() * 3600);
+            } else {
+                oTurntable.style.transform = "rotate(" + rdm + "deg)";
+                clearInterval(timer);
+                setTimeout(function () {
+                    offOn = !offOn;
+                    num = rdm % 360;
+                    if (num <= cat * 1) {
+                        alert("4999元");
+                    } else if (num <= cat * 2) {
+                        alert("條50元");
+                    } else if (num <= cat * 3) {
+                        alert("10元");
+                    } else if (num <= cat * 4) {
+                        alert("5元");
+                    } else if (num <= cat * 5) {
+                        alert("免息服務");
+                    } else if (num <= cat * 6) {
+                        alert("提交白金");
+                    } else if (num <= cat * 7) {
+                        alert("未中獎");
+                    }
+                }, 4000);
+            }
+        }, 30);
+    }
+</script>
+
+
+
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+    crossorigin="anonymous">
+    </script>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var tab_swiper = new Swiper('.tab_1_swiper,.tab_2_swiper', {
+        loop: true, //(循環)
+        autoplay: true, //(自動滑動)
+        delay: 2000, //(自動滑動時間)
+
+        navigation: {
+            nextEl: '.swiper-button-next', //右箭頭
+            prevEl: '.swiper-button-prev', //左箭頭
+        },
+
+        // responsive
+        breakpoints: {
+
+            //    responsive rwd
+            992: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+
+            1: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+        }
+    });
+
+
+    //TAB
+    var tab_btns = document.querySelectorAll(".tab_btn")
+    var tab_contents = document.querySelectorAll(".tab_content")
+
+    for (let index = 0; index < tab_btns.length; index++) {
+        const element = tab_btns[index];
+
+        element.addEventListener('click', function () {
+            console.log(index);
+            var x = index + 1;
+
+
+            remove_all_active();
+
+            var tab_content = document.querySelector(".tab_content:nth-child(" + x + ")");
+            tab_content.classList.add('active');
+
+        });
+    }
+
+    function remove_all_active() {
+        for (let index = 0; index < tab_contents.length; index++) {
+            const element = tab_contents[index];
+            // console.log(element);
+            element.classList.remove("active")
+        }
+    }
+</script>
+
+
+
+<script src="./script.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
